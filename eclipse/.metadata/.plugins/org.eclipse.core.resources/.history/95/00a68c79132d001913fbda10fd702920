@@ -1,0 +1,15 @@
+package fluids;
+
+import java.util.Set;
+
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
+import com.google.common.collect.Sets;
+
+import net.minecraftforge.fluids.Fluid;
+
+public class RegisterFluids {
+
+	public static BiMap<String, Fluid> fluids = HashBiMap.create();
+	public static Set<String> bucketFluids = Sets.newHashSet();
+}

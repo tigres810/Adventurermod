@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "generating=false,facing=north": { "model": "am:flux_generator_block_off_north" },
+        "generating=false,facing=east": { "model": "am:flux_generator_block_off_east" },
+        "generating=false,facing=south": { "model": "am:flux_generator_block" },
+        "generating=false,facing=west": { "model": "am:flux_generator_block_west" }
+    }
+}

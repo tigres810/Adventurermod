@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal": { "model": "am:flux_generator_block" },
+        "facing=north": { "model": "mod:model" },
+        "facing=east":  { "model": "mod:model", "y": 90 },
+        "facing=south": { "model": "mod:model", "y": 180 },
+        "facing=west":  { "model": "mod:model", "y": 270 },
+    }
+}

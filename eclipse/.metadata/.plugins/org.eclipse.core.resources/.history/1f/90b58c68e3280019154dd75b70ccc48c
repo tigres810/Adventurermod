@@ -1,0 +1,12 @@
+package com.tigres810.adventurermod.tabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class AdventurerModItemsTab extends CreativeTabs {
+
+	public AdventurerModItemsTab(int index, String label) {
+		super(index, label);
+		// TODO Auto-generated constructor stub
+	}
+
+}

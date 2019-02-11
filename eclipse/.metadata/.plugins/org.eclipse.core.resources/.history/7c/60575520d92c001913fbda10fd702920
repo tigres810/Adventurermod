@@ -1,0 +1,5 @@
+package com.tigres810.adventurermod.blocks.machines.container;
+
+public class ContainerBlockEntityFluxGenerator {
+
+}

@@ -1,0 +1,5 @@
+package codechicken.lib.block.property;
+
+public class PropertyInteger {
+
+}

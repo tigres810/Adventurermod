@@ -1,0 +1,3 @@
+package com.tigres810.adventurermod;
+
+public interface ITankBlockConnector {}

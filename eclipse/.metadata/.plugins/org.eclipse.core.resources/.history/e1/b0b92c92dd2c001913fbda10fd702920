@@ -1,0 +1,5 @@
+package com.tigres810.adventurermod.blocks.machines.tileentity;
+
+public class TileEntityEnergy {
+
+}

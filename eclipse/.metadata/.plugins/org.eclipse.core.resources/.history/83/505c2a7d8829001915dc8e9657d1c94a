@@ -1,0 +1,10 @@
+item.information_tablet.name=AdventurerMod Tableta de Informacion
+
+item.flux_generator_block.name=Generador de Flux 
+
+#Gui
+gui.title=Guia
+
+#Tabs
+itemGroup.AdventurerModItemsTab=AdventurerMod Items
+itemGroup.AdventurerModBlocksTab=AdventurerMod Bloques

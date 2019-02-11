@@ -1,0 +1,16 @@
+package com.tigres810.adventurermod.util.handler;
+
+import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
+import com.tigres810.adventurermod.util.Reference;
+
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class TileEntityHandler {
+
+	public static void registerTileEntities() {
+		GameRegistry.registerTileEntity(TileEntityFluxGenerator.class, new ResourceLocation(Reference.MOD_ID + ":models/block/flux_generator_block"));
+		GameRegistry.registerTileEntity(TileEntityFluxGenerator.class, new ResourceLocation(Reference.MOD_ID + ":models/block/flux_pipe_block"));
+		GameRegistry.registerTileEntity(TileEntityFluxGenerator.class, new ResourceLocation(Reference.MOD_ID + ":models/block/flux_pipe_block_side_connector"));
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2019-02-10 08:55:58 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2019-02-10 08:56:12 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2019-02-10 08:56:12 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2019-02-10 08:55:58 +0100"
+    },
+    "done": false
+  }
+}

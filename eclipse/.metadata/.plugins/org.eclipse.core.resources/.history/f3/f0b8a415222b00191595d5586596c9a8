@@ -1,0 +1,18 @@
+package com.tigres810.adventurermod.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import fluids.FluidBase;
+import net.minecraft.block.Block;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
+
+public class ModFluids {
+
+	public static final List<Fluid> FLUIDS = new ArrayList<Fluid>();
+	
+	public static final Fluid FLUX_FLUID = new FluidBase("flux_fluid", new ResourceLocation("am:blocks/flux_fluid_block"), new ResourceLocation("blocks_flux_fluid_flow"));
+
+}

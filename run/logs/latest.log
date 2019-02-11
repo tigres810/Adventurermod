@@ -1,0 +1,215 @@
+[22:09:08] [main/INFO] [GradleStart]: Extra: []
+[22:09:08] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/tigres810/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[22:09:08] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:09:08] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:09:08] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:09:08] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:09:08] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[22:09:08] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_202, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_202
+[22:09:08] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[22:09:08] [main/ERROR] [FML]: Full: C:\Users\tigres810\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[22:09:08] [main/ERROR] [FML]: Trimmed: c:/users/tigres810/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[22:09:09] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[22:09:09] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[22:09:10] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[22:09:10] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[22:09:10] [main/INFO] [FML]: Searching C:\Users\tigres810\Desktop\Minecraft Modding\AdventurerMod\run\.\mods for mods
+[22:09:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:09:10] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[22:09:10] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[22:09:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:09:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:09:10] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:09:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:09:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[22:09:10] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:09:11] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[22:09:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[22:09:11] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[22:09:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[22:09:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:09:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[22:09:12] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[22:09:12] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player166
+[22:09:16] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[22:09:16] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[22:09:17] [main/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 109011040 bytes (103 MB) / 376963072 bytes (359 MB) up to 1900019712 bytes (1812 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 418.81' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+[22:09:17] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[22:09:17] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[22:09:17] [main/INFO] [FML]: Replaced 1036 ore ingredients
+[22:09:18] [main/INFO] [FML]: Searching C:\Users\tigres810\Desktop\Minecraft Modding\AdventurerMod\run\.\mods for mods
+[22:09:19] [main/INFO] [FML]: Forge Mod Loader has identified 5 mods to load
+[22:09:19] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, am] at CLIENT
+[22:09:19] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, am] at SERVER
+[22:09:20] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Adventurer Mod
+[22:09:20] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 499947948 nanos
+[22:09:20] [main/INFO] [FML]: Processing ObjectHolder annotations
+[22:09:20] [main/INFO] [FML]: Found 1168 ObjectHolder annotations
+[22:09:20] [main/INFO] [FML]: Identifying ItemStackHolder annotations
+[22:09:20] [main/INFO] [FML]: Found 0 ItemStackHolder annotations
+[22:09:20] [main/INFO] [FML]: Configured a dormant chunk cache size of 0
+[22:09:20] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[22:09:20] [main/INFO] [FML]: Applying holder lookups
+[22:09:20] [main/INFO] [FML]: Holder lookups applied
+[22:09:20] [main/INFO] [FML]: Applying holder lookups
+[22:09:20] [main/INFO] [FML]: Holder lookups applied
+[22:09:20] [main/INFO] [FML]: Applying holder lookups
+[22:09:20] [main/INFO] [FML]: Holder lookups applied
+[22:09:20] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[22:09:20] [main/INFO] [FML]: Applying holder lookups
+[22:09:20] [main/INFO] [FML]: Holder lookups applied
+[22:09:20] [main/INFO] [FML]: Injecting itemstacks
+[22:09:20] [main/INFO] [FML]: Itemstack injection complete
+[22:09:24] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[22:09:24] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[22:09:24] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:09:24] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[22:09:25] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[22:09:31] [main/INFO] [FML]: Max texture size: 16384
+[22:09:32] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlas
+[22:09:34] [main/INFO] [FML]: Applying holder lookups
+[22:09:34] [main/INFO] [FML]: Holder lookups applied
+[22:09:34] [main/INFO] [FML]: Injecting itemstacks
+[22:09:34] [main/INFO] [FML]: Itemstack injection complete
+[22:09:34] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 5 mods
+[22:09:34] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[22:09:34] [main/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[22:09:35] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[22:09:37] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[22:09:37] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[22:09:37] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[22:09:37] [Server thread/INFO] [FML]: Registry Block: Found a missing id from the world am:fluxpipe_block
+[22:09:37] [Server thread/INFO] [FML]: Applying holder lookups
+[22:09:37] [Server thread/INFO] [FML]: Holder lookups applied
+[22:09:38] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@10318856)
+[22:09:38] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[22:09:38] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@10318856)
+[22:09:38] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@10318856)
+[22:09:38] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[22:09:39] [Server thread/WARN] [net.minecraft.world.WorldServer]: Keeping entity minecraft:sheep that already exists with UUID ac1188aa-7982-4cfd-82b5-b6cf5b61d831
+[22:09:39] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 50%
+[22:09:40] [Server thread/ERROR] [net.minecraft.server.MinecraftServer]: Encountered an unexpected exception
+net.minecraft.util.ReportedException: Ticking block entity
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:848) ~[MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743) ~[MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) ~[IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_202]
+Caused by: java.lang.ClassCastException: com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator cannot be cast to com.tigres810.adventurermod.energy.ISharingEnergyProvider
+	at com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator.update(TileEntityFluxGenerator.java:84) ~[TileEntityFluxGenerator.class:?]
+	at net.minecraft.world.World.updateEntities(World.java:2007) ~[World.class:?]
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643) ~[WorldServer.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842) ~[MinecraftServer.class:?]
+	... 4 more
+[22:09:40] [Server thread/ERROR] [net.minecraft.server.MinecraftServer]: This crash report has been saved to: C:\Users\tigres810\Desktop\Minecraft Modding\AdventurerMod\run\.\crash-reports\crash-2019-02-11_22.09.40-server.txt
+[22:09:40] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[22:09:40] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[22:09:40] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[22:09:40] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[22:09:40] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/the_nether
+[22:09:40] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/the_end
+[22:09:40] [Server thread/INFO] [FML]: Unloading dimension 0
+[22:09:40] [Server thread/INFO] [FML]: Unloading dimension -1
+[22:09:40] [Server thread/INFO] [FML]: Unloading dimension 1
+[22:09:40] [Server thread/INFO] [FML]: Applying holder lookups
+[22:09:40] [Server thread/INFO] [FML]: Holder lookups applied
+[22:09:40] [Server thread/INFO] [FML]: The state engine was in incorrect state SERVER_STOPPING and forced into state SERVER_STOPPED. Errors may have been discarded.
+[22:09:41] [main/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: ---- Minecraft Crash Report ----
+// Quite honestly, I wouldn't worry myself about that.
+
+Time: 2/11/19 10:09 PM
+Description: Ticking block entity
+
+java.lang.ClassCastException: com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator cannot be cast to com.tigres810.adventurermod.energy.ISharingEnergyProvider
+	at com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator.update(TileEntityFluxGenerator.java:84)
+	at net.minecraft.world.World.updateEntities(World.java:2007)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator.update(TileEntityFluxGenerator.java:84)
+
+-- Block entity being ticked --
+Details:
+	Name: am:flux_generator_block // com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator
+	Block type: ID #253 (tile.flux_generator_block // com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator // am:flux_generator_block)
+	Block data value: 3 / 0x3 / 0b0011
+	Block location: World: (-245,70,260), Chunk: (at 11,4,4 in -16,16; contains blocks -256,0,256 to -241,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Actual block type: ID #253 (tile.flux_generator_block // com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator // am:flux_generator_block)
+	Actual block data value: 3 / 0x3 / 0b0011
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2007)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: -4628799216239308610
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-196,64,256), Chunk: (at 12,4,0 in -13,16; contains blocks -208,0,256 to -193,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 506926 game time, 1000 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 77652 (now: false), thunder time: 142116 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_202, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 435460424 bytes (415 MB) / 682098688 bytes (650 MB) up to 1900019712 bytes (1812 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                           | Signature |
+	|:--------- |:--------- |:------------ |:-------------------------------- |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                    | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                    | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeSrc-1.12.2-14.23.5.2768.jar | None      |
+	| UCHIJAAAA | am        | 1.0          | bin                              | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+[22:09:41] [main/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: #@!@# Game crashed! Crash report saved to: #@!@# .\crash-reports\crash-2019-02-11_22.09.40-server.txt
+[22:09:41] [Client Shutdown Thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[22:09:41] [Client Shutdown Thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[22:09:41] [Client Shutdown Thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds

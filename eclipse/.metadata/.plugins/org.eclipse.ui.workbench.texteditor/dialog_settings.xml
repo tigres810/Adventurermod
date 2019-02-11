@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Extract" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="extract"/>
+			<item value="getopposite"/>
+			<item value="opposite"/>
+			<item value="tileentityflux"/>
+			<item value="state"/>
+			<item value="getblock"/>
+			<item value="saving other"/>
+			<item value="Saving other"/>
+			<item value="Saving"/>
+			<item value="item"/>
+			<item value="registerfluid"/>
+			<item value="modfluids"/>
+			<item value="Itemexternal"/>
+			<item value="currentBucketFluids"/>
+			<item value="nbt"/>
+		</list>
+		<list key="replacehistory">
+			<item value="am"/>
+			<item value="generating"/>
+			<item value=""/>
+			<item value="adventurermod"/>
+			<item value="&quot;north&quot;: {&quot;uv&quot;: [0, 0, 1, 4.1], &quot;rotation&quot;: 90, &quot;texture&quot;: &quot;#0&quot;},"/>
+			<item value="blocks"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="385" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="523" key="DIALOG_HEIGHT"/>
+		<item value="1312" key="DIALOG_X_ORIGIN"/>
+		<item value="195" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

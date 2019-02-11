@@ -1,0 +1,25 @@
+package com.tigres810.adventurermod.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.tigres810.adventurermod.blocks.BlockBase;
+import com.tigres810.adventurermod.blocks.machines.TileEntityFluxGenerator;
+
+import fluids.FluidBase;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class ModBlocks {
+
+	public static final List<Block> BLOCKS = new ArrayList<Block>();
+	
+	//Machines
+	public static final Block FLUX_GENERATOR_BLOCK = new TileEntityFluxGenerator("flux_generator_block", Material.ANVIL);
+	
+	//Pipes
+	public static final Block FLUX_PIPE_BLOCK = new TileEntityFluxGenerator("flux_pipe_block", Material.WOOD);
+	
+	//Fluids
+	public static final Block FLUX_FLUID_BLOCK = new FluidBase("flux_fluid_block", ModFluids.FLUX_FLUID, Material.WATER);
+}

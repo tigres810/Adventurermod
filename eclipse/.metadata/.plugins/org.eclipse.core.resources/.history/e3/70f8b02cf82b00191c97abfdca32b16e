@@ -1,0 +1,26 @@
+package com.tigres810.adventurermod.blocks;
+
+import com.tigres810.adventurermod.init.ModBlocks;
+
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+
+public class BlocksMeta extends BlockBase {
+
+	public BlocksMeta(String name, Material material) {
+		super(name, material);
+		
+		if(this.getRegistryName().equals(ModBlocks.FLUX_GENERATOR_BLOCK.getRegistryName())) {
+			setSoundType(SoundType.METAL);
+			setHardness(10.0f);
+			setResistance(6.000f);
+		}else if(this.getRegistryName().equals(ModBlocks.FLUX_PIPE_BLOCK.getRegistryName())) {
+			setSoundType(SoundType.GLASS);
+			setHardness(5.0f);
+			setResistance(1.000f);
+			setLightOpacity(1);
+		}
+	}
+
+	
+}

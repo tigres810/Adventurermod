@@ -1,0 +1,11 @@
+package com.tigres810.adventurermod.blocks;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityCable extends TileEntity {
+
+	public TileEntityCable() {
+		
+		
+	}
+}

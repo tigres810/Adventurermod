@@ -1,0 +1,198 @@
+item.information_tablet.name=AdventurerMod Tableta de Informacion
+
+tile.flux_generator_block.name=Generador de Flux 
+tile.flux_pipe_block.name=Tuberia de Flux
+
+#Gui
+gui.title=Guia
+
+#Tabs
+itemGroup.AdventurerModItemsTab=AdventurerMod Items
+itemGroup.AdventurerModBlocksTab=AdventurerMod Bloques
+
+#Pipes
+gui.adventurermod.transport.config=Config
+gui.adventurermod.transport.name=Tubo de red
+gui.adventurermod.transport.noDest=No hay destinos
+gui.adventurermod.transport.unnamed=Sin nombre
+gui.adventurermod.transport.waiting=Esperando informacion
+
+info.adventurermod.capacitance=Capacidad
+
+info.adventurermod.duct.cover=Combinalo con un bloque para hacer una cubierta.
+info.adventurermod.duct.crafting=Crafteando Item.
+info.adventurermod.duct.dense=Incrementa la trayectoria drasticamente.
+info.adventurermod.duct.energy=Transfiere Redstone Flux (RF).
+info.adventurermod.duct.fluid=Transfiere fluidos.
+info.adventurermod.duct.fluidEnergy=Transfiere Fluidos y Redstone Flux (RF).
+info.adventurermod.duct.item=Transfiere Items.
+info.adventurermod.duct.itemEnergy=Transfiere Items y Redstone Flux (RF).
+info.adventurermod.duct.light=Emite luz al transmitirle señal de redstone.
+info.adventurermod.duct.structure=Proporciona la estructura.
+info.adventurermod.duct.transport=Transfiere al Jugador. Whoosh.
+info.adventurermod.duct.transportCrossover=Puntos finales para largos tubos. Requerido.
+info.adventurermod.duct.transportLongRange=Transportes rapidos entre dos localizaciones.
+info.adventurermod.duct.vacuum=Reduce la trayectoria drasticamente.
+
+info.adventurermod.filter.antiSpam.0=Permitir pasar el limite
+info.adventurermod.filter.antiSpam.1=Prevernir sobrepasar el limite
+info.adventurermod.filter.decRetainSize=Dec. Maximo de Items en el inventario
+info.adventurermod.filter.incRetainSize=Inc. Maximo de Items en el inventario
+info.adventurermod.filter.metadata.off=Usar Metadata
+info.adventurermod.filter.metadata.on=Ignorar Metadata
+info.adventurermod.filter.metadata=Metadata
+info.adventurermod.filter.modSorting.off=Usar el dueño del mod
+info.adventurermod.filter.modSorting.on=Ignorar el dueño del mod
+info.adventurermod.filter.modSorting=Dueño del mod
+info.adventurermod.filter.nbt.off=Usar NBT
+info.adventurermod.filter.nbt.on=Ignorar NBT
+info.adventurermod.filter.nbt=NBT
+info.adventurermod.filter.options=Opciones de filtro
+info.adventurermod.filter.oreDict.off=Usar diccionario de minerales
+info.adventurermod.filter.oreDict.on=Ignorar diccionario de minerales
+info.adventurermod.filter.oreDict=Diccionario de minerales
+info.adventurermod.filter.routeType.0=Mas cercano primero
+info.adventurermod.filter.routeType.1=Mas lejano primero
+info.adventurermod.filter.routeType.2=Random
+info.adventurermod.filter.routeType.3=Redondeada
+info.adventurermod.filter.whiteList.off=Whitelist
+info.adventurermod.filter.whiteList.on=Blacklist
+info.adventurermod.filter.whiteList=Blacklist
+info.adventurermod.filter.zeroRetainSize=Infinita
+
+info.adventurermod.info.attachment=-Informacion del accesorio-
+info.adventurermod.info.duct=-Informacion del tubo-
+info.adventurermod.info.energy=RF
+info.adventurermod.info.fluid=Fluido
+info.adventurermod.info.fluidThroughput=Rendimiento maximo de fluidos
+info.adventurermod.info.invalid=Invalido
+info.adventurermod.info.invalidCover=Pongala en un crafteo para convertirla en una cubierta de piedra.
+info.adventurermod.info.items=Items
+info.adventurermod.info.redstone=Redstone
+info.adventurermod.info.size=Tamaño
+info.adventurermod.info.tracker.activate=Empezando la busqueda
+info.adventurermod.info.tracker.avg=5 Sec. Avg. Nivel
+info.adventurermod.info.tracker.avgInOut=5 Sec. Avg. In/Out
+info.adventurermod.info.tracker.cur=Nivel actual
+
+info.adventurermod.relay.color.0=Rojo
+info.adventurermod.relay.color.1=Verde
+info.adventurermod.relay.color.2=Marron
+info.adventurermod.relay.color.3=Azul
+info.adventurermod.relay.color.4=Morado
+info.adventurermod.relay.color.5=Cian
+info.adventurermod.relay.color.6=Gris Claro
+info.adventurermod.relay.color.7=Gris
+info.adventurermod.relay.color.8=Rosa
+info.adventurermod.relay.color.9=Lima
+info.adventurermod.relay.color.10=Amarillo
+info.adventurermod.relay.color.11=Azul Claro
+info.adventurermod.relay.color.12=Magenta
+info.adventurermod.relay.color.13=Naranja
+info.adventurermod.relay.color.14=Blanco
+info.adventurermod.relay.color.15=Negro
+info.adventurermod.relay.gridRS=Poder del tubo
+info.adventurermod.relay.invert.0=Escaledo
+info.adventurermod.relay.invert.1=Escaleado invertido
+info.adventurermod.relay.invert.2=Limite
+info.adventurermod.relay.invert.3=Limite invertido
+info.adventurermod.relay.relayRS=Poder del interruptor
+info.adventurermod.relay.threshold=Limite >=
+info.adventurermod.relay.type.0=Entrada de Redstone
+info.adventurermod.relay.type.1=Salida de Redstone
+info.adventurermod.relay.type.2=Comparador del interruptor
+
+info.adventurermod.servo.decStackSize=Dec. Tamaño de pila extraido
+info.adventurermod.servo.extractRate=Procentaje de extraccion
+info.adventurermod.servo.incStackSize=Inc. Tamaño de pila extraido
+info.adventurermod.servo.maxStackSize=Maximo tamaño de pila
+info.adventurermod.servo.redstoneExt=Requiere señal de redstone
+info.adventurermod.servo.redstoneInt=Control interno de redstone
+info.adventurermod.servo.slotMulti=Extrae desde multiples ranuras.
+info.adventurermod.servo.slotSingle=Extrae desde una sola ranura.
+info.adventurermod.servo.speedBoost=Impulso de velocidad
+
+info.adventurermod.toggle=Boton derecho para alternar el modo.
+
+info.adventurermod.transfer=Transferir
+info.adventurermod.transferConnection=Transfiere la cantidad por conexion.
+info.adventurermod.transferFluid=Transfiere un porcentaje varia dependiendo del fluido.
+
+item.adventurermod.cover.name=%s Cobertura
+
+item.adventurermod.filter.0.name=Filtro
+item.adventurermod.filter.1.name=Filtro endurecido
+item.adventurermod.filter.2.name=Filtro reforzado
+item.adventurermod.filter.3.name=Filtro de señal
+item.adventurermod.filter.4.name=Filtro resonante
+item.adventurermod.filter.info=Restringe que debe pasar por el.
+
+item.adventurermod.relay.info=Transmite señales de redstone.
+item.adventurermod.relay.name=Interruptor de Redstone
+
+item.adventurermod.retriever.0.name=Recibidor
+item.adventurermod.retriever.1.name=Recibidor endurecido
+item.adventurermod.retriever.2.name=Recibidor reforzado
+item.adventurermod.retriever.3.name=Recibidor de señal
+item.adventurermod.retriever.4.name=Recibidor resonante
+item.adventurermod.retriever.info=Coje items lejanos/fluidos a si mismo.
+
+item.adventurermod.servo.0.name=Servo
+item.adventurermod.servo.1.name=Servo endurecido
+item.adventurermod.servo.2.name=Servo reforzado
+item.adventurermod.servo.3.name=Servo de señal
+item.adventurermod.servo.4.name=Servo resonante
+item.adventurermod.servo.info=Extrae items/fluidos de algo.
+
+recipe.adventurermod.covers=Crafteos de cobertura
+
+tab.adventurermod.conChange=Hold Shift and use either mouse button to fine tune quantities.
+tab.adventurermod.filterItem.0=Control which items are allowed in the attached inventory.
+tab.adventurermod.retrieverItem.0=Pull items into the attached inventory from other inventories on this network.
+tab.adventurermod.retrieverItem.1=Use filter options to control which items are retrieved.
+tab.adventurermod.servoItem.0=Extract items from the attached inventory.
+tab.adventurermod.servoItem.1=Use the filter options to control which items are extracted.
+
+tile.adventurermod.duct.dense.name=Dense %s
+
+tile.adventurermod.duct.energyBasic.name=Leadstone Fluxduct
+tile.adventurermod.duct.energyHardened.name=Hardened Fluxduct
+tile.adventurermod.duct.energyReinforced.name=Redstone Energy Fluxduct
+tile.adventurermod.duct.energyReinforcedEmpty.name=Redstone Energy Fluxduct (Empty)
+tile.adventurermod.duct.energyResonant.name=Resonant Fluxduct
+tile.adventurermod.duct.energyResonantEmpty.name=Resonant Fluxduct (Empty)
+tile.adventurermod.duct.energySignalum.name=Signalum Fluxduct
+tile.adventurermod.duct.energySignalumEmpty.name=Signalum Fluxduct (Empty)
+tile.adventurermod.duct.energySuper.info=Has no residual capacitance.
+tile.adventurermod.duct.energySuper.name=Cryo-Stabilized Fluxduct
+tile.adventurermod.duct.energySuperEmpty.name=Cryo-Stabilized Fluxduct (Empty)
+
+tile.adventurermod.duct.fluidBasic.info=Will break if contents are extremely hot or cold.
+tile.adventurermod.duct.fluidBasic.name=Fluiduct
+tile.adventurermod.duct.fluidEnergy.name=Signalum-Plated Fluiduct
+tile.adventurermod.duct.fluidHardened.info=Contents may be any temperature.
+tile.adventurermod.duct.fluidHardened.name=Hardened Fluiduct
+tile.adventurermod.duct.fluidSuper.info=Limitless transfer rate when pressurized.
+tile.adventurermod.duct.fluidSuper.name=Super-Laminar Fluiduct
+
+tile.adventurermod.duct.itemBasic.name=Itemduct
+tile.adventurermod.duct.itemEnder.name=Warp Itemduct
+tile.adventurermod.duct.itemEnergy.name=Signalum-Plated Itemduct
+tile.adventurermod.duct.itemEnergyFast.name=Signalum-Plated Impulse Itemduct
+tile.adventurermod.duct.itemFast.info=Items travel more rapidly.
+tile.adventurermod.duct.itemFast.name=Impulse Itemduct
+
+tile.adventurermod.duct.opaque.name=%s (Opaque)
+
+tile.adventurermod.duct.structure.info=Provides Structure.
+tile.adventurermod.duct.structure.opaque.name=Structuralduct
+tile.adventurermod.duct.structureLight.name=Luxduct
+
+tile.adventurermod.duct.transportBasic.name=Viaduct
+tile.adventurermod.duct.transportFrame.name=Viaduct (Untreated)
+tile.adventurermod.duct.transportLinking.name=Long Range Linking Viaduct
+tile.adventurermod.duct.transportLongRange.name=Long Range Viaduct
+
+tile.adventurermod.duct.vacuum.name=Vacuum %s
+
+tile.adventurermod.duct=Duct

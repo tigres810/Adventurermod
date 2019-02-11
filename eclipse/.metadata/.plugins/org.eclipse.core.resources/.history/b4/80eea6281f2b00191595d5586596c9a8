@@ -1,0 +1,10 @@
+package fluids;
+
+import net.minecraft.util.ResourceLocation;
+
+public class FluidBase {
+
+	public FluidBase(String name, ResourceLocation block, ResourceLocation flow) {
+		
+	}
+}

@@ -1,0 +1,14 @@
+package fluids;
+
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fluids.BlockFluidClassic;
+import net.minecraftforge.fluids.Fluid;
+
+public class FluidBase extends BlockFluidClassic {
+
+	public FluidBase(String name, ResourceLocation block, ResourceLocation flow) {
+		
+		super(name, block, flow);
+		this.setUnlocalizedName(name);
+	}
+}

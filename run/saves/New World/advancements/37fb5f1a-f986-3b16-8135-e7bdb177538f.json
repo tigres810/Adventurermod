@@ -1,0 +1,14 @@
+{
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2019-02-10 07:57:08 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2019-02-10 07:57:08 +0100"
+    },
+    "done": false
+  }
+}

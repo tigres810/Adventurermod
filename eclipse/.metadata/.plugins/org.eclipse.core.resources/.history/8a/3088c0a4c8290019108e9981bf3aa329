@@ -1,0 +1,12 @@
+package com.tigres810.adventurermod;
+
+import net.minecraftforge.fml.common.Loader;
+
+public class ModChecker {
+
+	public static boolean isBuildCraftLoaded;
+	
+	public ModChecker() {
+		this.isBuildCraftLoaded = Loader.isModLoaded("buildcraft");
+	}
+}

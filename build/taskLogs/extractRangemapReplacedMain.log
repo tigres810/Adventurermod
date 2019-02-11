@@ -1,0 +1,57 @@
+Symbol range map extraction starting
+Processing 14 files
+startProcessing "com\tigres810\adventurermod\Main.java" md5: b5c077883cdbef3406e9c4ea610bcd4c
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\Main.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\BlockBase.java" md5: f9649ccaa87f8b64e77bf251ae2c6904
+endProcessing "com\tigres810\adventurermod\blocks\BlockBase.java"
+
+startProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTablet.java" md5: fa9a0f2c0d51e7be857fb2285d3ed29b
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTablet.java"
+
+startProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java" md5: f46935e3e961c5e060f437b93970e5fd
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java"
+
+startProcessing "com\tigres810\adventurermod\init\ModBlocks.java" md5: e13079a2a26d1814fbcbba15de003592
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\init\ModBlocks.java"
+
+startProcessing "com\tigres810\adventurermod\init\ModItems.java" md5: 2c4e88bb3dd90d45a0af1e55e0750b94
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\init\ModItems.java"
+
+startProcessing "com\tigres810\adventurermod\items\ItemBase.java" md5: f57b26d4e3001647702b6f7282468d7b
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\items\ItemBase.java"
+
+startProcessing "com\tigres810\adventurermod\proxy\ClientProxy.java" md5: 2f3c9701008eb30ba0ede5ef70eb3a7f
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\proxy\ClientProxy.java"
+
+startProcessing "com\tigres810\adventurermod\proxy\CommonProxy.java" md5: f42b70760b4d8d03361bcc4416097739
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\proxy\CommonProxy.java"
+
+startProcessing "com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java" md5: 485df2a0adc2437a218fc7fffd4e1924
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java"
+
+startProcessing "com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java" md5: 19c5a0ea177234093e55ead927782a93
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java"
+
+startProcessing "com\tigres810\adventurermod\util\IHasModel.java" md5: 1804bfa79ee9a67b9824da85c3cad828
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\util\IHasModel.java"
+
+startProcessing "com\tigres810\adventurermod\util\Reference.java" md5: f3003505c08b4af162cb4fb768de6d67
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\util\Reference.java"
+
+startProcessing "com\tigres810\adventurermod\util\handler\RegistryHandler.java" md5: fedb87d50d330fcf18dd9a8c45e339fb
+Cache Hit!
+endProcessing "com\tigres810\adventurermod\util\handler\RegistryHandler.java"
+

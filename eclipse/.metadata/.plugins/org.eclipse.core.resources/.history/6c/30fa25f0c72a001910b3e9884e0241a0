@@ -1,0 +1,53 @@
+package com.tigres810.adventurermod.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+
+public class BlockPropertie extends Block {
+
+	public BlockPropertie (Material materialIn) {
+		super(materialIn);
+		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.DOWN));
+	}
+
+	
+	public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
+
+		return worldIn.getBlockState(pos).getBlock().isReplaceable(worldIn, pos);
+	}
+	
+	public static PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+	
+	@Override
+	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
+
+		this.setDefaultFacing(worldIn, pos, state);
+	}
+
+
+	private void setDefaultFacing(World worldIn, BlockPos pos, IBlockState state) {
+		
+		if (!worldIn.isRemote) {
+			Block block = worldIn.getBlockState(pos.north()).getBlock();
+			Block block1 = worldIn.getBlockState(pos.south()).getBlock();
+			Block block2 = worldIn.getBlockState(pos.west()).getBlock();
+			Block block3 = worldIn.getBlockState(pos.east()).getBlock();
+			EnumFacing enumFacing = (EnumFacing)state.getValue(FACING);
+			
+			if(enumFacing == enumFacing.NORTH && !block.isFullBlock(state) && !block1.isFullBlock(state)) {
+				enumFacing = EnumFacing.SOUTH;
+			} else if(enumFacing == enumFacing.SOUTH && !block.isFullBlock(state) && !block1.isFullBlock(state)) {
+				enumFacing = EnumFacing.NORTH;
+			} else if(enumFacing == enumFacing.WEST && !block.isFullBlock(state) && !block1.isFullBlock(state)) {
+				enumFacing = EnumFacing.EAST;
+			} else if(enumFacing == enumFacing.EAST && !block.isFullBlock(state) && !block1.isFullBlock(state)) {
+				enumFacing = EnumFacing.WEST;
+			}
+		}
+	}
+}

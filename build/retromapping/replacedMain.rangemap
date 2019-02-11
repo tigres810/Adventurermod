@@ -1,0 +1,668 @@
+Symbol range map extraction starting
+Processing 14 files
+startProcessing "com\tigres810\adventurermod\Main.java" md5: b5c077883cdbef3406e9c4ea610bcd4c
+Cache Hit!
+@|com\tigres810\adventurermod\Main.java|8|35|com.tigres810.adventurermod|package|com.tigres810.adventurermod|(file)
+Class Start: com.tigres810.adventurermod.Main
+   @|com\tigres810\adventurermod\Main.java|725|728|Mod|class|net.minecraftforge.fml.common.Mod
+   @|com\tigres810\adventurermod\Main.java|729|734|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com\tigres810\adventurermod\Main.java|737|746|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\Main.java|747|753|MOD_ID|field|com.tigres810.adventurermod.util.Reference|MOD_ID
+   @|com\tigres810\adventurermod\Main.java|755|759|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com\tigres810\adventurermod\Main.java|762|771|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\Main.java|772|776|NAME|field|com.tigres810.adventurermod.util.Reference|NAME
+   @|com\tigres810\adventurermod\Main.java|778|785|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com\tigres810\adventurermod\Main.java|788|797|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\Main.java|798|805|VERSION|field|com.tigres810.adventurermod.util.Reference|VERSION
+   @|com\tigres810\adventurermod\Main.java|820|824|Main|class|com.tigres810.adventurermod.Main
+   @|com\tigres810\adventurermod\Main.java|849|861|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\tigres810\adventurermod\Main.java|849|861|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\tigres810\adventurermod\Main.java|862|883|adventurermoditemstab|field|com.tigres810.adventurermod.Main|adventurermoditemstab|
+   @|com\tigres810\adventurermod\Main.java|890|911|AdventurerModItemsTab|class|com.tigres810.adventurermod.tabs.AdventurerModItemsTab
+   @|com\tigres810\adventurermod\Main.java|959|971|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\tigres810\adventurermod\Main.java|959|971|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\tigres810\adventurermod\Main.java|972|994|adventurermodblockstab|field|com.tigres810.adventurermod.Main|adventurermodblockstab|
+   @|com\tigres810\adventurermod\Main.java|1001|1023|AdventurerModBlocksTab|class|com.tigres810.adventurermod.tabs.AdventurerModBlocksTab
+   @|com\tigres810\adventurermod\Main.java|1079|1083|Main|class|com.tigres810.adventurermod.Main
+   @|com\tigres810\adventurermod\Main.java|1055|1063|Instance|class|net.minecraftforge.fml.common.Mod.Instance
+   @|com\tigres810\adventurermod\Main.java|1079|1083|Main|class|com.tigres810.adventurermod.Main
+   @|com\tigres810\adventurermod\Main.java|1084|1092|instance|field|com.tigres810.adventurermod.Main|instance|
+   @|com\tigres810\adventurermod\Main.java|1210|1221|CommonProxy|class|com.tigres810.adventurermod.proxy.CommonProxy
+   @|com\tigres810\adventurermod\Main.java|1098|1108|SidedProxy|class|net.minecraftforge.fml.common.SidedProxy
+   @|com\tigres810\adventurermod\Main.java|1109|1119|clientSide|method|net.minecraftforge.fml.common.SidedProxy|clientSide|()Ljava/lang/String;
+   @|com\tigres810\adventurermod\Main.java|1122|1131|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\Main.java|1132|1150|CLIENT_PROXY_CLASS|field|com.tigres810.adventurermod.util.Reference|CLIENT_PROXY_CLASS
+   @|com\tigres810\adventurermod\Main.java|1152|1162|serverSide|method|net.minecraftforge.fml.common.SidedProxy|serverSide|()Ljava/lang/String;
+   @|com\tigres810\adventurermod\Main.java|1165|1174|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\Main.java|1175|1193|COMMON_PROXY_CLASS|field|com.tigres810.adventurermod.util.Reference|COMMON_PROXY_CLASS
+   @|com\tigres810\adventurermod\Main.java|1210|1221|CommonProxy|class|com.tigres810.adventurermod.proxy.CommonProxy
+   @|com\tigres810\adventurermod\Main.java|1222|1227|proxy|field|com.tigres810.adventurermod.Main|proxy|
+   Method Start: PreInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\tigres810\adventurermod\Main.java|1300|1305|event|param|com.tigres810.adventurermod.Main|PreInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\tigres810\adventurermod\Main.java|1233|1245|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\tigres810\adventurermod\Main.java|1266|1273|PreInit|method|com.tigres810.adventurermod.Main|PreInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\tigres810\adventurermod\Main.java|1274|1299|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+   Method End: PreInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\tigres810\adventurermod\Main.java|1381|1386|event|param|com.tigres810.adventurermod.Main|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\tigres810\adventurermod\Main.java|1320|1332|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\tigres810\adventurermod\Main.java|1353|1357|init|method|com.tigres810.adventurermod.Main|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\tigres810\adventurermod\Main.java|1358|1380|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: Postinit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\tigres810\adventurermod\Main.java|1470|1475|event|param|com.tigres810.adventurermod.Main|Postinit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\tigres810\adventurermod\Main.java|1401|1413|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\tigres810\adventurermod\Main.java|1434|1442|Postinit|method|com.tigres810.adventurermod.Main|Postinit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\tigres810\adventurermod\Main.java|1443|1469|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+   Method End: Postinit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.tigres810.adventurermod.Main
+endProcessing "com\tigres810\adventurermod\Main.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\BlockBase.java" md5: f9649ccaa87f8b64e77bf251ae2c6904
+@|com\tigres810\adventurermod\blocks\BlockBase.java|8|42|com.tigres810.adventurermod.blocks|package|com.tigres810.adventurermod.blocks|(file)
+Class Start: com.tigres810.adventurermod.blocks.BlockBase
+   @|com\tigres810\adventurermod\blocks\BlockBase.java|636|645|BlockBase|class|com.tigres810.adventurermod.blocks.BlockBase
+   @|com\tigres810\adventurermod\blocks\BlockBase.java|654|659|Block|class|net.minecraft.block.Block
+   @|com\tigres810\adventurermod\blocks\BlockBase.java|671|680|IHasModel|class|com.tigres810.adventurermod.util.IHasModel
+   Method Start: BlockBase(Ljava/lang/String;Lnet/minecraft/block/material/Material;)V
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|709|713|name|param|com.tigres810.adventurermod.blocks.BlockBase|BlockBase|(Ljava/lang/String;Lnet/minecraft/block/material/Material;)V|name|0
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|724|732|material|param|com.tigres810.adventurermod.blocks.BlockBase|BlockBase|(Ljava/lang/String;Lnet/minecraft/block/material/Material;)V|material|1
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|692|701|BlockBase|method|com.tigres810.adventurermod.blocks.BlockBase|BlockBase|(Ljava/lang/String;Lnet/minecraft/block/material/Material;)V
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|702|708|String|class|java.lang.String
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|715|723|Material|class|net.minecraft.block.material.Material
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|744|752|material|param|com.tigres810.adventurermod.blocks.BlockBase|BlockBase|(Ljava/lang/String;Lnet/minecraft/block/material/Material;)V|material|1
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|757|775|setUnlocalizedName|method|net.minecraft.block.Block|setUnlocalizedName|(Ljava/lang/String;)Lnet/minecraft/block/Block;
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|776|780|name|param|com.tigres810.adventurermod.blocks.BlockBase|BlockBase|(Ljava/lang/String;Lnet/minecraft/block/material/Material;)V|name|0
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|785|800|setRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry.Impl|setRegistryName|(Ljava/lang/String;)Lnet/minecraftforge/registries/IForgeRegistryEntry;
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|801|805|name|param|com.tigres810.adventurermod.blocks.BlockBase|BlockBase|(Ljava/lang/String;Lnet/minecraft/block/material/Material;)V|name|0
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|810|824|setCreativeTab|method|net.minecraft.block.Block|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|825|829|Main|class|com.tigres810.adventurermod.Main
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|830|852|adventurermodblockstab|field|com.tigres810.adventurermod.Main|adventurermodblockstab
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|860|869|ModBlocks|class|com.tigres810.adventurermod.init.ModBlocks
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|870|876|BLOCKS|field|com.tigres810.adventurermod.init.ModBlocks|BLOCKS
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|877|880|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|890|898|ModItems|class|com.tigres810.adventurermod.init.ModItems
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|899|904|ITEMS|field|com.tigres810.adventurermod.init.ModItems|ITEMS
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|905|908|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|913|922|ItemBlock|class|net.minecraft.item.ItemBlock
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|929|944|setRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|950|965|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+   Method End: BlockBase(Ljava/lang/String;Lnet/minecraft/block/material/Material;)V
+   Method Start: registerModels()V
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|977|985|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|999|1013|registerModels|method|com.tigres810.adventurermod.util.IHasModel|registerModels|()V
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1023|1027|Main|class|com.tigres810.adventurermod.Main
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1028|1033|proxy|field|com.tigres810.adventurermod.Main|proxy
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1034|1054|registerItemRenderer|method|com.tigres810.adventurermod.proxy.CommonProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1055|1059|Item|class|net.minecraft.item.Item
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1060|1076|getItemFromBlock|method|net.minecraft.item.Item|getItemFromBlock|(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+   Method End: registerModels()V
+   Method Start: isOpaqueCube(Lnet/minecraft/block/state/IBlockState;)Z
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1157|1162|state|param|com.tigres810.adventurermod.blocks.BlockBase|isOpaqueCube|(Lnet/minecraft/block/state/IBlockState;)Z|state|0
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1107|1115|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1132|1144|isOpaqueCube|method|net.minecraft.block.Block|isOpaqueCube|(Lnet/minecraft/block/state/IBlockState;)Z
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1145|1156|IBlockState|class|net.minecraft.block.state.IBlockState
+   Method End: isOpaqueCube(Lnet/minecraft/block/state/IBlockState;)Z
+   Method Start: getBlockLayer()Lnet/minecraft/util/BlockRenderLayer;
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1189|1197|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1198|1202|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1203|1209|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1216|1224|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1236|1252|BlockRenderLayer|class|net.minecraft.util.BlockRenderLayer
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1253|1266|getBlockLayer|method|net.minecraft.block.Block|getBlockLayer|()Lnet/minecraft/util/BlockRenderLayer;
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1286|1302|BlockRenderLayer|class|net.minecraft.util.BlockRenderLayer
+      @|com\tigres810\adventurermod\blocks\BlockBase.java|1303|1309|CUTOUT|field|net.minecraft.util.BlockRenderLayer|CUTOUT
+   Method End: getBlockLayer()Lnet/minecraft/util/BlockRenderLayer;
+Class End  : com.tigres810.adventurermod.blocks.BlockBase
+endProcessing "com\tigres810\adventurermod\blocks\BlockBase.java"
+
+startProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTablet.java" md5: fa9a0f2c0d51e7be857fb2285d3ed29b
+Cache Hit!
+@|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|8|46|com.tigres810.adventurermod.client.gui|package|com.tigres810.adventurermod.client.gui|(file)
+Class Start: com.tigres810.adventurermod.client.gui.GuiInformationTablet
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|398|418|GuiInformationTablet|class|com.tigres810.adventurermod.client.gui.GuiInformationTablet
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|427|436|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|447|463|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|447|463|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|464|485|information_tabletgui|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|information_tabletgui|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|492|508|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|509|518|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|519|525|MOD_ID|field|com.tigres810.adventurermod.util.Reference|MOD_ID
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|566|582|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|566|582|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|583|605|information_tabletgui1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|information_tabletgui1|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|612|628|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|629|638|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|639|645|MOD_ID|field|com.tigres810.adventurermod.util.Reference|MOD_ID
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|683|691|guiWidth|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiWidth|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|704|713|guiHeight|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiHeight|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|722|731|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|722|731|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|732|739|button1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|button1|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|742|768|GuiInformationTabletButton|class|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|742|768|GuiInformationTabletButton|class|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|769|774|arrow|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|777|803|GuiInformationTabletButton|class|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|777|803|GuiInformationTabletButton|class|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|804|810|arrow1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow1|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|825|832|BUTTON1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|BUTTON1|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|838|843|ARROW|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|ARROW|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|849|855|ARROW1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|ARROW1|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|868|879|currentpage|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|currentpage|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|890|898|maxpages|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|maxpages|
+   Method Start: drawScreen(IIF)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|945|951|mouseX|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|drawScreen|(IIF)V|mouseX|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|957|963|mouseY|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|drawScreen|(IIF)V|mouseY|1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|971|983|partialTicks|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|drawScreen|(IIF)V|partialTicks|2
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|908|916|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|930|940|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|989|1010|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1016|1025|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1026|1038|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1041|1053|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1054|1065|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1066|1087|information_tabletgui|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|information_tabletgui
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1109|1114|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1125|1133|guiWidth|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiWidth
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1156|1162|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1170|1179|guiHeight|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiHeight
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1187|1208|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(FFIIII)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1233|1241|guiWidth|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiWidth
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1243|1252|guiHeight|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiHeight
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1257|1266|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1267|1279|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1282|1294|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1295|1306|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1307|1329|information_tabletgui1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|information_tabletgui1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1352|1357|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1369|1377|guiWidth|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiWidth
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1385|1406|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(FFIIII)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1432|1440|guiWidth|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiWidth
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1442|1451|guiHeight|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiHeight
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1512|1524|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1525|1535|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1536|1540|I18n|class|net.minecraft.client.resources.I18n
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1541|1547|format|method|net.minecraft.client.resources.I18n|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1570|1575|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1586|1598|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1599|1613|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1657|1669|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1670|1680|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1681|1692|currentpage|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|currentpage
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1701|1709|maxpages|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|maxpages
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1719|1724|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1736|1748|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1749|1763|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1814|1824|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1825|1831|mouseX|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|drawScreen|(IIF)V|mouseX|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1833|1839|mouseY|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|drawScreen|(IIF)V|mouseY|1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1841|1853|partialTicks|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: initGui()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1863|1871|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1885|1892|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1899|1909|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1910|1915|clear|method|java.util.Collection|clear|()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1936|1942|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1950|1959|guiHeight|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiHeight
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1967|1977|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1978|1981|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1982|1989|button1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|button1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|1996|2005|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2006|2013|BUTTON1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|BUTTON1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2022|2027|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2040|2052|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2053|2067|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2114|2124|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2125|2128|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2129|2134|arrow|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2141|2167|GuiInformationTabletButton|class|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2168|2173|ARROW|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|ARROW
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2182|2187|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2199|2211|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2212|2226|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2267|2274|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+   Method End: initGui()V
+   Method Start: NextDrawButton()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2297|2311|NextDrawButton|method|com.tigres810.adventurermod.client.gui.GuiInformationTablet|NextDrawButton|()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2333|2339|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2347|2356|guiHeight|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|guiHeight
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2369|2379|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2380|2388|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2389|2395|arrow1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2403|2413|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2414|2417|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2418|2424|arrow1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2431|2457|GuiInformationTabletButton|class|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2458|2464|ARROW1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|ARROW1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2473|2478|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2490|2502|fontRenderer|field|net.minecraft.client.gui.GuiScreen|fontRenderer
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2503|2517|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+   Method End: NextDrawButton()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2612|2618|button|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2561|2569|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2586|2601|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2602|2611|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2627|2638|IOException|class|java.io.IOException
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2651|2657|button|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2658|2660|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2671|2678|BUTTON1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|BUTTON1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2683|2685|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2686|2702|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2727|2732|ARROW|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|ARROW
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2741|2752|currentpage|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|currentpage
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2755|2763|maxpages|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|maxpages
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2775|2786|currentpage|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|currentpage
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2806|2817|currentpage|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|currentpage
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2825|2835|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2836|2842|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2843|2848|arrow|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2859|2873|NextDrawButton|method|com.tigres810.adventurermod.client.gui.GuiInformationTablet|NextDrawButton|()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2894|2900|ARROW1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|ARROW1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2909|2920|currentpage|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|currentpage
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2932|2943|currentpage|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|currentpage
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2956|2966|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2967|2975|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2976|2981|arrow|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|2991|3001|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3002|3005|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3006|3011|arrow|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3036|3047|currentpage|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|currentpage
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3057|3067|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3068|3074|remove|method|java.util.Collection|remove|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3075|3081|arrow1|field|com.tigres810.adventurermod.client.gui.GuiInformationTablet|arrow1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3111|3126|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3127|3133|button|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: keyTyped(CI)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3182|3191|typedChar|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|keyTyped|(CI)V|typedChar|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3197|3204|keyCode|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|keyTyped|(CI)V|keyCode|1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3143|3151|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3168|3176|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3213|3224|IOException|class|java.io.IOException
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3272|3280|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3281|3290|typedChar|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|keyTyped|(CI)V|typedChar|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3292|3299|keyCode|param|com.tigres810.adventurermod.client.gui.GuiInformationTablet|keyTyped|(CI)V|keyCode|1
+   Method End: keyTyped(CI)V
+   Method Start: doesGuiPauseGame()Z
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3309|3317|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3334|3350|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+   Method Start: onGuiClosed()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3415|3423|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3437|3448|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTablet.java|3498|3509|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
+   Method End: onGuiClosed()V
+Class End  : com.tigres810.adventurermod.client.gui.GuiInformationTablet
+endProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTablet.java"
+
+startProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java" md5: f46935e3e961c5e060f437b93970e5fd
+Cache Hit!
+@|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|8|46|com.tigres810.adventurermod.client.gui|package|com.tigres810.adventurermod.client.gui|(file)
+Class Start: com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|284|310|GuiInformationTabletButton|class|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|319|328|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|339|355|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|339|355|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|356|377|information_tabletgui|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|information_tabletgui|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|384|400|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|401|410|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|411|417|MOD_ID|field|com.tigres810.adventurermod.util.Reference|MOD_ID
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|458|469|buttonwidth|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|buttonwidth|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|481|493|buttonheight|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|buttonheight|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|505|506|u|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|u|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|519|520|v|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|v|
+   @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|531|537|button|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|button|
+   Method Start: GuiInformationTabletButton(III)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|580|588|buttonId|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V|buttonId|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|594|595|x|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V|x|1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|601|602|y|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V|y|2
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|549|575|GuiInformationTabletButton|method|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|614|622|buttonId|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V|buttonId|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|624|625|x|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V|x|1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|627|628|y|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V|y|2
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|649|657|buttonId|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V|buttonId|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|669|675|button|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|button
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|678|686|buttonId|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|GuiInformationTabletButton|(III)V|buttonId|0
+   Method End: GuiInformationTabletButton(III)V
+   Method Start: drawButton(Lnet/minecraft/client/Minecraft;IIF)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|742|744|mc|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|mc|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|750|756|mouseX|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|mouseX|1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|762|768|mouseY|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|mouseY|2
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|776|788|partialTicks|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|partialTicks|3
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|699|707|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|721|731|drawButton|method|net.minecraft.client.gui.GuiButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|732|741|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|798|805|visible|field|net.minecraft.client.gui.GuiButton|visible
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|812|814|mc|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|mc|0
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|815|827|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|828|839|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|840|861|information_tabletgui|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|information_tabletgui
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|870|876|mouseX|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|mouseX|1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|880|881|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|885|891|mouseX|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|mouseX|1
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|895|896|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|899|904|width|field|net.minecraft.client.gui.GuiButton|width
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|908|914|mouseY|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|mouseY|2
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|918|919|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|923|929|mouseY|param|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|drawButton|(Lnet/minecraft/client/Minecraft;IIF)V|mouseY|2
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|933|934|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|937|943|height|field|net.minecraft.client.gui.GuiButton|height
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|951|958|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|983|990|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1012|1019|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1027|1028|v|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|v
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1051|1052|v|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|v
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1070|1076|button|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|button
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1089|1110|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1111|1112|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1114|1115|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1122|1123|v|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|v
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1125|1136|buttonwidth|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|buttonwidth
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1138|1150|buttonheight|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|buttonheight
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1169|1190|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1191|1192|x|field|net.minecraft.client.gui.GuiButton|x
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1194|1195|y|field|net.minecraft.client.gui.GuiButton|y
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1197|1198|u|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|u
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1200|1201|v|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|v
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1203|1214|buttonwidth|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|buttonwidth
+      @|com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java|1216|1228|buttonheight|field|com.tigres810.adventurermod.client.gui.GuiInformationTabletButton|buttonheight
+   Method End: drawButton(Lnet/minecraft/client/Minecraft;IIF)V
+Class End  : com.tigres810.adventurermod.client.gui.GuiInformationTabletButton
+endProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java"
+
+startProcessing "com\tigres810\adventurermod\init\ModBlocks.java" md5: e13079a2a26d1814fbcbba15de003592
+Cache Hit!
+@|com\tigres810\adventurermod\init\ModBlocks.java|8|40|com.tigres810.adventurermod.init|package|com.tigres810.adventurermod.init|(file)
+Class Start: com.tigres810.adventurermod.init.ModBlocks
+   @|com\tigres810\adventurermod\init\ModBlocks.java|243|252|ModBlocks|class|com.tigres810.adventurermod.init.ModBlocks
+   @|com\tigres810\adventurermod\init\ModBlocks.java|282|287|Block|class|net.minecraft.block.Block
+   @|com\tigres810\adventurermod\init\ModBlocks.java|277|281|List|class|java.util.List
+   @|com\tigres810\adventurermod\init\ModBlocks.java|277|281|List|class|java.util.List
+   @|com\tigres810\adventurermod\init\ModBlocks.java|282|287|Block|class|net.minecraft.block.Block
+   @|com\tigres810\adventurermod\init\ModBlocks.java|289|295|BLOCKS|field|com.tigres810.adventurermod.init.ModBlocks|BLOCKS|
+   @|com\tigres810\adventurermod\init\ModBlocks.java|302|311|ArrayList|class|java.util.ArrayList
+   @|com\tigres810\adventurermod\init\ModBlocks.java|312|317|Block|class|net.minecraft.block.Block
+   @|com\tigres810\adventurermod\init\ModBlocks.java|345|350|Block|class|net.minecraft.block.Block
+   @|com\tigres810\adventurermod\init\ModBlocks.java|345|350|Block|class|net.minecraft.block.Block
+   @|com\tigres810\adventurermod\init\ModBlocks.java|351|371|FLUX_GENERATOR_BLOCK|field|com.tigres810.adventurermod.init.ModBlocks|FLUX_GENERATOR_BLOCK|
+   @|com\tigres810\adventurermod\init\ModBlocks.java|378|387|BlockBase|class|com.tigres810.adventurermod.blocks.BlockBase
+   @|com\tigres810\adventurermod\init\ModBlocks.java|412|420|Material|class|net.minecraft.block.material.Material
+   @|com\tigres810\adventurermod\init\ModBlocks.java|421|426|ANVIL|field|net.minecraft.block.material.Material|ANVIL
+Class End  : com.tigres810.adventurermod.init.ModBlocks
+endProcessing "com\tigres810\adventurermod\init\ModBlocks.java"
+
+startProcessing "com\tigres810\adventurermod\init\ModItems.java" md5: 2c4e88bb3dd90d45a0af1e55e0750b94
+Cache Hit!
+@|com\tigres810\adventurermod\init\ModItems.java|8|40|com.tigres810.adventurermod.init|package|com.tigres810.adventurermod.init|(file)
+Class Start: com.tigres810.adventurermod.init.ModItems
+   @|com\tigres810\adventurermod\init\ModItems.java|193|201|ModItems|class|com.tigres810.adventurermod.init.ModItems
+   @|com\tigres810\adventurermod\init\ModItems.java|231|235|Item|class|net.minecraft.item.Item
+   @|com\tigres810\adventurermod\init\ModItems.java|226|230|List|class|java.util.List
+   @|com\tigres810\adventurermod\init\ModItems.java|226|230|List|class|java.util.List
+   @|com\tigres810\adventurermod\init\ModItems.java|231|235|Item|class|net.minecraft.item.Item
+   @|com\tigres810\adventurermod\init\ModItems.java|237|242|ITEMS|field|com.tigres810.adventurermod.init.ModItems|ITEMS|
+   @|com\tigres810\adventurermod\init\ModItems.java|249|258|ArrayList|class|java.util.ArrayList
+   @|com\tigres810\adventurermod\init\ModItems.java|259|263|Item|class|net.minecraft.item.Item
+   @|com\tigres810\adventurermod\init\ModItems.java|291|295|Item|class|net.minecraft.item.Item
+   @|com\tigres810\adventurermod\init\ModItems.java|291|295|Item|class|net.minecraft.item.Item
+   @|com\tigres810\adventurermod\init\ModItems.java|296|314|INFORMATION_TABLET|field|com.tigres810.adventurermod.init.ModItems|INFORMATION_TABLET|
+   @|com\tigres810\adventurermod\init\ModItems.java|321|329|ItemBase|class|com.tigres810.adventurermod.items.ItemBase
+Class End  : com.tigres810.adventurermod.init.ModItems
+endProcessing "com\tigres810\adventurermod\init\ModItems.java"
+
+startProcessing "com\tigres810\adventurermod\items\ItemBase.java" md5: f57b26d4e3001647702b6f7282468d7b
+Cache Hit!
+@|com\tigres810\adventurermod\items\ItemBase.java|8|41|com.tigres810.adventurermod.items|package|com.tigres810.adventurermod.items|(file)
+Class Start: com.tigres810.adventurermod.items.ItemBase
+   @|com\tigres810\adventurermod\items\ItemBase.java|646|654|ItemBase|class|com.tigres810.adventurermod.items.ItemBase
+   @|com\tigres810\adventurermod\items\ItemBase.java|663|667|Item|class|net.minecraft.item.Item
+   @|com\tigres810\adventurermod\items\ItemBase.java|679|688|IHasModel|class|com.tigres810.adventurermod.util.IHasModel
+   Method Start: ItemBase(Ljava/lang/String;)V
+      @|com\tigres810\adventurermod\items\ItemBase.java|716|720|name|param|com.tigres810.adventurermod.items.ItemBase|ItemBase|(Ljava/lang/String;)V|name|0
+      @|com\tigres810\adventurermod\items\ItemBase.java|700|708|ItemBase|method|com.tigres810.adventurermod.items.ItemBase|ItemBase|(Ljava/lang/String;)V
+      @|com\tigres810\adventurermod\items\ItemBase.java|709|715|String|class|java.lang.String
+      @|com\tigres810\adventurermod\items\ItemBase.java|726|744|setUnlocalizedName|method|net.minecraft.item.Item|setUnlocalizedName|(Ljava/lang/String;)Lnet/minecraft/item/Item;
+      @|com\tigres810\adventurermod\items\ItemBase.java|745|749|name|param|com.tigres810.adventurermod.items.ItemBase|ItemBase|(Ljava/lang/String;)V|name|0
+      @|com\tigres810\adventurermod\items\ItemBase.java|754|769|setRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry.Impl|setRegistryName|(Ljava/lang/String;)Lnet/minecraftforge/registries/IForgeRegistryEntry;
+      @|com\tigres810\adventurermod\items\ItemBase.java|770|774|name|param|com.tigres810.adventurermod.items.ItemBase|ItemBase|(Ljava/lang/String;)V|name|0
+      @|com\tigres810\adventurermod\items\ItemBase.java|779|793|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
+      @|com\tigres810\adventurermod\items\ItemBase.java|794|798|Main|class|com.tigres810.adventurermod.Main
+      @|com\tigres810\adventurermod\items\ItemBase.java|799|820|adventurermoditemstab|field|com.tigres810.adventurermod.Main|adventurermoditemstab
+      @|com\tigres810\adventurermod\items\ItemBase.java|828|836|ModItems|class|com.tigres810.adventurermod.init.ModItems
+      @|com\tigres810\adventurermod\items\ItemBase.java|837|842|ITEMS|field|com.tigres810.adventurermod.init.ModItems|ITEMS
+      @|com\tigres810\adventurermod\items\ItemBase.java|843|846|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+   Method End: ItemBase(Ljava/lang/String;)V
+   Method Start: registerModels()V
+      @|com\tigres810\adventurermod\items\ItemBase.java|861|869|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\items\ItemBase.java|883|897|registerModels|method|com.tigres810.adventurermod.util.IHasModel|registerModels|()V
+      @|com\tigres810\adventurermod\items\ItemBase.java|904|908|Main|class|com.tigres810.adventurermod.Main
+      @|com\tigres810\adventurermod\items\ItemBase.java|909|914|proxy|field|com.tigres810.adventurermod.Main|proxy
+      @|com\tigres810\adventurermod\items\ItemBase.java|915|935|registerItemRenderer|method|com.tigres810.adventurermod.proxy.CommonProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V
+   Method End: registerModels()V
+   Method Start: onItemRightClick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1030|1037|worldIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|worldIn|0
+      @|com\tigres810\adventurermod\items\ItemBase.java|1052|1060|playerIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|playerIn|1
+      @|com\tigres810\adventurermod\items\ItemBase.java|1071|1077|handIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|handIn|2
+      @|com\tigres810\adventurermod\items\ItemBase.java|966|974|Override|class|java.lang.Override
+      @|com\tigres810\adventurermod\items\ItemBase.java|983|995|ActionResult|class|net.minecraft.util.ActionResult
+      @|com\tigres810\adventurermod\items\ItemBase.java|996|1005|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\tigres810\adventurermod\items\ItemBase.java|1007|1023|onItemRightClick|method|net.minecraft.item.Item|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1024|1029|World|class|net.minecraft.world.World
+      @|com\tigres810\adventurermod\items\ItemBase.java|1039|1051|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\tigres810\adventurermod\items\ItemBase.java|1062|1070|EnumHand|class|net.minecraft.util.EnumHand
+      @|com\tigres810\adventurermod\items\ItemBase.java|1088|1095|worldIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|worldIn|0
+      @|com\tigres810\adventurermod\items\ItemBase.java|1096|1104|isRemote|field|net.minecraft.world.World|isRemote
+      @|com\tigres810\adventurermod\items\ItemBase.java|1114|1122|playerIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|playerIn|1
+      @|com\tigres810\adventurermod\items\ItemBase.java|1123|1134|getHeldItem|method|net.minecraft.entity.EntityLivingBase|getHeldItem|(Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1135|1141|handIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|handIn|2
+      @|com\tigres810\adventurermod\items\ItemBase.java|1143|1157|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1160|1166|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\items\ItemBase.java|1206|1214|playerIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|playerIn|1
+      @|com\tigres810\adventurermod\items\ItemBase.java|1215|1226|getHeldItem|method|net.minecraft.entity.EntityLivingBase|getHeldItem|(Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1227|1233|handIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|handIn|2
+      @|com\tigres810\adventurermod\items\ItemBase.java|1235|1249|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1252|1258|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\items\ItemBase.java|1307|1313|System|class|java.lang.System
+      @|com\tigres810\adventurermod\items\ItemBase.java|1314|1317|out|field|java.lang.System|out
+      @|com\tigres810\adventurermod\items\ItemBase.java|1318|1323|print|method|java.io.PrintStream|print|(Ljava/lang/String;)V
+      @|com\tigres810\adventurermod\items\ItemBase.java|1597|1605|playerIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|playerIn|1
+      @|com\tigres810\adventurermod\items\ItemBase.java|1606|1617|getHeldItem|method|net.minecraft.entity.EntityLivingBase|getHeldItem|(Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1618|1624|handIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|handIn|2
+      @|com\tigres810\adventurermod\items\ItemBase.java|1626|1640|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1643|1649|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\items\ItemBase.java|1689|1697|playerIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|playerIn|1
+      @|com\tigres810\adventurermod\items\ItemBase.java|1698|1709|getHeldItem|method|net.minecraft.entity.EntityLivingBase|getHeldItem|(Lnet/minecraft/util/EnumHand;)Lnet/minecraft/item/ItemStack;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1710|1716|handIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|handIn|2
+      @|com\tigres810\adventurermod\items\ItemBase.java|1718|1732|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1735|1741|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\tigres810\adventurermod\items\ItemBase.java|1790|1799|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\tigres810\adventurermod\items\ItemBase.java|1800|1812|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1815|1831|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\tigres810\adventurermod\items\ItemBase.java|1836|1856|GuiInformationTablet|class|com.tigres810.adventurermod.client.gui.GuiInformationTablet
+      @|com\tigres810\adventurermod\items\ItemBase.java|1885|1901|onItemRightClick|method|net.minecraft.item.Item|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+      @|com\tigres810\adventurermod\items\ItemBase.java|1902|1909|worldIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|worldIn|0
+      @|com\tigres810\adventurermod\items\ItemBase.java|1911|1919|playerIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|playerIn|1
+      @|com\tigres810\adventurermod\items\ItemBase.java|1921|1927|handIn|param|com.tigres810.adventurermod.items.ItemBase|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|handIn|2
+   Method End: onItemRightClick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+Class End  : com.tigres810.adventurermod.items.ItemBase
+endProcessing "com\tigres810\adventurermod\items\ItemBase.java"
+
+startProcessing "com\tigres810\adventurermod\proxy\ClientProxy.java" md5: 2f3c9701008eb30ba0ede5ef70eb3a7f
+Cache Hit!
+@|com\tigres810\adventurermod\proxy\ClientProxy.java|8|41|com.tigres810.adventurermod.proxy|package|com.tigres810.adventurermod.proxy|(file)
+Class Start: com.tigres810.adventurermod.proxy.ClientProxy
+   @|com\tigres810\adventurermod\proxy\ClientProxy.java|318|329|ClientProxy|class|com.tigres810.adventurermod.proxy.ClientProxy
+   @|com\tigres810\adventurermod\proxy\ClientProxy.java|338|349|CommonProxy|class|com.tigres810.adventurermod.proxy.CommonProxy
+   Method Start: registerItemRenderer(Lnet/minecraft/item/Item;ILjava/lang/String;)V
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|393|397|item|param|com.tigres810.adventurermod.proxy.ClientProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|item|0
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|403|407|meta|param|com.tigres810.adventurermod.proxy.ClientProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|meta|1
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|416|418|id|param|com.tigres810.adventurermod.proxy.ClientProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|id|2
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|367|387|registerItemRenderer|method|com.tigres810.adventurermod.proxy.CommonProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|388|392|Item|class|net.minecraft.item.Item
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|409|415|String|class|java.lang.String
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|424|435|ModelLoader|class|net.minecraftforge.client.model.ModelLoader
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|436|466|setCustomModelResourceLocation|method|net.minecraftforge.client.model.ModelLoader|setCustomModelResourceLocation|(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|467|471|item|param|com.tigres810.adventurermod.proxy.ClientProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|item|0
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|473|477|meta|param|com.tigres810.adventurermod.proxy.ClientProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|meta|1
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|483|504|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|505|509|item|param|com.tigres810.adventurermod.proxy.ClientProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|item|0
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|510|525|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|com\tigres810\adventurermod\proxy\ClientProxy.java|529|531|id|param|com.tigres810.adventurermod.proxy.ClientProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|id|2
+   Method End: registerItemRenderer(Lnet/minecraft/item/Item;ILjava/lang/String;)V
+Class End  : com.tigres810.adventurermod.proxy.ClientProxy
+endProcessing "com\tigres810\adventurermod\proxy\ClientProxy.java"
+
+startProcessing "com\tigres810\adventurermod\proxy\CommonProxy.java" md5: f42b70760b4d8d03361bcc4416097739
+Cache Hit!
+@|com\tigres810\adventurermod\proxy\CommonProxy.java|8|41|com.tigres810.adventurermod.proxy|package|com.tigres810.adventurermod.proxy|(file)
+Class Start: com.tigres810.adventurermod.proxy.CommonProxy
+   @|com\tigres810\adventurermod\proxy\CommonProxy.java|90|101|CommonProxy|class|com.tigres810.adventurermod.proxy.CommonProxy
+   Method Start: registerItemRenderer(Lnet/minecraft/item/Item;ILjava/lang/String;)V
+      @|com\tigres810\adventurermod\proxy\CommonProxy.java|144|148|item|param|com.tigres810.adventurermod.proxy.CommonProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|item|0
+      @|com\tigres810\adventurermod\proxy\CommonProxy.java|154|158|meta|param|com.tigres810.adventurermod.proxy.CommonProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|meta|1
+      @|com\tigres810\adventurermod\proxy\CommonProxy.java|167|169|id|param|com.tigres810.adventurermod.proxy.CommonProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V|id|2
+      @|com\tigres810\adventurermod\proxy\CommonProxy.java|118|138|registerItemRenderer|method|com.tigres810.adventurermod.proxy.CommonProxy|registerItemRenderer|(Lnet/minecraft/item/Item;ILjava/lang/String;)V
+      @|com\tigres810\adventurermod\proxy\CommonProxy.java|139|143|Item|class|net.minecraft.item.Item
+      @|com\tigres810\adventurermod\proxy\CommonProxy.java|160|166|String|class|java.lang.String
+   Method End: registerItemRenderer(Lnet/minecraft/item/Item;ILjava/lang/String;)V
+Class End  : com.tigres810.adventurermod.proxy.CommonProxy
+endProcessing "com\tigres810\adventurermod\proxy\CommonProxy.java"
+
+startProcessing "com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java" md5: 485df2a0adc2437a218fc7fffd4e1924
+Cache Hit!
+@|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|8|40|com.tigres810.adventurermod.tabs|package|com.tigres810.adventurermod.tabs|(file)
+Class Start: com.tigres810.adventurermod.tabs.AdventurerModBlocksTab
+   @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|243|265|AdventurerModBlocksTab|class|com.tigres810.adventurermod.tabs.AdventurerModBlocksTab
+   @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|274|286|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   Method Start: AdventurerModBlocksTab(Ljava/lang/String;)V
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|328|333|label|param|com.tigres810.adventurermod.tabs.AdventurerModBlocksTab|AdventurerModBlocksTab|(Ljava/lang/String;)V|label|0
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|298|320|AdventurerModBlocksTab|method|com.tigres810.adventurermod.tabs.AdventurerModBlocksTab|AdventurerModBlocksTab|(Ljava/lang/String;)V
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|321|327|String|class|java.lang.String
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|377|399|setBackgroundImageName|method|net.minecraft.creativetab.CreativeTabs|setBackgroundImageName|(Ljava/lang/String;)Lnet/minecraft/creativetab/CreativeTabs;
+   Method End: AdventurerModBlocksTab(Ljava/lang/String;)V
+   Method Start: getTabIconItem()Lnet/minecraft/item/ItemStack;
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|433|442|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|443|457|getTabIconItem|method|net.minecraft.creativetab.CreativeTabs|getTabIconItem|()Lnet/minecraft/item/ItemStack;
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|473|482|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|483|492|ModBlocks|class|com.tigres810.adventurermod.init.ModBlocks
+      @|com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java|493|513|FLUX_GENERATOR_BLOCK|field|com.tigres810.adventurermod.init.ModBlocks|FLUX_GENERATOR_BLOCK
+   Method End: getTabIconItem()Lnet/minecraft/item/ItemStack;
+Class End  : com.tigres810.adventurermod.tabs.AdventurerModBlocksTab
+endProcessing "com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java"
+
+startProcessing "com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java" md5: 19c5a0ea177234093e55ead927782a93
+Cache Hit!
+@|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|8|40|com.tigres810.adventurermod.tabs|package|com.tigres810.adventurermod.tabs|(file)
+Class Start: com.tigres810.adventurermod.tabs.AdventurerModItemsTab
+   @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|192|213|AdventurerModItemsTab|class|com.tigres810.adventurermod.tabs.AdventurerModItemsTab
+   @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|222|234|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   Method Start: AdventurerModItemsTab(Ljava/lang/String;)V
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|275|280|label|param|com.tigres810.adventurermod.tabs.AdventurerModItemsTab|AdventurerModItemsTab|(Ljava/lang/String;)V|label|0
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|246|267|AdventurerModItemsTab|method|com.tigres810.adventurermod.tabs.AdventurerModItemsTab|AdventurerModItemsTab|(Ljava/lang/String;)V
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|268|274|String|class|java.lang.String
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|324|346|setBackgroundImageName|method|net.minecraft.creativetab.CreativeTabs|setBackgroundImageName|(Ljava/lang/String;)Lnet/minecraft/creativetab/CreativeTabs;
+   Method End: AdventurerModItemsTab(Ljava/lang/String;)V
+   Method Start: getTabIconItem()Lnet/minecraft/item/ItemStack;
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|380|389|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|390|404|getTabIconItem|method|net.minecraft.creativetab.CreativeTabs|getTabIconItem|()Lnet/minecraft/item/ItemStack;
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|420|429|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|430|438|ModItems|class|com.tigres810.adventurermod.init.ModItems
+      @|com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java|439|457|INFORMATION_TABLET|field|com.tigres810.adventurermod.init.ModItems|INFORMATION_TABLET
+   Method End: getTabIconItem()Lnet/minecraft/item/ItemStack;
+Class End  : com.tigres810.adventurermod.tabs.AdventurerModItemsTab
+endProcessing "com\tigres810\adventurermod\tabs\AdventurerModItemsTab.java"
+
+startProcessing "com\tigres810\adventurermod\util\IHasModel.java" md5: 1804bfa79ee9a67b9824da85c3cad828
+Cache Hit!
+@|com\tigres810\adventurermod\util\IHasModel.java|8|40|com.tigres810.adventurermod.util|package|com.tigres810.adventurermod.util|(file)
+Class Start: com.tigres810.adventurermod.util.IHasModel
+   @|com\tigres810\adventurermod\util\IHasModel.java|60|69|IHasModel|class|com.tigres810.adventurermod.util.IHasModel
+   Method Start: registerModels()V
+      @|com\tigres810\adventurermod\util\IHasModel.java|86|100|registerModels|method|com.tigres810.adventurermod.util.IHasModel|registerModels|()V
+   Method End: registerModels()V
+Class End  : com.tigres810.adventurermod.util.IHasModel
+endProcessing "com\tigres810\adventurermod\util\IHasModel.java"
+
+startProcessing "com\tigres810\adventurermod\util\Reference.java" md5: f3003505c08b4af162cb4fb768de6d67
+Cache Hit!
+@|com\tigres810\adventurermod\util\Reference.java|8|40|com.tigres810.adventurermod.util|package|com.tigres810.adventurermod.util|(file)
+Class Start: com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\util\Reference.java|56|65|Reference|class|com.tigres810.adventurermod.util.Reference
+   @|com\tigres810\adventurermod\util\Reference.java|90|96|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|90|96|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|97|103|MOD_ID|field|com.tigres810.adventurermod.util.Reference|MOD_ID|
+   @|com\tigres810\adventurermod\util\Reference.java|133|139|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|133|139|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|140|144|NAME|field|com.tigres810.adventurermod.util.Reference|NAME|
+   @|com\tigres810\adventurermod\util\Reference.java|186|192|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|186|192|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|193|200|VERSION|field|com.tigres810.adventurermod.util.Reference|VERSION|
+   @|com\tigres810\adventurermod\util\Reference.java|231|237|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|231|237|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|238|254|ACCEPTED_VERSION|field|com.tigres810.adventurermod.util.Reference|ACCEPTED_VERSION|
+   @|com\tigres810\adventurermod\util\Reference.java|290|296|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|290|296|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|297|315|CLIENT_PROXY_CLASS|field|com.tigres810.adventurermod.util.Reference|CLIENT_PROXY_CLASS|
+   @|com\tigres810\adventurermod\util\Reference.java|388|394|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|388|394|String|class|java.lang.String
+   @|com\tigres810\adventurermod\util\Reference.java|395|413|COMMON_PROXY_CLASS|field|com.tigres810.adventurermod.util.Reference|COMMON_PROXY_CLASS|
+Class End  : com.tigres810.adventurermod.util.Reference
+endProcessing "com\tigres810\adventurermod\util\Reference.java"
+
+startProcessing "com\tigres810\adventurermod\util\handler\RegistryHandler.java" md5: fedb87d50d330fcf18dd9a8c45e339fb
+Cache Hit!
+@|com\tigres810\adventurermod\util\handler\RegistryHandler.java|8|48|com.tigres810.adventurermod.util.handler|package|com.tigres810.adventurermod.util.handler|(file)
+Class Start: com.tigres810.adventurermod.util.handler.RegistryHandler
+   @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|505|523|EventBusSubscriber|class|net.minecraftforge.fml.common.Mod.EventBusSubscriber
+   @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|537|552|RegistryHandler|class|com.tigres810.adventurermod.util.handler.RegistryHandler
+   Method Start: onItemRegister(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|637|642|event|param|com.tigres810.adventurermod.util.handler.RegistryHandler|onItemRegister|(Lnet/minecraftforge/event/RegistryEvent$Register;)V|event|0
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|558|572|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|593|607|onItemRegister|method|com.tigres810.adventurermod.util.handler.RegistryHandler|onItemRegister|(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|608|630|RegistryEvent.Register|class|net.minecraftforge.event.RegistryEvent.Register
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|631|635|Item|class|net.minecraft.item.Item
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|648|653|event|param|com.tigres810.adventurermod.util.handler.RegistryHandler|onItemRegister|(Lnet/minecraftforge/event/RegistryEvent$Register;)V|event|0
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|654|665|getRegistry|method|net.minecraftforge.event.RegistryEvent.Register|getRegistry|()Lnet/minecraftforge/registries/IForgeRegistry;
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|668|679|registerAll|method|net.minecraftforge.registries.IForgeRegistry|registerAll|([Lnet/minecraftforge/registries/IForgeRegistryEntry;)V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|680|688|ModItems|class|com.tigres810.adventurermod.init.ModItems
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|689|694|ITEMS|field|com.tigres810.adventurermod.init.ModItems|ITEMS
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|695|702|toArray|method|java.util.Collection|toArray|([Ljava/lang/Object;)[Ljava/lang/Object;
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|707|711|Item|class|net.minecraft.item.Item
+   Method End: onItemRegister(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+   Method Start: onBlockRegister(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|806|811|event|param|com.tigres810.adventurermod.util.handler.RegistryHandler|onBlockRegister|(Lnet/minecraftforge/event/RegistryEvent$Register;)V|event|0
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|725|739|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|760|775|onBlockRegister|method|com.tigres810.adventurermod.util.handler.RegistryHandler|onBlockRegister|(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|776|798|RegistryEvent.Register|class|net.minecraftforge.event.RegistryEvent.Register
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|799|804|Block|class|net.minecraft.block.Block
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|817|822|event|param|com.tigres810.adventurermod.util.handler.RegistryHandler|onBlockRegister|(Lnet/minecraftforge/event/RegistryEvent$Register;)V|event|0
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|823|834|getRegistry|method|net.minecraftforge.event.RegistryEvent.Register|getRegistry|()Lnet/minecraftforge/registries/IForgeRegistry;
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|837|848|registerAll|method|net.minecraftforge.registries.IForgeRegistry|registerAll|([Lnet/minecraftforge/registries/IForgeRegistryEntry;)V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|849|858|ModBlocks|class|com.tigres810.adventurermod.init.ModBlocks
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|859|865|BLOCKS|field|com.tigres810.adventurermod.init.ModBlocks|BLOCKS
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|866|873|toArray|method|java.util.Collection|toArray|([Ljava/lang/Object;)[Ljava/lang/Object;
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|878|883|Block|class|net.minecraft.block.Block
+   Method End: onBlockRegister(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+   Method Start: onModelRegister(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|967|972|event|param|com.tigres810.adventurermod.util.handler.RegistryHandler|onModelRegister|(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V|event|0
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|897|911|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|932|947|onModelRegister|method|com.tigres810.adventurermod.util.handler.RegistryHandler|onModelRegister|(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|948|966|ModelRegistryEvent|class|net.minecraftforge.client.event.ModelRegistryEvent
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|982|986|Item|class|net.minecraft.item.Item
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|994|1002|ModItems|class|com.tigres810.adventurermod.init.ModItems
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1003|1008|ITEMS|field|com.tigres810.adventurermod.init.ModItems|ITEMS
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1034|1043|IHasModel|class|com.tigres810.adventurermod.util.IHasModel
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1053|1062|IHasModel|class|com.tigres810.adventurermod.util.IHasModel
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1069|1083|registerModels|method|com.tigres810.adventurermod.util.IHasModel|registerModels|()V
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1105|1110|Block|class|net.minecraft.block.Block
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1119|1128|ModBlocks|class|com.tigres810.adventurermod.init.ModBlocks
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1129|1135|BLOCKS|field|com.tigres810.adventurermod.init.ModBlocks|BLOCKS
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1162|1171|IHasModel|class|com.tigres810.adventurermod.util.IHasModel
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1181|1190|IHasModel|class|com.tigres810.adventurermod.util.IHasModel
+      @|com\tigres810\adventurermod\util\handler\RegistryHandler.java|1198|1212|registerModels|method|com.tigres810.adventurermod.util.IHasModel|registerModels|()V
+   Method End: onModelRegister(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V
+Class End  : com.tigres810.adventurermod.util.handler.RegistryHandler
+endProcessing "com\tigres810\adventurermod\util\handler\RegistryHandler.java"
+

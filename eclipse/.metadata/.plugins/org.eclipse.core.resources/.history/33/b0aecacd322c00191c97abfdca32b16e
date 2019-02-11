@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "facing=north,generating=false": { "model": "am:flux_generator_block" },
+        "facing=east,generating=false": { "model": "am:flux_generator_block", "y": 90 },
+        "facing=south,generating=false": { "model": "am:flux_generator_block", "y": 180 },
+        "facing=west,generating=false": { "model": "am:flux_generator_block", "y": 270 },
+        "facing=north,generating=true": { "model": "am:flux_generator_block_on" },
+        "facing=east,generating=true": { "model": "am:flux_generator_block_on", "y": 90 },
+        "facing=south,generating=true": { "model": "am:flux_generator_block_on", "y": 180 },
+        "facing=west,generating=true": { "model": "am:flux_generator_block_on", "y":270  }
+    }
+}

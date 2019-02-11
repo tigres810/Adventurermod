@@ -1,0 +1,14 @@
+item.information_tablet.name=AdventurerMod Information Tablet
+
+tile.flux_generator_block.name=Flux Generator 
+tile.flux_pipe_block.name=Flux Pipe
+
+#Gui
+gui.title=Guide
+
+#Tabs
+itemGroup.AdventurerModItemsTab=AdventurerMod Items
+itemGroup.AdventurerModBlocksTab=AdventurerMod Blocks
+
+#Fluids
+tile.flux_fluid.block.name=Flux liquid

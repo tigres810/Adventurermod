@@ -1,0 +1,9 @@
+package com.tigres810.adventurermod.blocks.machines;
+
+import com.tigres810.adventurermod.blocks.BlockBase;
+
+import net.minecraft.block.ITileEntityProvider;
+
+public class FluxGeneratorBlock extends BlockBase implements ITileEntityProvider {
+
+}
