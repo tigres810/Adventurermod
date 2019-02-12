@@ -1,14 +1,14 @@
 [
 {
-  "modid": "am",
-  "name": "Adventurer Mod",
-  "description": "Un mod para aventureros.",
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Example placeholder mod.",
   "version": "1.0",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
-  "authorList": ["tigres810"],
-  "credits": "Al Forge y los chicos de FML, por ayudarme con tutoriales",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

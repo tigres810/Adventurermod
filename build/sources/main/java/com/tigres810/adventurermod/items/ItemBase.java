@@ -1,7 +1,13 @@
 package com.tigres810.adventurermod.items;
 
+import java.util.Set;
+
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
+import com.google.common.collect.Sets;
 import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.client.gui.GuiInformationTablet;
+import com.tigres810.adventurermod.init.ModFluids;
 import com.tigres810.adventurermod.init.ModItems;
 import com.tigres810.adventurermod.tabs.AdventurerModItemsTab;
 import com.tigres810.adventurermod.util.IHasModel;
@@ -14,6 +20,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.FluidUtil;
 
 public class ItemBase extends Item implements IHasModel {
 
@@ -46,5 +55,5 @@ public class ItemBase extends Item implements IHasModel {
 		}
 		return super.onItemRightClick(worldIn, playerIn, handIn);
 	}
-
+	
 }

@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Extract" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="capability"/>
+			<item value="tileentity"/>
 			<item value="extract"/>
 			<item value="getopposite"/>
 			<item value="opposite"/>
@@ -21,8 +23,6 @@
 			<item value="registerfluid"/>
 			<item value="modfluids"/>
 			<item value="Itemexternal"/>
-			<item value="currentBucketFluids"/>
-			<item value="nbt"/>
 		</list>
 		<list key="replacehistory">
 			<item value="am"/>

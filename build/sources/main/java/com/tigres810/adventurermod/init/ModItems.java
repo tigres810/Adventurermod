@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.tigres810.adventurermod.items.ItemBase;
-
 import net.minecraft.item.Item;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.FluidUtil;
 
 public class ModItems {
 

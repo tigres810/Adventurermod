@@ -1,8 +1,0 @@
-item.information_tablet.name=AdventurerMod Information Tablet
-
-#Gui
-gui.title=Guide
-
-#Tabs
-itemGroup.AdventurerModItemsTab=AdventurerMod Items
-itemGroup.AdventurerModBlocksTab=AdventurerMod Blocks

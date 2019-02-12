@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.IGuiHandler"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.container.ContainerBlockEntityFluxGenerator"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.event.FMLPreInitializationEvent"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.event.FMLInitializationEvent"/>
-<fullyQualifiedTypeName name="com.google.common.graph.Network"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.NetworkRegistry"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.Main"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.util.handler.GuiHandler"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.util.handler.RegistryHandler"/>
-<fullyQualifiedTypeName name="scala.collection.script.Update"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
-<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.pipes.tileentity.TileEntityFluxPipeSideConnector"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.util.Reference"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.gui.ContainerFluxGeneratorBlock"/>
-<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntityLockable"/>
-<fullyQualifiedTypeName name="net.minecraft.inventory.ISidedInventory"/>
-<fullyQualifiedTypeName name="net.minecraftforge.items.ItemStackHandler"/>
-<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
-<fullyQualifiedTypeName name="net.minecraftforge.items.CapabilityItemHandler"/>
-<fullyQualifiedTypeName name="net.minecraft.util.text.TextComponentTranslation"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.capability.CapabilityFluidHandler"/>
-<fullyQualifiedTypeName name="net.minecraftforge.items.IItemHandler"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fluids.capability.templates.FluidHandlerItemStack"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fluids.capability.templates.FluidHandlerItemStackSimple"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidActionResult"/>
@@ -36,8 +13,6 @@
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.items.ItemBase"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.items.ItemExternalAdder"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModItems"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidUtil"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidStack"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModFluids"/>
 <fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
@@ -47,7 +22,6 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="net.minecraft.world.IBlockAccess"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.pipes.tileentity.TileEntityFluxPipe"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.capabilities.Capability.IStorage"/>
@@ -60,4 +34,30 @@
 <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.ISharingEnergyProvider"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.util.WorldUtil"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidTank"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fluids.capability.CapabilityFluidHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketUpdateTileEntity"/>
+<fullyQualifiedTypeName name="net.minecraft.network.NetworkManager"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.Tessellator"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.BufferBuilder"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.texture.TextureAtlasSprite"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.vertex.DefaultVertexFormats"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fluids.Fluid"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidStack"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.texture.TextureMap"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.SideOnly"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.client.registry.ClientRegistry"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.pipes.tileentity.TileEntityFluxPipeSpecialRender"/>
+<fullyQualifiedTypeName name="net.minecraftforge.client.model.ModelLoader"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelResourceLocation"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidUtil"/>
+<fullyQualifiedTypeName name="net.minecraft.block.ITileEntityProvider"/>
+<fullyQualifiedTypeName name="javax.annotation.Nullable"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.pipes.tileentity.TileEntityFluxPipe"/>
 </qualifiedTypeNameHistroy>
