@@ -76,6 +76,15 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 			}
 		}
     }
+    
+    public void consumeEnergy(int amount) {
+    	energy -= amount;
+    }
+    
+    public int getFuelValueFromGenerator() 
+	{
+		return energy;
+	}
 
     private boolean isItemFuel(ItemStack stack) 
 	{

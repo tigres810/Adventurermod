@@ -67,7 +67,7 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 	private IBlockState neighbourState = null;
 
     private Block neighbourBlock = null;
-	private CustomEnergyStorage storage = new CustomEnergyStorage(100);
+	private CustomEnergyStorage storage = new CustomEnergyStorage(500);
 	public int energy = storage.getEnergyStored();
 	private boolean output = false;
 	private String customName;
@@ -115,15 +115,16 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 			    if ( neighbourBlock == ModBlocks.FLUX_GENERATOR_BLOCK ) {
 
 			    	if( neighbourState.getValue(FACING).equals( EnumFacing.NORTH ) || neighbourState.getValue(FACING).equals( EnumFacing.SOUTH ) ) {
-			    		TileEntity tile = world.getTileEntity(neighbourPos);
+			    		TileEntityFluxGenerator tile = (TileEntityFluxGenerator) world.getTileEntity(neighbourPos);
 			    		if(tile != null) {
-			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.EAST) && energy < 100) {
+			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.EAST) && energy < storage.getMaxEnergyStored()) {
 			    				if(world.getTileEntity(pos).hasCapability(CapabilityEnergy.ENERGY, EnumFacing.EAST)) {
-				    				IEnergyStorage tilestorage = tile.getCapability(CapabilityEnergy.ENERGY, EnumFacing.EAST);
-				    				int maxOut = tilestorage.extractEnergy(100 - energy, true);
-									int maxAccept = this.storage.receiveEnergy(maxOut, false);
-									energy += tilestorage.extractEnergy(maxAccept, false);
-									System.out.println("MaxOut: " + maxOut + " MaxAccept: " + maxAccept);
+				    				int FUEL = tile.getFuelValueFromGenerator();
+				    				if(FUEL > 0) {
+				    					energy += 1;
+				    					tile.consumeEnergy(1);
+				    					System.out.println(energy);
+				    				}
 			    				}
 			    			}
 			    		}
