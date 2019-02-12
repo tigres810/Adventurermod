@@ -89,7 +89,18 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 			    if ( neighbourBlock == ModBlocks.FLUX_GENERATOR_BLOCK ) {
 
 			    	if( neighbourState.getValue(FACING).equals( EnumFacing.EAST ) || neighbourState.getValue(FACING).equals( EnumFacing.WEST ) ) {
-			    		
+			    		TileEntityFluxGenerator tile = (TileEntityFluxGenerator) world.getTileEntity(neighbourPos);
+			    		if(tile != null) {
+			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.NORTH) && energy < storage.getMaxEnergyStored()) {
+			    				if(world.getTileEntity(pos).hasCapability(CapabilityEnergy.ENERGY, EnumFacing.NORTH)) {
+				    				int FUEL = tile.getFuelValueFromGenerator();
+				    				if(FUEL > 0) {
+				    					energy += 1;
+				    					tile.consumeEnergy(1);
+				    				}
+			    				}
+			    			}
+			    		}
 			    	}
 			    }
 			} else if( face.equals( EnumFacing.SOUTH ) ) {
@@ -102,7 +113,18 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 			    if ( neighbourBlock == ModBlocks.FLUX_GENERATOR_BLOCK ) {
 
 			    	if( neighbourState.getValue(FACING).equals( EnumFacing.EAST ) || neighbourState.getValue(FACING).equals( EnumFacing.WEST ) ) {
-			    		
+			    		TileEntityFluxGenerator tile = (TileEntityFluxGenerator) world.getTileEntity(neighbourPos);
+			    		if(tile != null) {
+			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.SOUTH) && energy < storage.getMaxEnergyStored()) {
+			    				if(world.getTileEntity(pos).hasCapability(CapabilityEnergy.ENERGY, EnumFacing.SOUTH)) {
+				    				int FUEL = tile.getFuelValueFromGenerator();
+				    				if(FUEL > 0) {
+				    					energy += 1;
+				    					tile.consumeEnergy(1);
+				    				}
+			    				}
+			    			}
+			    		}
 			    	}
 			    }
 			} else if( face.equals( EnumFacing.EAST ) ) {
@@ -123,7 +145,6 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 				    				if(FUEL > 0) {
 				    					energy += 1;
 				    					tile.consumeEnergy(1);
-				    					System.out.println(energy);
 				    				}
 			    				}
 			    			}
@@ -140,7 +161,18 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 			    if ( neighbourBlock == ModBlocks.FLUX_GENERATOR_BLOCK ) {
 
 			    	if( neighbourState.getValue(FACING).equals( EnumFacing.NORTH ) || neighbourState.getValue(FACING).equals( EnumFacing.SOUTH ) ) {
-			    		
+			    		TileEntityFluxGenerator tile = (TileEntityFluxGenerator) world.getTileEntity(neighbourPos);
+			    		if(tile != null) {
+			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.WEST) && energy < storage.getMaxEnergyStored()) {
+			    				if(world.getTileEntity(pos).hasCapability(CapabilityEnergy.ENERGY, EnumFacing.WEST)) {
+				    				int FUEL = tile.getFuelValueFromGenerator();
+				    				if(FUEL > 0) {
+				    					energy += 1;
+				    					tile.consumeEnergy(1);
+				    				}
+			    				}
+			    			}
+			    		}
 			    	}
 			    }
 			}
