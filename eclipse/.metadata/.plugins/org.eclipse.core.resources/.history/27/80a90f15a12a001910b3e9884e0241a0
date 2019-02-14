@@ -1,8 +1,0 @@
-package com.tigres810.adventurermod.blocks.statements;
-
-import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.tileentity.TileEntity;
-
-public class TileEntityRenderCable extends TileEntitySpecialRenderer {
-
-}

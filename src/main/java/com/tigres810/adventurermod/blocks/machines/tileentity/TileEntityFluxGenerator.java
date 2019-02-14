@@ -1,19 +1,3 @@
-/**
-    Copyright (C) 2019 by tigres810
-
-    This file is part of jabelar's Minecraft Forge modding examples; as such,
-    you can redistribute it and/or modify it under the terms of the GNU
-    General Public License as published by the Free Software Foundation,
-    either version 3 of the License, or (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-    GNU General Public License for more details.
-
-    For a copy of the GNU General Public License see <http://www.gnu.org/licenses/>.
-*/
-
 package com.tigres810.adventurermod.blocks.machines.tileentity;
 
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
@@ -122,7 +106,7 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 		compound.setTag("Inventory", this.handler.serializeNBT());
 		compound.setInteger("CookTime", this.cookTime);
 		compound.setInteger("GuiEnergy", this.energy);
-		compound.setString("Name", getDisplayName().toString());
+		compound.setString("Name", this.getDisplayName().toString());
 		this.storage.writeToNBT(compound);
 		return compound;
 	}

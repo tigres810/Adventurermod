@@ -12,4 +12,4 @@ itemGroup.AdventurerModItemsTab=AdventurerMod Items
 itemGroup.AdventurerModBlocksTab=AdventurerMod Bloques
 
 #Fluids
-fluid.flux_fluid=Cubo con liquido de Flux
+fluid.flux_fluid=liquido de Flux

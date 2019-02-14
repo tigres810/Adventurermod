@@ -5,10 +5,9 @@ import java.util.List;
 import java.util.Set;
 
 import com.tigres810.adventurermod.Main;
+import com.tigres810.adventurermod.fluids.FluidLiquid;
 import com.tigres810.adventurermod.items.ItemBase;
 
-import fluids.FluidBase;
-import fluids.FluidLiquid;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

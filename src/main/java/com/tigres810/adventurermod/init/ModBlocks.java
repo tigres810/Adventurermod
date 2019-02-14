@@ -7,8 +7,8 @@ import com.tigres810.adventurermod.blocks.BlockBase;
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.pipes.BlockEntityFluxPipe;
 import com.tigres810.adventurermod.blocks.pipes.BlockEntityFluxPipeSideConnector;
+import com.tigres810.adventurermod.fluids.FluidBase;
 
-import fluids.FluidBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

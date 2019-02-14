@@ -1,8 +1,0 @@
-package com.tigres810.adventurermod.blocks.statements;
-
-import net.minecraft.tileentity.TileEntity;
-
-public class TileEntityCable extends TileEntity {
-	
-	public ForgeDirection[] connections = new ForgeDirection[6];
-}
