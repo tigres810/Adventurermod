@@ -1,39 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="fluids.FluidBase"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.fluids.FluidBase"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.fluids.FluidLiquid"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.texture.TextureMap"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.BufferBuilder"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.Fluid"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.Tessellator"/>
-<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.texture.TextureAtlasSprite"/>
-<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.vertex.DefaultVertexFormats"/>
-<fullyQualifiedTypeName name="net.minecraftforge.event.RegistryEvent"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator"/>
-<fullyQualifiedTypeName name="net.minecraftforge.client.model.ModelLoader"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelResourceLocation"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.SideOnly"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
-<fullyQualifiedTypeName name="net.minecraftforge.registries.IForgeRegistry"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.pipes.BlockEntityFluxPipe"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.util.Reference"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.client.registry.ClientRegistry"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.pipes.tesr.TileEntityFluxPipeTESR"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.pipes.tileentity.TileEntityFluxPipe"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidTank"/>
-<fullyQualifiedTypeName name="javax.annotation.Nullable"/>
-<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketUpdateTileEntity"/>
-<fullyQualifiedTypeName name="net.minecraft.network.NetworkManager"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.capability.CapabilityFluidHandler"/>
-<fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidUtil"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidStack"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModFluids"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.statemap.IStateMapper"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.nimbus.State"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.statemap.StateMap"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.statemap.StateMap.Builder"/>
+<fullyQualifiedTypeName name="net.minecraft.util.DamageSource"/>
 </qualifiedTypeNameHistroy>

@@ -2,42 +2,51 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="getCapa" key="selection"/>
+		<item value="CACTUS_AABB" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="getcapa"/>
-			<item value="getcapa "/>
-			<item value="writeto"/>
-			<item value="tileentity"/>
-			<item value="clientproxy"/>
-			<item value="name"/>
-			<item value="consume"/>
-			<item value="getDisplayName"/>
-			<item value="container.energy_storage"/>
-			<item value="container"/>
-			<item value="CALLING"/>
-			<item value="capability"/>
-			<item value="extract"/>
-			<item value="getopposite"/>
-			<item value="opposite"/>
+			<item value="CACTUS_AABB"/>
+			<item value="DamageSource"/>
+			<item value="damage"/>
+			<item value="takedamage"/>
+			<item value="true"/>
+			<item value="machineoverhaul:smeltery_frame_block_c4angle"/>
+			<item value="machineoverhaul:smeltery_frame_block_c3angle"/>
+			<item value="machineoverhaul:smeltery_frame_block_c3t2"/>
+			<item value="machineoverhaul:smeltery_frame_block_c3t1"/>
+			<item value="machineoverhaul:smeltery_frame_block_c2"/>
+			<item value="machineoverhaul:smeltery_frame_block_c2angle"/>
+			<item value="machineoverhaul:smeltery_frame_block_c1"/>
+			<item value="connected_west"/>
+			<item value="connected_east"/>
+			<item value="connected_south"/>
 		</list>
 		<list key="replacehistory">
+			<item value="false"/>
+			<item value="flux_pipe_block_side_connector"/>
+			<item value="am:flux_pipe_block"/>
+			<item value="west"/>
+			<item value="east"/>
+			<item value="south"/>
+			<item value="north"/>
+			<item value="up"/>
+			<item value="down"/>
+			<item value="connected"/>
+			<item value=""/>
+			<item value="render"/>
 			<item value="am"/>
 			<item value="generating"/>
-			<item value=""/>
 			<item value="adventurermod"/>
-			<item value="&quot;north&quot;: {&quot;uv&quot;: [0, 0, 1, 4.1], &quot;rotation&quot;: 90, &quot;texture&quot;: &quot;#0&quot;},"/>
-			<item value="blocks"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="385" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="523" key="DIALOG_HEIGHT"/>
-		<item value="1372" key="DIALOG_X_ORIGIN"/>
-		<item value="181" key="DIALOG_Y_ORIGIN"/>
+		<item value="1451" key="DIALOG_X_ORIGIN"/>
+		<item value="157" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

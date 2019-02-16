@@ -71,13 +71,7 @@ public class BlockBase extends Block implements IHasModel {
 	
 	@Override
 	public BlockRenderLayer getBlockLayer() {
-		if (this.getRegistryName().equals(ModBlocks.FLUX_PIPE_BLOCK.getRegistryName())) {
-			return BlockRenderLayer.TRANSLUCENT;
-		} else if(this.getRegistryName().equals(ModBlocks.FLUX_PIPE_BLOCK_SIDE_CONNECTOR.getRegistryName())) {
-			return BlockRenderLayer.TRANSLUCENT;
-		} else {
 			return super.getBlockLayer();
-		}
 	}
 
 }

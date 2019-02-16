@@ -88,6 +88,7 @@ public class BlockEntityFluxGenerator extends BlockBase {
 	}
 	
 	public static void setState(boolean active, World worldIn, BlockPos pos) {
+		System.out.println("Changing!");
 		IBlockState state = worldIn.getBlockState(pos);
 		TileEntity tileentity = worldIn.getTileEntity(pos);
 		

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
+import com.tigres810.adventurermod.blocks.pipes.BlockEntityFluxPipe;
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
 import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.init.ModFluids;
@@ -43,124 +44,16 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
 
-public class TileEntityFluxPipe extends TileEntity implements ITickable
+public class TileEntityFluxPipe extends TileEntity
 {
-	private PropertyDirection FACING = BlockHorizontal.FACING;
-	private BlockPos neighbourPos = null;
-	
-	private IBlockState neighbourState = null;
-
-    private Block neighbourBlock = null;
 	private CustomEnergyStorage storage = new CustomEnergyStorage(500);
 	public int energy = storage.getEnergyStored();
 	private boolean output = false;
 	private String customName;
 	
-	@Override
-	public void update() 
-	{
-		//Handle check block nearby
-		if(world.getBlockState(pos).getValue(FACING) != null) {
-			//Check block neighbourPos
-			EnumFacing face = (EnumFacing)world.getBlockState(pos).getValue(FACING);
-			if( face.equals( EnumFacing.NORTH ) ) {
-				neighbourPos = pos.offset(EnumFacing.NORTH);
-				
-				neighbourState = world.getBlockState(neighbourPos);
-
-			    neighbourBlock = neighbourState.getBlock();
-			    
-			    if ( neighbourBlock == ModBlocks.FLUX_GENERATOR_BLOCK ) {
-
-			    	if( neighbourState.getValue(FACING).equals( EnumFacing.EAST ) || neighbourState.getValue(FACING).equals( EnumFacing.WEST ) ) {
-			    		TileEntityFluxGenerator tile = (TileEntityFluxGenerator) world.getTileEntity(neighbourPos);
-			    		if(tile != null) {
-			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.NORTH) && energy < storage.getMaxEnergyStored()) {
-			    				if(world.getTileEntity(pos).hasCapability(CapabilityEnergy.ENERGY, EnumFacing.NORTH)) {
-				    				int FUEL = tile.getFuelValueFromGenerator();
-				    				if(FUEL > 0) {
-				    					energy += 1;
-				    					tile.consumeEnergy(1);
-				    				}
-			    				}
-			    			}
-			    		}
-			    	}
-			    }
-			} else if( face.equals( EnumFacing.SOUTH ) ) {
-				neighbourPos = pos.offset(EnumFacing.SOUTH);
-				
-				neighbourState = world.getBlockState(neighbourPos);
-
-			    neighbourBlock = neighbourState.getBlock();
-			    
-			    if ( neighbourBlock == ModBlocks.FLUX_GENERATOR_BLOCK ) {
-
-			    	if( neighbourState.getValue(FACING).equals( EnumFacing.EAST ) || neighbourState.getValue(FACING).equals( EnumFacing.WEST ) ) {
-			    		TileEntityFluxGenerator tile = (TileEntityFluxGenerator) world.getTileEntity(neighbourPos);
-			    		if(tile != null) {
-			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.SOUTH) && energy < storage.getMaxEnergyStored()) {
-			    				if(world.getTileEntity(pos).hasCapability(CapabilityEnergy.ENERGY, EnumFacing.SOUTH)) {
-				    				int FUEL = tile.getFuelValueFromGenerator();
-				    				if(FUEL > 0) {
-				    					energy += 1;
-				    					tile.consumeEnergy(1);
-				    				}
-			    				}
-			    			}
-			    		}
-			    	}
-			    }
-			} else if( face.equals( EnumFacing.EAST ) ) {
-				neighbourPos = pos.offset(EnumFacing.EAST);
-				
-				neighbourState = world.getBlockState(neighbourPos);
-
-			    neighbourBlock = neighbourState.getBlock();
-			    
-			    if ( neighbourBlock == ModBlocks.FLUX_GENERATOR_BLOCK ) {
-
-			    	if( neighbourState.getValue(FACING).equals( EnumFacing.NORTH ) || neighbourState.getValue(FACING).equals( EnumFacing.SOUTH ) ) {
-			    		TileEntityFluxGenerator tile = (TileEntityFluxGenerator) world.getTileEntity(neighbourPos);
-			    		if(tile != null) {
-			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.EAST) && energy < storage.getMaxEnergyStored()) {
-			    				if(world.getTileEntity(pos).hasCapability(CapabilityEnergy.ENERGY, EnumFacing.EAST)) {
-				    				int FUEL = tile.getFuelValueFromGenerator();
-				    				if(FUEL > 0) {
-				    					energy += 1;
-				    					tile.consumeEnergy(1);
-				    				}
-			    				}
-			    			}
-			    		}
-			    	}
-			    }
-			} else if( face.equals( EnumFacing.WEST ) ) {
-				neighbourPos = pos.offset(EnumFacing.WEST);
-				
-				neighbourState = world.getBlockState(neighbourPos);
-
-			    neighbourBlock = neighbourState.getBlock();
-			    
-			    if ( neighbourBlock == ModBlocks.FLUX_GENERATOR_BLOCK ) {
-
-			    	if( neighbourState.getValue(FACING).equals( EnumFacing.NORTH ) || neighbourState.getValue(FACING).equals( EnumFacing.SOUTH ) ) {
-			    		TileEntityFluxGenerator tile = (TileEntityFluxGenerator) world.getTileEntity(neighbourPos);
-			    		if(tile != null) {
-			    			if(tile.hasCapability(CapabilityEnergy.ENERGY, EnumFacing.WEST) && energy < storage.getMaxEnergyStored()) {
-			    				if(world.getTileEntity(pos).hasCapability(CapabilityEnergy.ENERGY, EnumFacing.WEST)) {
-				    				int FUEL = tile.getFuelValueFromGenerator();
-				    				if(FUEL > 0) {
-				    					energy += 1;
-				    					tile.consumeEnergy(1);
-				    				}
-			    				}
-			    			}
-			    		}
-			    	}
-			    }
-			}
-		}
+	private Block isBlockConnection(Block block) {
+		if(block == ModBlocks.FLUX_PIPE_BLOCK) return block;
+		else return null;
 	}
 	
 	public void consumeEnergy(int amount) {

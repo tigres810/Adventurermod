@@ -11,6 +11,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/repeater": {
+    "criteria": {
+      "has_redstone_torch": "2019-02-15 23:16:03 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/cauldron": {
     "criteria": {
       "has_water_bucket": "2019-02-10 07:41:29 +0100"

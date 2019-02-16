@@ -23,9 +23,11 @@ import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.energy.IEnergyStorage;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidUtil;
 import net.minecraftforge.fluids.capability.templates.FluidHandlerItemStack;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -42,23 +44,26 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
     @Override
     public void update()
     {
-    	if(!handler.getStackInSlot(0).isEmpty() && isItemFuel(handler.getStackInSlot(0)))
-		{
-    		if(energy < storage.getMaxEnergyStored()) {
-			cookTime++;
-			if(cookTime == 25)
+    	if(!world.isRemote) {
+	    	if(!handler.getStackInSlot(0).isEmpty() && isItemFuel(handler.getStackInSlot(0)))
 			{
-				//System.out.println(handler.getStackInSlot(0).getItem().getUnlocalizedName());
-				energy += getFuelValue(handler.getStackInSlot(0));
-				if(handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(Items.WATER_BUCKET.getUnlocalizedName()) || handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(Items.MILK_BUCKET.getUnlocalizedName()) || handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(FluidUtil.getFilledBucket(new FluidStack(ModFluids.FLUX_FLUID, 1)).getItem().getUnlocalizedName())) {
-					handler.setStackInSlot(0, new ItemStack(Items.BUCKET));
-				} else {
-					handler.getStackInSlot(0).shrink(1);
+	    		if(energy < storage.getMaxEnergyStored()) {
+				cookTime++;
+				if(cookTime == 25)
+				{
+					//System.out.println(handler.getStackInSlot(0).getItem().getUnlocalizedName());
+					energy += getFuelValue(handler.getStackInSlot(0));
+					if(handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(Items.WATER_BUCKET.getUnlocalizedName()) || handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(Items.MILK_BUCKET.getUnlocalizedName()) || handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(FluidUtil.getFilledBucket(new FluidStack(ModFluids.FLUX_FLUID, 1)).getItem().getUnlocalizedName())) {
+						handler.setStackInSlot(0, new ItemStack(Items.BUCKET));
+					} else {
+						handler.getStackInSlot(0).shrink(1);
+					}
+					cookTime = 0;
+					this.markDirty();
 				}
-				cookTime = 0;
+				}
 			}
-			}
-		}
+    	}
     }
     
     public void consumeEnergy(int amount) {

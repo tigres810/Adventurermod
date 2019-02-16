@@ -1,7 +1,37 @@
 {
+  "minecraft:recipes/redstone/noteblock": {
+    "criteria": {
+      "has_redstone": "2019-02-16 07:02:54 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dropper": {
+    "criteria": {
+      "has_redstone": "2019-02-16 07:02:54 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/clock": {
+    "criteria": {
+      "has_redstone": "2019-02-16 07:02:54 +0100"
+    },
+    "done": true
+  },
   "minecraft:story/iron_tools": {
     "criteria": {
       "iron_pickaxe": "2019-02-12 06:09:39 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/piston": {
+    "criteria": {
+      "has_redstone": "2019-02-16 07:02:54 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_torch": {
+    "criteria": {
+      "has_redstone": "2019-02-16 07:02:54 +0100"
     },
     "done": true
   },
@@ -14,6 +44,12 @@
   "minecraft:recipes/redstone/repeater": {
     "criteria": {
       "has_redstone_torch": "2019-02-12 06:09:39 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/compass": {
+    "criteria": {
+      "has_redstone": "2019-02-16 07:02:54 +0100"
     },
     "done": true
   },
