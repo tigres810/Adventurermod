@@ -5,4 +5,10 @@
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.block.statemap.StateMap"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.block.statemap.StateMap.Builder"/>
 <fullyQualifiedTypeName name="net.minecraft.util.DamageSource"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.Interfaces.IPipeConnect"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
 </qualifiedTypeNameHistroy>

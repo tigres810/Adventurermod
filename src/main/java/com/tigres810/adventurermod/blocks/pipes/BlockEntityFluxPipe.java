@@ -1,9 +1,11 @@
 package com.tigres810.adventurermod.blocks.pipes;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import com.tigres810.adventurermod.Main;
+import com.tigres810.adventurermod.Interfaces.IPipeConnect;
 import com.tigres810.adventurermod.blocks.BlockBase;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.pipes.tileentity.TileEntityFluxPipe;
@@ -41,7 +43,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockEntityFluxPipe extends BlockBase {
+public class BlockEntityFluxPipe extends BlockBase implements IPipeConnect {
 
 	//public static final PropertyDirection FACING = BlockHorizontal.FACING;
 	public static final PropertyBool UP = PropertyBool.create("up");
@@ -113,10 +115,15 @@ public class BlockEntityFluxPipe extends BlockBase {
 	*/
 	
 	private boolean isSideConnectable (IBlockAccess world, BlockPos pos, EnumFacing side) {
-        
-        final IBlockState state = world.getBlockState(pos.offset(side));
-        return (state == null) ? false : state.getBlock() instanceof BlockEntityFluxPipe;
-    }
+	        
+		final IBlockState state = world.getBlockState(pos.offset(side));
+			if(state==null) return false;
+				if(!( state.getBlock() instanceof IPipeConnect)) return false;
+					List<EnumFacing> faces = ((IPipeConnect)state.getBlock()).getConnectableSides(state);     
+						if(!faces.contains(side)) return false;
+						return true;
+						
+	} 
 	
 	@Override
     public IBlockState getActualState (IBlockState state, IBlockAccess world, BlockPos position) {
@@ -165,6 +172,18 @@ public class BlockEntityFluxPipe extends BlockBase {
 	public IBlockState getStateFromMeta(int meta) 
 	{
 		return this.getDefaultState();
+	}
+
+	@Override
+	public List<EnumFacing> getConnectableSides(IBlockState state) {
+		List<EnumFacing> faces = new ArrayList<EnumFacing>();
+		faces.add(EnumFacing.UP);
+		faces.add(EnumFacing.DOWN);
+		faces.add(EnumFacing.NORTH);
+		faces.add(EnumFacing.SOUTH);
+		faces.add(EnumFacing.EAST);
+		faces.add(EnumFacing.WEST);
+		return faces;
 	}
 	
 	/*
