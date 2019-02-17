@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="isSide" key="selection"/>
+		<item value="getMax" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="getmax"/>
+			<item value="customenergy"/>
+			<item value="getEnergyStoredScaled"/>
 			<item value="isside"/>
 			<item value="CACTUS_AABB"/>
 			<item value="DamageSource"/>
@@ -20,9 +23,6 @@
 			<item value="machineoverhaul:smeltery_frame_block_c3t1"/>
 			<item value="machineoverhaul:smeltery_frame_block_c2"/>
 			<item value="machineoverhaul:smeltery_frame_block_c2angle"/>
-			<item value="machineoverhaul:smeltery_frame_block_c1"/>
-			<item value="connected_west"/>
-			<item value="connected_east"/>
 		</list>
 		<list key="replacehistory">
 			<item value="false"/>

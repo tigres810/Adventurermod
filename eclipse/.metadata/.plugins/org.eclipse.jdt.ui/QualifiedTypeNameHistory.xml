@@ -11,4 +11,6 @@
 <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
 <fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
+<fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.CustomEnergyStorage"/>
 </qualifiedTypeNameHistroy>
