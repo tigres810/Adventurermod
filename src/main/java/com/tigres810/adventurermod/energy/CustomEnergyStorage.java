@@ -71,11 +71,12 @@ public class CustomEnergyStorage extends EnergyStorage {
     	this.maxExtract = compound.getInteger("MaxExtract");
     }
     
-    public void writeToNBT(NBTTagCompound compound)
+    public NBTTagCompound writeToNBT(NBTTagCompound compound)
     {
     	compound.setInteger("Energy", this.energy);
     	compound.setInteger("Capacity", this.capacity);
     	compound.setInteger("MaxReceive", this.maxReceive);
     	compound.setInteger("MaxExtract", this.maxExtract);
+		return compound;
     }
 }

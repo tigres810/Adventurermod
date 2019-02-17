@@ -45,34 +45,37 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
     public void update()
     {
     	if(!world.isRemote) {
-	    	if(!handler.getStackInSlot(0).isEmpty() && isItemFuel(handler.getStackInSlot(0)))
+	    	if(!this.handler.getStackInSlot(0).isEmpty() && isItemFuel(this.handler.getStackInSlot(0)))
 			{
-	    		if(energy < storage.getMaxEnergyStored()) {
-				cookTime++;
-				if(cookTime == 25)
+	    		if(this.energy < this.storage.getMaxEnergyStored()) {
+				this.cookTime++;
+				if(this.cookTime == 25)
 				{
 					//System.out.println(handler.getStackInSlot(0).getItem().getUnlocalizedName());
-					energy += getFuelValue(handler.getStackInSlot(0));
-					if(handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(Items.WATER_BUCKET.getUnlocalizedName()) || handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(Items.MILK_BUCKET.getUnlocalizedName()) || handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(FluidUtil.getFilledBucket(new FluidStack(ModFluids.FLUX_FLUID, 1)).getItem().getUnlocalizedName())) {
-						handler.setStackInSlot(0, new ItemStack(Items.BUCKET));
+					this.energy += getFuelValue(this.handler.getStackInSlot(0));
+					if(this.handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(Items.WATER_BUCKET.getUnlocalizedName()) || this.handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(Items.MILK_BUCKET.getUnlocalizedName()) || this.handler.getStackInSlot(0).getItem().getUnlocalizedName().equals(FluidUtil.getFilledBucket(new FluidStack(ModFluids.FLUX_FLUID, 1)).getItem().getUnlocalizedName())) {
+						this.handler.setStackInSlot(0, new ItemStack(Items.BUCKET));
 					} else {
-						handler.getStackInSlot(0).shrink(1);
+						this.handler.getStackInSlot(0).shrink(1);
 					}
-					cookTime = 0;
+					this.cookTime = 0;
 					this.markDirty();
 				}
+				} else {
+					this.energy = 1000;
+					this.cookTime = 0;
 				}
 			}
     	}
     }
     
     public void consumeEnergy(int amount) {
-    	energy -= amount;
+    	this.energy -= amount;
     }
     
     public int getFuelValueFromGenerator() 
 	{
-		return energy;
+		return this.energy;
 	}
 
     private boolean isItemFuel(ItemStack stack) 
@@ -86,6 +89,10 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 		else if(stack.getItem() == Items.WHEAT_SEEDS || stack.getItem() == Items.MELON_SEEDS || stack.getItem() == Items.PUMPKIN_SEEDS) return 50;
 		else if(stack.getItem() == FluidUtil.getFilledBucket(new FluidStack(ModFluids.FLUX_FLUID, 1)).getItem()) return 200;
 		else return 0;
+	}
+	
+	public int getCookTimeValue() {
+		return this.energy < this.storage.getMaxEnergyStored() ? this.cookTime : 0;
 	}
 
 	@Override
@@ -112,7 +119,7 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 		compound.setInteger("CookTime", this.cookTime);
 		compound.setInteger("GuiEnergy", this.energy);
 		compound.setString("Name", this.getDisplayName().toString());
-		this.storage.writeToNBT(compound);
+		compound.setInteger("Energy", this.storage.getEnergyStored());
 		return compound;
 	}
 	
@@ -123,8 +130,9 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 		this.handler.deserializeNBT(compound.getCompoundTag("Inventory"));
 		this.cookTime = compound.getInteger("CookTime");
 		this.energy = compound.getInteger("GuiEnergy");
+		int t = compound.getInteger("Energy");
 		this.customName = compound.getString("Name");
-		this.storage.readFromNBT(compound);
+		this.storage = new CustomEnergyStorage(1000, 0, 100, t);
 	}
 	
 	@Override

@@ -54,7 +54,7 @@ public class ContainerFluxGeneratorBlock extends GuiContainer
 	
 	private int getCookProgressScaled(int pixels)
 	{
-		int i = this.tileentity.cookTime;
+		int i = this.tileentity.getCookTimeValue();
 		return i != 0 ? i * pixels / 25 : 0;
 	}
 }
