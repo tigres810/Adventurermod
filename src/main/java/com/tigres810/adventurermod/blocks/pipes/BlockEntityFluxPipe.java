@@ -123,7 +123,16 @@ public class BlockEntityFluxPipe extends BlockBase implements IPipeConnect {
                     if(!faces.contains(side)) return false;
                     return true;
 						
-	} 
+	}
+	
+	public static boolean isSideConnectable1 (IBlockAccess world, BlockPos pos, EnumFacing side) {
+		final IBlockState state = world.getBlockState(pos.offset(side));
+        if(state==null) return false;
+            if(!( state.getBlock() instanceof IPipeConnect)) return false;
+                List<EnumFacing> faces = ((IPipeConnect)state.getBlock()).getConnectableSides(state);     
+                    if(!faces.contains(side)) return false;
+                    return true;
+	}
 	
 	@Override
     public IBlockState getActualState (IBlockState state, IBlockAccess world, BlockPos position) {

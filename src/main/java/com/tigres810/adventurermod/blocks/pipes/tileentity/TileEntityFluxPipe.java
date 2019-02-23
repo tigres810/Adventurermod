@@ -3,6 +3,7 @@ package com.tigres810.adventurermod.blocks.pipes.tileentity;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.pipes.BlockEntityFluxPipe;
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
@@ -44,16 +45,117 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
 
-public class TileEntityFluxPipe extends TileEntity
+public class TileEntityFluxPipe extends TileEntity implements ITickable
 {
 	private CustomEnergyStorage storage = new CustomEnergyStorage(500);
 	public int energy = storage.getEnergyStored();
 	private boolean output = false;
 	private String customName;
+	private int cooldown;
+	private int counttoenergy;
 	
 	private Block isBlockConnection(Block block) {
 		if(block == ModBlocks.FLUX_PIPE_BLOCK) return block;
 		else return null;
+	}
+	
+	@Override
+	public void update() {
+		IBlockState currentState = this.world.getBlockState(pos); // Updates current state variable
+        EnumFacing facing = EnumFacing.SOUTH; // Gets which way block is facing
+        
+        if (this.world != null) 
+        {
+            if (!this.world.isRemote)
+            {
+            	if(counttoenergy < 6) {
+            		counttoenergy += 1;
+            	} else {
+            		counttoenergy = 0;
+            	}
+                	if(counttoenergy == 1) {
+                		if(world.getBlockState(pos.offset(EnumFacing.UP)).getBlock() == ModBlocks.FLUX_PIPE_BLOCK) {
+                			TileEntityFluxPipe te = (TileEntityFluxPipe)world.getTileEntity(pos.offset(EnumFacing.UP));
+                			if(this.getFuelValueFromPipe() > 200) {
+	                			this.consumeEnergy(Math.min(100, this.energy));
+	                			te.energy += 100;
+                			}
+                		}
+                	}else if(counttoenergy == 2) {
+                		if(world.getBlockState(pos.offset(EnumFacing.DOWN)).getBlock() == ModBlocks.FLUX_PIPE_BLOCK) {
+                			TileEntityFluxPipe te = (TileEntityFluxPipe)world.getTileEntity(pos.offset(EnumFacing.DOWN));
+                			if(this.getFuelValueFromPipe() > 200) {
+	                			this.consumeEnergy(Math.min(100, this.energy));
+	                			te.energy += 100;
+                			}
+                		}
+            		}else if(counttoenergy == 3) {
+            			if(world.getBlockState(pos.offset(EnumFacing.NORTH)).getBlock() == ModBlocks.FLUX_GENERATOR_BLOCK) {
+                			TileEntityFluxGenerator te = (TileEntityFluxGenerator)world.getTileEntity(pos.offset(EnumFacing.NORTH));
+                			if(BlockEntityFluxPipe.isSideConnectable1(world, pos, EnumFacing.NORTH) == true) {
+                				if(te.getFuelValueFromGenerator() > 100) {
+	                				te.consumeEnergy(Math.min(100, te.energy));
+	                				this.energy += 100;
+                				}
+                			}
+                		}else if(world.getBlockState(pos.offset(EnumFacing.NORTH)).getBlock() == ModBlocks.FLUX_PIPE_BLOCK) {
+                			TileEntityFluxPipe te = (TileEntityFluxPipe)world.getTileEntity(pos.offset(EnumFacing.NORTH));
+                			if(this.getFuelValueFromPipe() > 200) {
+	                			this.consumeEnergy(Math.min(100, this.energy));
+	                			te.energy += 100;
+                			}
+                		}
+            		}else if(counttoenergy == 4) {
+            			if(world.getBlockState(pos.offset(EnumFacing.SOUTH)).getBlock() == ModBlocks.FLUX_GENERATOR_BLOCK) {
+                			TileEntityFluxGenerator te = (TileEntityFluxGenerator)world.getTileEntity(pos.offset(EnumFacing.SOUTH));
+                			if(BlockEntityFluxPipe.isSideConnectable1(world, pos, EnumFacing.SOUTH) == true) {
+                				if(te.getFuelValueFromGenerator() > 100) {
+	                				te.consumeEnergy(Math.min(100, te.energy));
+	                				this.energy += 100;
+                				}
+                			}
+                		}else if(world.getBlockState(pos.offset(EnumFacing.SOUTH)).getBlock() == ModBlocks.FLUX_PIPE_BLOCK) {
+                			TileEntityFluxPipe te = (TileEntityFluxPipe)world.getTileEntity(pos.offset(EnumFacing.SOUTH));
+                			if(this.getFuelValueFromPipe() > 200) {
+	                			this.consumeEnergy(Math.min(100, this.energy));
+	                			te.energy += 100;
+                			}
+                		}
+            		}else if(counttoenergy == 5) {
+            			if(world.getBlockState(pos.offset(EnumFacing.EAST)).getBlock() == ModBlocks.FLUX_GENERATOR_BLOCK) {
+            				TileEntityFluxGenerator te = (TileEntityFluxGenerator)world.getTileEntity(pos.offset(EnumFacing.EAST));
+                			if(BlockEntityFluxPipe.isSideConnectable1(world, pos, EnumFacing.EAST) == true) {
+                				if(te.getFuelValueFromGenerator() > 100) {
+	                				te.consumeEnergy(Math.min(100, te.energy));
+	                				this.energy += 100;
+                				}
+                			}
+                		}else if(world.getBlockState(pos.offset(EnumFacing.EAST)).getBlock() == ModBlocks.FLUX_PIPE_BLOCK) {
+                			TileEntityFluxPipe te = (TileEntityFluxPipe)world.getTileEntity(pos.offset(EnumFacing.EAST));
+                			if(this.getFuelValueFromPipe() > 200) {
+	                			this.consumeEnergy(Math.min(100, this.energy));
+	                			te.energy += 100;
+                			}
+                		}
+            		}else if(counttoenergy == 6) {
+            			if(world.getBlockState(pos.offset(EnumFacing.WEST)).getBlock() == ModBlocks.FLUX_GENERATOR_BLOCK) {
+                			TileEntityFluxGenerator te = (TileEntityFluxGenerator)world.getTileEntity(pos.offset(EnumFacing.WEST));
+                			if(BlockEntityFluxPipe.isSideConnectable1(world, pos, EnumFacing.WEST) == true) {
+                				if(te.getFuelValueFromGenerator() > 100) {
+	                				te.consumeEnergy(Math.min(100, te.energy));
+	                				this.energy += 100;
+                				}
+                			}
+                		}else if(world.getBlockState(pos.offset(EnumFacing.WEST)).getBlock() == ModBlocks.FLUX_PIPE_BLOCK) {
+                			TileEntityFluxPipe te = (TileEntityFluxPipe)world.getTileEntity(pos.offset(EnumFacing.WEST));
+                			if(this.getFuelValueFromPipe() > 200) {
+	                			this.consumeEnergy(Math.min(100, this.energy));
+	                			te.energy += 100;
+                			}
+                		}
+            		}
+            }
+        }
 	}
 	
 	public void consumeEnergy(int amount) {

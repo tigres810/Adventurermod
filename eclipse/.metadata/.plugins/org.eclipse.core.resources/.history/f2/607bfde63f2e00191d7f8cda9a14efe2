@@ -1,5 +1,0 @@
-package com.tigres810.adventurermod.energy;
-
-public interface ISharingEnergyProvider {
-
-}

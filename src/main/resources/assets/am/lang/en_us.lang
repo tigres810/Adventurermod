@@ -1,8 +1,10 @@
 item.information_tablet.name=AdventurerMod Information Tablet
+item.flux_ore.name=Flux ore
 
 tile.flux_generator_block.name=Flux Generator 
 tile.flux_pipe_block.name=Flux Pipe
 tile.flux_pipe_block_side_connector.name=Side Connector Flux Pipe
+tile.flux_ore_block.name=Flux Ore Block 
 
 #Gui
 gui.title=Guide

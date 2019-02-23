@@ -44,7 +44,7 @@ public class ItemBase extends Item implements IHasModel {
 
 		if(!worldIn.isRemote) {
 			if(playerIn.getHeldItem(handIn).getDisplayName().equals("AdventurerMod Information Tablet") || playerIn.getHeldItem(handIn).getDisplayName().equals("AdventurerMod Tableta de Informacion") ) {
-				System.out.print("Done well!"); // Print stuff if it works
+				//System.out.print("Done well!"); // Print stuff if it works
 			//playerIn.openGui(Main.instance, GuiIds.class, playerIn.world, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ));
 				//Minecraft.getMinecraft().displayGuiScreen(new GuiInformationTablet());
 			}
