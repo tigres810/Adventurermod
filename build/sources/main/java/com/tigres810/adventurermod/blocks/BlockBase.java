@@ -5,6 +5,7 @@ import java.util.Random;
 
 import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
+import com.tigres810.adventurermod.blocks.pipes.tileentity.TileEntityFluxPipe;
 import com.tigres810.adventurermod.blocks.statements.TileEntityCustom;
 import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.init.ModItems;
@@ -19,6 +20,7 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
@@ -34,6 +36,8 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ITickable;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -67,13 +71,7 @@ public class BlockBase extends Block implements IHasModel {
 	
 	@Override
 	public BlockRenderLayer getBlockLayer() {
-		if (this.getRegistryName().equals(ModBlocks.FLUX_PIPE_BLOCK.getRegistryName())) {
-			return BlockRenderLayer.TRANSLUCENT;
-		} else if(this.getRegistryName().equals(ModBlocks.FLUX_PIPE_BLOCK_SIDE_CONNECTOR.getRegistryName())) {
-			return BlockRenderLayer.TRANSLUCENT;
-		} else {
 			return super.getBlockLayer();
-		}
 	}
 
 }

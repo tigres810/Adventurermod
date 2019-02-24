@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "SGS",
+        "I I",
+        "SGS"
+    ],
+   
+    "key":
+    {
+        "S":
+        {
+            "item": "minecraft:stone",
+            "data": 0
+        },
+        "G":
+        {
+            "item": "minecraft:glass_pane"
+        },
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "am:flux_pipe_block",
+        "count": 1
+    }
+}

@@ -12,5 +12,9 @@ public class ModItems {
 
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
+	//Items
 	public static final Item INFORMATION_TABLET = new ItemBase("information_tablet");
+	
+	//Ore Items
+	public static final Item FLUX_ORE = new ItemBase("flux_ore");
 }

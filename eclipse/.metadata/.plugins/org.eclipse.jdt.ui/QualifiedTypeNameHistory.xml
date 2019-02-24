@@ -35,4 +35,6 @@
 <fullyQualifiedTypeName name="net.minecraft.util.DamageSource"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModItems"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.items.PreventBurn"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
 </qualifiedTypeNameHistroy>
