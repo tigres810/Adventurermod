@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="world" key="selection"/>
+		<item value="storage" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="generator"/>
+			<item value="FLUX_GENERATOR_BLOCK"/>
 			<item value="world"/>
 			<item value="modworld"/>
 			<item value="registry"/>
@@ -21,10 +23,10 @@
 			<item value="getEnergyStoredScaled"/>
 			<item value="CACTUS_AABB"/>
 			<item value="DamageSource"/>
-			<item value="damage"/>
-			<item value="takedamage"/>
 		</list>
 		<list key="replacehistory">
+			<item value="storage"/>
+			<item value="FLUX_GENERATOR_BLOCK"/>
 			<item value="false"/>
 			<item value="flux_pipe_block_side_connector"/>
 			<item value="am:flux_pipe_block"/>
@@ -38,8 +40,6 @@
 			<item value=""/>
 			<item value="render"/>
 			<item value="am"/>
-			<item value="generating"/>
-			<item value="adventurermod"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

@@ -71,7 +71,11 @@ public class BlockBase extends Block implements IHasModel {
 	
 	@Override
 	public BlockRenderLayer getBlockLayer() {
+		if(this.getUnlocalizedName().equals(ModBlocks.FLUX_STORAGE_BLOCK.getUnlocalizedName())) {
+			return BlockRenderLayer.CUTOUT;
+		}else { 
 			return super.getBlockLayer();
+		}
 	}
 
 }

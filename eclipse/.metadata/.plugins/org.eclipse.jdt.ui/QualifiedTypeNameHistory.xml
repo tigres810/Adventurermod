@@ -24,7 +24,6 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModBlocks"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.util.handler.RegistryHandler"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.world.ModWorldGen"/>
@@ -37,4 +36,6 @@
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.items.PreventBurn"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModBlocks"/>
+<fullyQualifiedTypeName name="net.minecraft.util.BlockRenderLayer"/>
 </qualifiedTypeNameHistroy>

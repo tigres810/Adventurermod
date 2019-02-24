@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.tigres810.adventurermod.blocks.BlockBase;
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator;
+import com.tigres810.adventurermod.blocks.machines.storages.BlockEntityFluxStorage;
 import com.tigres810.adventurermod.blocks.ores.BlockFluxOre;
 import com.tigres810.adventurermod.blocks.pipes.BlockEntityFluxPipe;
 import com.tigres810.adventurermod.fluids.FluidBase;
@@ -27,4 +28,7 @@ public class ModBlocks {
 	
 	//Fluids
 	public static final Block FLUX_FLUID_BLOCK = new FluidBase("flux_fluid_block", ModFluids.FLUX_FLUID, Material.WATER);
+	
+	//Storages
+	public static final Block FLUX_STORAGE_BLOCK = new BlockEntityFluxStorage("flux_storage_block", Material.ANVIL);
 }
