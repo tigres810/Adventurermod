@@ -44,7 +44,7 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
     @Override
     public void update()
     {
-    	if(!world.isRemote) {
+    	if(!this.world.isRemote) {
 	    	if(!this.handler.getStackInSlot(0).isEmpty() && isItemFuel(this.handler.getStackInSlot(0)))
 			{
 	    		if(this.energy < this.storage.getMaxEnergyStored()) {

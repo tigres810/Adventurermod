@@ -1,6 +1,8 @@
 package com.tigres810.adventurermod.proxy;
 
 import com.tigres810.adventurermod.Main;
+import com.tigres810.adventurermod.blocks.machines.storages.tileentity.RenderFluxStorage;
+import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.pipes.tileentity.TileEntityFluxPipe;
 
@@ -15,5 +17,7 @@ public class ClientProxy extends CommonProxy {
 	
 	public void registerItemRenderer(Item item, int meta, String id) {
 		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
+		
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityFluxStorage.class, new RenderFluxStorage());
 	}
 }

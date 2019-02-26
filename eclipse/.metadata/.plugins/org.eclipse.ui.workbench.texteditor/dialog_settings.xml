@@ -2,12 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="storage" key="selection"/>
+		<item value="height" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="0.5D"/>
+			<item value="posY"/>
+			<item value="buffer"/>
+			<item value="color["/>
+			<item value="getactual"/>
+			<item value="generating"/>
+			<item value="getActualState"/>
+			<item value="flux_pipe_block"/>
 			<item value="generator"/>
 			<item value="FLUX_GENERATOR_BLOCK"/>
 			<item value="world"/>
@@ -15,16 +23,13 @@
 			<item value="registry"/>
 			<item value="registryhandler"/>
 			<item value="tileentity"/>
-			<item value="isside"/>
-			<item value="FULL_BLOCK_AABB"/>
-			<item value="fullblock"/>
-			<item value="getmax"/>
-			<item value="customenergy"/>
-			<item value="getEnergyStoredScaled"/>
-			<item value="CACTUS_AABB"/>
-			<item value="DamageSource"/>
 		</list>
 		<list key="replacehistory">
+			<item value="height"/>
+			<item value="0.1D"/>
+			<item value="wrInner"/>
+			<item value="ModFluids.FLUX_FLUID.setColor("/>
+			<item value="flux_storage_block"/>
 			<item value="storage"/>
 			<item value="FLUX_GENERATOR_BLOCK"/>
 			<item value="false"/>
@@ -35,11 +40,6 @@
 			<item value="south"/>
 			<item value="north"/>
 			<item value="up"/>
-			<item value="down"/>
-			<item value="connected"/>
-			<item value=""/>
-			<item value="render"/>
-			<item value="am"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

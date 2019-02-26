@@ -16,14 +16,23 @@ import net.minecraftforge.items.ItemStackHandler;
 
 public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	
-	public ItemStackHandler handler = new ItemStackHandler(1);
 	private CustomEnergyStorage storage = new CustomEnergyStorage(10000, 0, 100);
 	public int energy = storage.getEnergyStored();
 
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
-		
+		if(!world.isRemote) {
+			if(this.world.isBlockPowered(this.pos)) {
+				this.energy += Math.min(10, this.storage.getMaxEnergyStored()-this.energy);
+				this.world.markBlockRangeForRenderUpdate(this.pos, this.pos);
+			    this.world.notifyBlockUpdate(this.pos, this.world.getBlockState(this.pos), this.world.getBlockState(this.pos), 4);
+			    this.world.scheduleBlockUpdate(this.pos,this.getBlockType(),0,0);
+			    this.markDirty();
+			}
+		}
+		else {
+			System.out.println(this.energy);
+		}
 	}
 	
 	public void consumeEnergy(int amount) {
@@ -39,7 +48,7 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	public <T> T getCapability(Capability<T> capability, EnumFacing facing) 
 	{
 		if(capability == CapabilityEnergy.ENERGY) return (T)this.storage;
-		if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return (T)this.handler;
+		//if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return (T)this.handler;
 		return super.getCapability(capability, facing);
 	}
 	
@@ -47,7 +56,7 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	public boolean hasCapability(Capability<?> capability, EnumFacing facing) 
 	{
 		if(capability == CapabilityEnergy.ENERGY) return true;
-		if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return true;
+		//if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return true;
 		return super.hasCapability(capability, facing);
 	}
 	
@@ -55,9 +64,8 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) 
 	{
 		super.writeToNBT(compound);
-		compound.setTag("Inventory", this.handler.serializeNBT());
+		//compound.setTag("Inventory", this.handler.serializeNBT());
 		compound.setInteger("GuiEnergy", this.energy);
-		compound.setString("Name", this.getDisplayName().toString());
 		compound.setInteger("Energy", this.storage.getEnergyStored());
 		return compound;
 	}
@@ -66,16 +74,18 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	public void readFromNBT(NBTTagCompound compound) 
 	{
 		super.readFromNBT(compound);
-		this.handler.deserializeNBT(compound.getCompoundTag("Inventory"));
+		//this.handler.deserializeNBT(compound.getCompoundTag("Inventory"));
 		int t = compound.getInteger("Energy");
 		this.storage = new CustomEnergyStorage(1000, 0, 100, t);
 	}
 	
+	/*
 	@Override
 	public ITextComponent getDisplayName()
 	{
 		return new TextComponentTranslation("tile.flux_generator_block.name");
 	}
+	*/
 	
 	public int getEnergyStored()
 	{
