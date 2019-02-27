@@ -24,6 +24,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -39,6 +40,7 @@ import net.minecraft.world.World;
 public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 	
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
+	public static EntityPlayerMP player = null;
 
 	public BlockEntityFluxStorage(String name, Material material) {
 		super(name, material);
@@ -133,6 +135,7 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 	@Override
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
 		worldIn.setBlockState(pos, this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
+		player = (EntityPlayerMP) placer;
 	}
 	
 	@Override

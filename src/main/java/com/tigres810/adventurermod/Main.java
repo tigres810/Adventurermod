@@ -3,7 +3,6 @@ package com.tigres810.adventurermod;
 import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.init.ModFluids;
 import com.tigres810.adventurermod.init.ModItems;
-import com.tigres810.adventurermod.network.NetworkHandler;
 import com.tigres810.adventurermod.proxy.CommonProxy;
 import com.tigres810.adventurermod.tabs.AdventurerModBlocksTab;
 import com.tigres810.adventurermod.tabs.AdventurerModItemsTab;
@@ -33,7 +32,6 @@ public class Main {
 	
 	@Instance
 	public static Main instance;
-	public static SimpleNetworkWrapper network;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
 	public static CommonProxy proxy;
@@ -44,7 +42,6 @@ public class Main {
 	public static void PreInit(FMLPreInitializationEvent event)
 	{
 		RegistryHandler.preInitRegistries(event);
-		NetworkHandler.init();
 		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
 	}
 	

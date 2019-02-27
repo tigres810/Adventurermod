@@ -7,7 +7,6 @@ import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntit
 import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.init.ModFluids;
 import com.tigres810.adventurermod.init.ModItems;
-import com.tigres810.adventurermod.network.client.TileEntitySyncPacket;
 import com.tigres810.adventurermod.util.IHasModel;
 
 import net.minecraft.block.Block;
@@ -72,21 +71,4 @@ public class RegistryHandler {
 	{
 		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
 	}
-	
-	public static void sendTileEntityUpdate(TileEntity tile)
-    {
-        if (tile != null && tile.getWorld() != null && !tile.getWorld().isRemote)
-        {
-            NBTTagCompound compound = new NBTTagCompound();
-            compound = tile.writeToNBT(compound);
-
-            NBTTagCompound data = new NBTTagCompound();
-            data.setTag("data", compound);
-            data.setInteger("x", tile.getPos().getX());
-            data.setInteger("y", tile.getPos().getY());
-            data.setInteger("z", tile.getPos().getZ());
-            Main.network.sendToAllAround(new TileEntitySyncPacket(data), new NetworkRegistry.TargetPoint(tile.getWorld().provider.getDimension(), tile.getPos().getX(), tile.getPos().getY(), tile.getPos().getZ(), 64));
-        }
-
-    }
 }
