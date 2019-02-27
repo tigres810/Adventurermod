@@ -2,12 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="height" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="World for set"/>
+			<item value="set"/>
+			<item value="blockstate"/>
+			<item value="boolean"/>
+			<item value="is source"/>
+			<item value="us"/>
+			<item value="getlevel"/>
+			<item value="water"/>
 			<item value="0.5D"/>
 			<item value="posY"/>
 			<item value="buffer"/>
@@ -15,14 +23,6 @@
 			<item value="getactual"/>
 			<item value="generating"/>
 			<item value="getActualState"/>
-			<item value="flux_pipe_block"/>
-			<item value="generator"/>
-			<item value="FLUX_GENERATOR_BLOCK"/>
-			<item value="world"/>
-			<item value="modworld"/>
-			<item value="registry"/>
-			<item value="registryhandler"/>
-			<item value="tileentity"/>
 		</list>
 		<list key="replacehistory">
 			<item value="height"/>

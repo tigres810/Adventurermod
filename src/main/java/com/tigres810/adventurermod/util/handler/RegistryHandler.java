@@ -2,6 +2,8 @@ package com.tigres810.adventurermod.util.handler;
 
 import com.google.common.graph.Network;
 import com.tigres810.adventurermod.Main;
+import com.tigres810.adventurermod.blocks.machines.storages.tileentity.RenderFluxStorage;
+import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
 import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.init.ModFluids;
 import com.tigres810.adventurermod.init.ModItems;
@@ -9,9 +11,12 @@ import com.tigres810.adventurermod.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -31,6 +36,7 @@ public class RegistryHandler {
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 		TileEntityHandler.registerTileEntities();
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityFluxStorage.class, new RenderFluxStorage());
 	}
 	
 	@SubscribeEvent

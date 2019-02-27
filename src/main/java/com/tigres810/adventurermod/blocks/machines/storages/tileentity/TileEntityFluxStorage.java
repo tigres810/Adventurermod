@@ -1,7 +1,7 @@
 package com.tigres810.adventurermod.blocks.machines.storages.tileentity;
 
+import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -11,6 +11,7 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.energy.CapabilityEnergy;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
@@ -24,10 +25,6 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable {
 		if(!world.isRemote) {
 			if(this.world.isBlockPowered(this.pos)) {
 				this.energy += Math.min(10, this.storage.getMaxEnergyStored()-this.energy);
-				this.world.markBlockRangeForRenderUpdate(this.pos, this.pos);
-			    this.world.notifyBlockUpdate(this.pos, this.world.getBlockState(this.pos), this.world.getBlockState(this.pos), 4);
-			    this.world.scheduleBlockUpdate(this.pos,this.getBlockType(),0,0);
-			    this.markDirty();
 			}
 		}
 		else {
