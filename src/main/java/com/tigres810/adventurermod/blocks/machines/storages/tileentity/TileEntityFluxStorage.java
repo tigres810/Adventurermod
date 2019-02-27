@@ -2,6 +2,8 @@ package com.tigres810.adventurermod.blocks.machines.storages.tileentity;
 
 import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
+import com.tigres810.adventurermod.util.handler.RegistryHandler;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -18,13 +20,16 @@ import net.minecraftforge.items.ItemStackHandler;
 public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	
 	private CustomEnergyStorage storage = new CustomEnergyStorage(10000, 0, 100);
-	public int energy = storage.getEnergyStored();
+	public int energy = this.storage.getEnergyStored();
 
 	@Override
 	public void update() {
 		if(!world.isRemote) {
 			if(this.world.isBlockPowered(this.pos)) {
-				this.energy += Math.min(10, this.storage.getMaxEnergyStored()-this.energy);
+				if(energy < storage.getMaxEnergyStored()) {
+					this.energy += Math.min(10, this.storage.getMaxEnergyStored()-this.energy);
+					RegistryHandler.sendTileEntityUpdate(this.world.getTileEntity(this.pos));
+				}
 			}
 		}
 		else {
@@ -61,8 +66,6 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) 
 	{
 		super.writeToNBT(compound);
-		//compound.setTag("Inventory", this.handler.serializeNBT());
-		compound.setInteger("GuiEnergy", this.energy);
 		compound.setInteger("Energy", this.storage.getEnergyStored());
 		return compound;
 	}
@@ -71,7 +74,6 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	public void readFromNBT(NBTTagCompound compound) 
 	{
 		super.readFromNBT(compound);
-		//this.handler.deserializeNBT(compound.getCompoundTag("Inventory"));
 		int t = compound.getInteger("Energy");
 		this.storage = new CustomEnergyStorage(1000, 0, 100, t);
 	}

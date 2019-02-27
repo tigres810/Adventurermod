@@ -28,13 +28,7 @@
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager.Profile"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.network.NetworkHandler"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.Main"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.NetworkRegistry"/>
 <fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.network.client.TileEntitySyncPacket"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.util.handler.RegistryHandler"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.IMessage"/>
 <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="scala.actors.threadpool.helpers.Utils"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
 <fullyQualifiedTypeName name="net.minecraft.block.properties.PropertyInteger"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.Main"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.network.client.TileEntitySyncPacket"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.network.NetworkHandler"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.NetworkRegistry"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.util.handler.RegistryHandler"/>
 </qualifiedTypeNameHistroy>
