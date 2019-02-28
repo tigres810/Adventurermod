@@ -12,6 +12,12 @@ public class CommonProxy {
 	public void init() {
 		
 	}
+	
+	public void registerTESR() {
+	}
+	
+	public void registerCustomMeshesAndStates() {
+	}
 
 	public ListenableFuture<Object> addScheduledTaskClient(Runnable runnableToSchedule) {
         throw new IllegalStateException("This should only be called from client side");

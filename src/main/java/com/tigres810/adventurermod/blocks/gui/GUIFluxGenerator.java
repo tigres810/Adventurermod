@@ -1,6 +1,6 @@
 package com.tigres810.adventurermod.blocks.gui;
 
-import com.tigres810.adventurermod.blocks.machines.container.ContainerBlockEntityFluxGenerator;
+import com.tigres810.adventurermod.blocks.machines.container.ContainerFluxGenerator;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 import com.tigres810.adventurermod.util.Reference;
 
@@ -9,15 +9,15 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 
-public class ContainerFluxGeneratorBlock extends GuiContainer
+public class GUIFluxGenerator extends GuiContainer
 {
 	private static final ResourceLocation TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/gui/flux_generator_block.png");
 	private final InventoryPlayer player;
 	private final TileEntityFluxGenerator tileentity;
 	
-	public ContainerFluxGeneratorBlock(InventoryPlayer player, TileEntityFluxGenerator tileentity) 
+	public GUIFluxGenerator(InventoryPlayer player, TileEntityFluxGenerator tileentity) 
 	{
-		super(new ContainerBlockEntityFluxGenerator(player, tileentity));
+		super(new ContainerFluxGenerator(player, tileentity));
 		this.player = player;
 		this.tileentity = tileentity;
 	}

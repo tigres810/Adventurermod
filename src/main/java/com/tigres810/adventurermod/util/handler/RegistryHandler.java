@@ -18,6 +18,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -38,7 +39,7 @@ public class RegistryHandler {
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
 		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 		TileEntityHandler.registerTileEntities();
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityFluxStorage.class, new RenderFluxStorage());
+		Main.proxy.registerTESR();
 	}
 	
 	@SubscribeEvent
@@ -66,7 +67,7 @@ public class RegistryHandler {
 	{
 		ModFluids.registerFluids();
 		
-		RenderHandler.registerCustomMeshesAndStates();
+		Main.proxy.registerCustomMeshesAndStates();
 	}
 	
 	public static void initRegistries(FMLInitializationEvent event) 

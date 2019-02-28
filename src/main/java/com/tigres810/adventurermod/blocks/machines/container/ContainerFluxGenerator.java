@@ -12,11 +12,11 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class ContainerBlockEntityFluxGenerator extends Container {
+public class ContainerFluxGenerator extends Container {
 	private final TileEntityFluxGenerator tileentity;
 	private int energy, cooktime;
 	
-	public ContainerBlockEntityFluxGenerator(InventoryPlayer player, TileEntityFluxGenerator tileentity) {
+	public ContainerFluxGenerator(InventoryPlayer player, TileEntityFluxGenerator tileentity) {
 		this.tileentity = tileentity;
 		IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 		

@@ -23,6 +23,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidUtil;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 
 public class ItemBase extends Item implements IHasModel {
 
@@ -50,7 +51,7 @@ public class ItemBase extends Item implements IHasModel {
 			}
 		} else {
 			if(playerIn.getHeldItem(handIn).getDisplayName().equals("AdventurerMod Information Tablet") || playerIn.getHeldItem(handIn).getDisplayName().equals("AdventurerMod Tableta de Informacion") ) {
-				Minecraft.getMinecraft().displayGuiScreen(new GuiInformationTablet());
+				FMLCommonHandler.instance().showGuiScreen(new GuiInformationTablet());
 			}
 		}
 		return super.onItemRightClick(worldIn, playerIn, handIn);

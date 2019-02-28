@@ -18,7 +18,7 @@ public class ModBlocks {
 	public static final List<Block> BLOCKS = new ArrayList<Block>();
 	
 	//Machines
-	public static final Block FLUX_GENERATOR_BLOCK = new BlockEntityFluxGenerator("flux_generator_block", Material.ANVIL);
+	public static final Block FLUX_GENERATOR_BLOCK = new BlockEntityFluxGenerator("flux_generator_block", Material.IRON);
 	
 	//Pipes
 	public static final Block FLUX_PIPE_BLOCK = new BlockEntityFluxPipe("flux_pipe_block", Material.WOOD);
@@ -30,5 +30,5 @@ public class ModBlocks {
 	public static final Block FLUX_FLUID_BLOCK = new FluidBase("flux_fluid_block", ModFluids.FLUX_FLUID, Material.WATER);
 	
 	//Storages
-	public static final Block FLUX_STORAGE_BLOCK = new BlockEntityFluxStorage("flux_storage_block", Material.ANVIL);
+	public static final Block FLUX_STORAGE_BLOCK = new BlockEntityFluxStorage("flux_storage_block", Material.IRON);
 }
