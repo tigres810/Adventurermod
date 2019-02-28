@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="scala.reflect.reify.utils.Utils"/>
-<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.ByteBufUtils"/>
 <fullyQualifiedTypeName name="com.ibm.icu.impl.duration.impl.Utils"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.FMLCommonHandler"/>
 <fullyQualifiedTypeName name="javax.xml.ws.handler.MessageContext"/>
@@ -39,7 +36,6 @@
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.TileEntityBase"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.ISharingEnergyProvider"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidTank"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.SideOnly"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fluids.capability.CapabilityFluidHandler"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator"/>
 <fullyQualifiedTypeName name="net.minecraftforge.energy.IEnergyStorage"/>
@@ -47,17 +43,21 @@
 <fullyQualifiedTypeName name="joptsimple.internal.Messages"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.NetworkRegistry"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.IMessage"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.Main"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.MessageContext"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.network.PacketSyncPower"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.network.Messages"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.server.MinecraftServer"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.storages.BlockEntityFluxStorage"/>
 <fullyQualifiedTypeName name="com.google.common.util.concurrent.ListenableFuture"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayerMP"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.IEnergyContainer"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayerMP"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.network.IEnergyContainer"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.storages.BlockEntityFluxStorage"/>
+<fullyQualifiedTypeName name="net.minecraft.client.entity.EntityPlayerSP"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.SideOnly"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
 </qualifiedTypeNameHistroy>

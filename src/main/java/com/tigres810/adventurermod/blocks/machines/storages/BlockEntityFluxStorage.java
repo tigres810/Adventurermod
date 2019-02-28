@@ -21,6 +21,8 @@ import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
@@ -40,7 +42,7 @@ import net.minecraft.world.World;
 public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 	
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
-	public static EntityPlayerMP player = null;
+	public static EntityPlayerSP player = null;
 
 	public BlockEntityFluxStorage(String name, Material material) {
 		super(name, material);
@@ -90,6 +92,7 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
             else if (face == EnumFacing.WEST && west.isFullBlock() && !east.isFullBlock()) face = EnumFacing.EAST;
             else if (face == EnumFacing.EAST && east.isFullBlock() && !west.isFullBlock()) face = EnumFacing.WEST;
             worldIn.setBlockState(pos, state.withProperty(FACING, face), 2);
+            player = Minecraft.getMinecraft().player;
 		}
 	}
 	
@@ -135,7 +138,6 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 	@Override
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
 		worldIn.setBlockState(pos, this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
-		player = (EntityPlayerMP) placer;
 	}
 	
 	@Override

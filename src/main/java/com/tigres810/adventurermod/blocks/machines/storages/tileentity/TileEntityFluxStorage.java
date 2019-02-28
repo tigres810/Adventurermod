@@ -1,16 +1,17 @@
 package com.tigres810.adventurermod.blocks.machines.storages.tileentity;
 
+import java.util.UUID;
+
 import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.machines.storages.BlockEntityFluxStorage;
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
-import com.tigres810.adventurermod.energy.IEnergyContainer;
-import com.tigres810.adventurermod.energy.network.Messages;
-import com.tigres810.adventurermod.energy.network.PacketSyncPower;
 import com.tigres810.adventurermod.init.ModFluids;
 import com.tigres810.adventurermod.util.handler.RegistryHandler;
 
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.nbt.NBTTagCompound;
@@ -31,30 +32,23 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
-public class TileEntityFluxStorage extends TileEntity implements ITickable, IEnergyContainer {
+public class TileEntityFluxStorage extends TileEntity implements ITickable {
 	
 	private CustomEnergyStorage storage = new CustomEnergyStorage(10000, 0, 100);
 	public int energy = this.storage.getEnergyStored();
-	private int clientenergy = -1;
 
 	@Override
 	public void update() {
+		TileEntityFluxStorage te = (TileEntityFluxStorage) this.world.getTileEntity(this.pos);
 		if(!world.isRemote) {
 			if(this.world.isBlockPowered(this.pos)) {
 				if(energy < storage.getMaxEnergyStored()) {
-					TileEntityFluxStorage te = (TileEntityFluxStorage) this.world.getTileEntity(this.pos);
 					this.energy += Math.min(10, this.storage.getMaxEnergyStored()-this.energy);
-					
-					if(te.getEnergy() != te.getClientEnergy()) {
-						EntityPlayerMP player = BlockEntityFluxStorage.player;
-						te.setClientEnergy(te.getEnergy());
-						Messages.INSTANCE.sendTo(new PacketSyncPower(te.getEnergy()), player);
-					}
 				}
 			}
 		}
 		else {
-			//System.out.println(this.clientenergy);
+			System.out.println(this.energy);
 		}
 	}
 	
@@ -66,18 +60,6 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable, IEne
 	{
 		return this.energy;
 	}
-    
-    public int getEnergy() {
-    	return storage.getEnergyStored();
-    }
-    
-    public int getClientEnergy() {
-    	return clientenergy;
-    }
-    
-    public void setClientEnergy(int clientEnergy) {
-    	this.clientenergy = clientEnergy;
-    }
     
     @Override
 	public <T> T getCapability(Capability<T> capability, EnumFacing facing) 
@@ -132,12 +114,6 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable, IEne
 	public boolean isUsableByPlayer(EntityPlayer player) 
 	{
 		return this.world.getTileEntity(this.pos) != this ? false : player.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
-	}
-
-	@Override
-	public void syncEnergy(int energy) {
-		TileEntityFluxStorage te = (TileEntityFluxStorage) this.world.getTileEntity(this.pos);
-		te.setClientEnergy(energy);
 	}
 
 }

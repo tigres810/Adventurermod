@@ -37,16 +37,16 @@ public class FluidBase extends BlockFluidClassic {
 	}
 	
 	@Override
-	public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
-        if(worldIn.getBlockState(fromPos).getBlock() instanceof FluidBase) {
-            FluidBase block = (FluidBase)worldIn.getBlockState(fromPos).getBlock();
+	public void neighborChanged(IBlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos neighbourPos) {
+		if(world.getBlockState(neighbourPos).getBlock() instanceof FluidBase) {
+            FluidBase block = (FluidBase)world.getBlockState(neighbourPos).getBlock();
             Fluid fluid = block.getFluid();
             if(fluid == ModFluids.FLUX_FLUID) {
-                if(block.isSourceBlock(worldIn, fromPos)) {
-                	worldIn.setBlockState(fromPos, worldIn.getBlockState(fromPos).withProperty(LEVEL, 16));
+                if(block.isSourceBlock(world, neighbourPos)) {
+                	//world.setBlockState(neighbourPos, world.getBlockState(neighbourPos).withProperty(LEVEL, 15));
                 }
             }
         }
-        super.onNeighborChange(worldIn, pos, fromPos);
-    }
+		super.neighborChanged(state, world, pos, neighborBlock, neighbourPos);
+	}
 }
