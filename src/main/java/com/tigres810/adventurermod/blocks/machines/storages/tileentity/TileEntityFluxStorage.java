@@ -64,7 +64,7 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable, IEne
 			}
 		}
 		else {
-			System.out.println(this.energy);
+			//System.out.println(this.energy);
 		}
 	}
 	

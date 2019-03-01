@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraftforge.items.CapabilityItemHandler"/>
-<fullyQualifiedTypeName name="net.minecraftforge.items.IItemHandler"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.capability.IFluidHandler"/>
-<fullyQualifiedTypeName name="net.minecraftforge.energy.CapabilityEnergy"/>
-<fullyQualifiedTypeName name="net.minecraft.network.NetworkManager"/>
-<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketUpdateTileEntity"/>
-<fullyQualifiedTypeName name="javax.annotation.Nullable"/>
-<fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
-<fullyQualifiedTypeName name="net.minecraftforge.energy.EnergyStorage"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.TileEntityBase"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.ISharingEnergyProvider"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.FluidTank"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fluids.capability.CapabilityFluidHandler"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator"/>
 <fullyQualifiedTypeName name="net.minecraftforge.energy.IEnergyStorage"/>
 <fullyQualifiedTypeName name="joptsimple.internal.Messages"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.network.PacketSyncPower"/>
@@ -25,7 +11,6 @@
 <fullyQualifiedTypeName name="net.minecraft.client.entity.EntityPlayerSP"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.SideOnly"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.Main"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.SidedProxy"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.util.handler.RenderHandler"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.container.ContainerBlockEntityFluxGenerator"/>
@@ -40,7 +25,6 @@
 <fullyQualifiedTypeName name="io.netty.buffer.ByteBuf"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.MessageContext"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
-<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage"/>
 <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.IEnergyProvider"/>
@@ -57,7 +41,23 @@
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.storages.BlockEntityFluxStorage"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockHorizontal"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockLog.EnumAxis"/>
-<fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
 <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing.Axis"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.gui.GUIFluxCrafter"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumActionResult"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelResourceLocation"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+<fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModBlocks"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModItems"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="scala.reflect.runtime.ThreadLocalStorage.MyThreadLocalStorage"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockEntityFluxCrafter"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockFluxCrafterLeftSide"/>
 </qualifiedTypeNameHistroy>

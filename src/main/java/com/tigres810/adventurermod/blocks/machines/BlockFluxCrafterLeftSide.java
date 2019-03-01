@@ -5,25 +5,24 @@ import java.util.List;
 import java.util.Random;
 
 import com.tigres810.adventurermod.Main;
-import com.tigres810.adventurermod.Interfaces.IPipeConnect;
 import com.tigres810.adventurermod.blocks.BlockBase;
-import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
+import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxCrafter;
 import com.tigres810.adventurermod.init.ModBlocks;
+import com.tigres810.adventurermod.init.ModItems;
 import com.tigres810.adventurermod.util.Reference;
 
 import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -34,40 +33,45 @@ import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.network.internal.FMLMessage.OpenGui;
+import scala.reflect.runtime.ThreadLocalStorage.MyThreadLocalStorage;
 
-public class BlockEntityFluxGenerator extends BlockBase implements IPipeConnect {
+public class BlockFluxCrafterLeftSide extends BlockBase {
 
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
-	public static final PropertyBool GENERATING = PropertyBool.create("generating");
 	
-	public BlockEntityFluxGenerator(String name, Material material) {
+	private static IBlockState state;
+	private static EnumFacing myfacing;
+	
+	public BlockFluxCrafterLeftSide(String name, Material material) {
 		super(name, material);
-		
-		//Block Meta
-		setSoundType(SoundType.METAL);
-		setHardness(10.0f);
-		setResistance(6.000f);
 			
-		this.setDefaultState(this.getDefaultState().withProperty(FACING, EnumFacing.NORTH).withProperty(GENERATING, false));
+			//Block Meta
+			setSoundType(SoundType.METAL);
+			setHardness(10.0f);
+			setResistance(6.000f);
+			
+			setCreativeTab(null);
+				
+			this.setDefaultState(this.getDefaultState().withProperty(FACING, EnumFacing.NORTH));
+			state = this.getDefaultState();
 	}
-
+	
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		
-		return Item.getItemFromBlock(ModBlocks.FLUX_GENERATOR_BLOCK);
+		return Item.getItemFromBlock(ModBlocks.FLUX_CRAFTER_BLOCK);
 	}
 	
 	@Override
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
 		
-		return new ItemStack(ModBlocks.FLUX_GENERATOR_BLOCK);
+		return new ItemStack(ModBlocks.FLUX_CRAFTER_BLOCK);
 	}
 	
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if(!worldIn.isRemote) {
-			playerIn.openGui(Main.instance, Reference.GUI_FLUX_GENERATOR_BLOCK, worldIn, pos.getX(), pos.getY(), pos.getZ());
+			BlockEntityFluxCrafter.openGui(worldIn, pos, playerIn);
 		}
 		
 		return true;
@@ -90,20 +94,6 @@ public class BlockEntityFluxGenerator extends BlockBase implements IPipeConnect 
 		}
 	}
 	
-	public static void setState(boolean active, World worldIn, BlockPos pos) {
-		IBlockState state = worldIn.getBlockState(pos);
-		TileEntity tileentity = worldIn.getTileEntity(pos);
-		
-		if(active) worldIn.setBlockState(pos, ModBlocks.FLUX_GENERATOR_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(GENERATING, true), 3);
-		else worldIn.setBlockState(pos, ModBlocks.FLUX_GENERATOR_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(GENERATING, false), 3);
-		
-		if(tileentity != null) 
-		{
-			tileentity.validate();
-			worldIn.setTileEntity(pos, tileentity);
-		}
-	}
-	
 	@Override
 	public boolean hasTileEntity(IBlockState state) {
 		return true;
@@ -111,13 +101,20 @@ public class BlockEntityFluxGenerator extends BlockBase implements IPipeConnect 
 	
 	@Override
 	public TileEntity createTileEntity(World world, IBlockState state) {
-		return new TileEntityFluxGenerator();
+		return new TileEntityFluxCrafter();
 	}
 	
 	@Override
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-		TileEntityFluxGenerator tileentity = (TileEntityFluxGenerator)worldIn.getTileEntity(pos);
-		worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
+		if(myfacing.equals(EnumFacing.NORTH)) {
+        	worldIn.destroyBlock(pos.offset(EnumFacing.EAST.getOpposite()), false);
+        } else if(myfacing.equals(EnumFacing.SOUTH)) {
+        	worldIn.destroyBlock(pos.offset(EnumFacing.EAST), false);
+        } else if(myfacing.equals(EnumFacing.EAST)) {
+        	worldIn.destroyBlock(pos.offset(EnumFacing.SOUTH.getOpposite()), false);
+        } else if (myfacing.equals(EnumFacing.WEST)) {
+        	worldIn.destroyBlock(pos.offset(EnumFacing.SOUTH), false);
+        }
 		super.breakBlock(worldIn, pos, state);
 	}
 	
@@ -148,7 +145,7 @@ public class BlockEntityFluxGenerator extends BlockBase implements IPipeConnect 
 	
 	@Override
 	protected BlockStateContainer createBlockState() {
-		return new BlockStateContainer(this, new IProperty[] {GENERATING,FACING});
+		return new BlockStateContainer(this, new IProperty[] {FACING});
 	}
 	
 	@Override
@@ -164,17 +161,10 @@ public class BlockEntityFluxGenerator extends BlockBase implements IPipeConnect 
 	{
 		return ((EnumFacing)state.getValue(FACING)).getIndex();
 	}
-
-	@Override
-    public List<EnumFacing> getConnectableSides(IBlockState state) {
-        List<EnumFacing> faces = new ArrayList<EnumFacing>();
-        faces.add(EnumFacing.NORTH);
-        faces.add(EnumFacing.SOUTH);
-        faces.add(EnumFacing.EAST);
-        faces.add(EnumFacing.WEST);
-         faces.remove(state.getValue(FACING));
-    faces.remove(state.getValue(FACING).getOpposite());
-        return faces;
-    } 
+	
+	public static void setBlock( World worldIn, BlockPos pos, EnumFacing face) {
+        worldIn.setBlockState(pos, state.withProperty(FACING, face), 2);
+        myfacing = face;
+	}
 
 }

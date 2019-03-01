@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "burning=false,connected=false,facing=north": { "model": "am:flux_crafter_block" },
+        "burning=false,connected=false,facing=east": { "model": "am:flux_crafter_block", "y": 90 },
+        "burning=false,connected=false,facing=south": { "model": "am:flux_crafter_block", "y": 180 },
+        "burning=false,connected=false,facing=west": { "model": "am:flux_crafter_block", "y": 270},
+        "burning=false,connected=true,facing=north": { "model": "am:flux_crafter_block" },
+        "burning=false,connected=true,facing=east": { "model": "am:flux_crafter_block", "y": 90 },
+        "burning=false,connected=true,facing=south": { "model": "am:flux_crafter_block", "y": 180 },
+        "burning=false,connected=true,facing=west": { "model": "am:flux_crafter_block", "y": 270},
+        "burning=true,connected=true,facing=north": { "model": "am:flux_crafter_block" },
+        "burning=true,connected=true,facing=east": { "model": "am:flux_crafter_block", "y": 90 },
+        "burning=true,connected=true,facing=south": { "model": "am:flux_crafter_block", "y": 180 },
+        "burning=true,connected=true,facing=west": { "model": "am:flux_crafter_block", "y": 270}
+    }
+}

@@ -2,29 +2,35 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="state" key="selection"/>
+		<item value="isblockair" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="bool"/>
+			<item value="GENERATOR"/>
+			<item value="am:flux_crafter_block"/>
+			<item value="burning=false,connected=true,"/>
+			<item value="burning=false,connected=false,"/>
+			<item value="bed"/>
+			<item value="beds"/>
+			<item value="getopposite"/>
+			<item value="generator"/>
+			<item value="generating"/>
 			<item value="state"/>
 			<item value="onne"/>
 			<item value="registry"/>
 			<item value="flux"/>
 			<item value="getactual"/>
-			<item value="messages"/>
-			<item value="World for set"/>
-			<item value="set"/>
-			<item value="blockstate"/>
-			<item value="boolean"/>
-			<item value="is source"/>
-			<item value="us"/>
-			<item value="getlevel"/>
-			<item value="water"/>
-			<item value="0.5D"/>
 		</list>
 		<list key="replacehistory">
+			<item value="isblockair"/>
+			<item value="STORAGE"/>
+			<item value="am:flux_crafter_side_block"/>
+			<item value=""/>
+			<item value="crafter"/>
+			<item value="burning"/>
 			<item value="height"/>
 			<item value="0.1D"/>
 			<item value="wrInner"/>
@@ -34,12 +40,6 @@
 			<item value="FLUX_GENERATOR_BLOCK"/>
 			<item value="false"/>
 			<item value="flux_pipe_block_side_connector"/>
-			<item value="am:flux_pipe_block"/>
-			<item value="west"/>
-			<item value="east"/>
-			<item value="south"/>
-			<item value="north"/>
-			<item value="up"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

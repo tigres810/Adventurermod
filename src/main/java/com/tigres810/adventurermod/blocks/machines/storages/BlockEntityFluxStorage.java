@@ -8,7 +8,6 @@ import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.Interfaces.IPipeConnect;
 import com.tigres810.adventurermod.blocks.BlockBase;
 import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
-import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.util.Reference;
 
@@ -58,20 +57,20 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		
-		return Item.getItemFromBlock(ModBlocks.FLUX_GENERATOR_BLOCK);
+		return Item.getItemFromBlock(ModBlocks.FLUX_STORAGE_BLOCK);
 	}
 	
 	@Override
 	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
 		
-		return new ItemStack(ModBlocks.FLUX_GENERATOR_BLOCK);
+		return new ItemStack(ModBlocks.FLUX_STORAGE_BLOCK);
 	}
 	
 	/*
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if(!worldIn.isRemote) {
-			playerIn.openGui(Main.instance, Reference.GUI_FLUX_GENERATOR_BLOCK, worldIn, pos.getX(), pos.getY(), pos.getZ());
+			playerIn.openGui(Main.instance, Reference.GUI_FLUX_STORAGE_BLOCK, worldIn, pos.getX(), pos.getY(), pos.getZ());
 		}
 		
 		return true;
@@ -101,8 +100,8 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 		IBlockState state = worldIn.getBlockState(pos);
 		TileEntity tileentity = worldIn.getTileEntity(pos);
 		
-		if(active) worldIn.setBlockState(pos, ModBlocks.FLUX_GENERATOR_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)), 3);
-		else worldIn.setBlockState(pos, ModBlocks.FLUX_GENERATOR_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)), 3);
+		if(active) worldIn.setBlockState(pos, ModBlocks.FLUX_STORAGE_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)), 3);
+		else worldIn.setBlockState(pos, ModBlocks.FLUX_STORAGE_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)), 3);
 		
 		if(tileentity != null) 
 		{
@@ -124,7 +123,7 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 	/*
 	@Override
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-		TileEntityFluxGenerator tileentity = (TileEntityFluxGenerator)worldIn.getTileEntity(pos);
+		TileEntityFluxSTORAGE tileentity = (TileEntityFluxSTORAGE)worldIn.getTileEntity(pos);
 		worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
 		super.breakBlock(worldIn, pos, state);
 	}
