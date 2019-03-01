@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="isblockair" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="connected=true,"/>
+			<item value="connected=false,"/>
 			<item value="bool"/>
 			<item value="GENERATOR"/>
 			<item value="am:flux_crafter_block"/>
@@ -21,14 +23,12 @@
 			<item value="state"/>
 			<item value="onne"/>
 			<item value="registry"/>
-			<item value="flux"/>
-			<item value="getactual"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 			<item value="isblockair"/>
 			<item value="STORAGE"/>
 			<item value="am:flux_crafter_side_block"/>
-			<item value=""/>
 			<item value="crafter"/>
 			<item value="burning"/>
 			<item value="height"/>

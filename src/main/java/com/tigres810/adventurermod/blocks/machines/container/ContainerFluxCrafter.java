@@ -21,7 +21,8 @@ public class ContainerFluxCrafter extends Container {
 		this.tileentity = tileentity;
 		IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 		
-		this.addSlotToContainer(new SlotItemHandler(handler, 0, 80, 33));
+		this.addSlotToContainer(new SlotItemHandler(handler, 0, 16, 22));
+		this.addSlotToContainer(new SlotItemHandler(handler, 1, 68, 22));
 		
 		for(int y = 0; y < 3; y++) {
 			for(int x = 0; x < 9; x++)

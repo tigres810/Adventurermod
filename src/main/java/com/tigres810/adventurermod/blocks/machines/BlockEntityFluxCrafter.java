@@ -38,7 +38,6 @@ public class BlockEntityFluxCrafter extends BlockBase implements IPipeConnect {
 
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
 	public static final PropertyBool BURNING = PropertyBool.create("burning");
-	public static final PropertyBool CONNECTED = PropertyBool.create("connected");
 	
 	public BlockEntityFluxCrafter(String name, Material material) {
 		super(name, material);
@@ -125,8 +124,8 @@ public class BlockEntityFluxCrafter extends BlockBase implements IPipeConnect {
 		IBlockState state = worldIn.getBlockState(pos);
 		TileEntity tileentity = worldIn.getTileEntity(pos);
 		
-		if(active) worldIn.setBlockState(pos, ModBlocks.FLUX_CRAFTER_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true).withProperty(CONNECTED, true), 3);
-		else worldIn.setBlockState(pos, ModBlocks.FLUX_CRAFTER_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false).withProperty(CONNECTED, true), 3);
+		if(active) worldIn.setBlockState(pos, ModBlocks.FLUX_CRAFTER_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
+		else worldIn.setBlockState(pos, ModBlocks.FLUX_CRAFTER_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
 		
 		if(tileentity != null) 
 		{
@@ -188,7 +187,7 @@ public class BlockEntityFluxCrafter extends BlockBase implements IPipeConnect {
 	
 	@Override
 	protected BlockStateContainer createBlockState() {
-		return new BlockStateContainer(this, new IProperty[] {CONNECTED,BURNING,FACING});
+		return new BlockStateContainer(this, new IProperty[] {BURNING,FACING});
 	}
 	
 	@Override

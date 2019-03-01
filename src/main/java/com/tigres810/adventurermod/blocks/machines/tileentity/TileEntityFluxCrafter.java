@@ -1,7 +1,11 @@
 package com.tigres810.adventurermod.blocks.machines.tileentity;
 
+import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
+import com.tigres810.adventurermod.energy.IEnergyProvider;
 import com.tigres810.adventurermod.init.ModFluids;
+import com.tigres810.adventurermod.network.MessageEnergy;
+import com.tigres810.adventurermod.network.NetworkNetHandler;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -16,21 +20,43 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidUtil;
+import net.minecraftforge.fml.common.network.NetworkRegistry.TargetPoint;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
-public class TileEntityFluxCrafter extends TileEntity implements ITickable {
+public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEnergyProvider {
 
 	public ItemStackHandler handler = new ItemStackHandler(12);
-	private CustomEnergyStorage storage = new CustomEnergyStorage(1000, 0, 100);
+	private CustomEnergyStorage storage = new CustomEnergyStorage(5000, 0, 100);
 	public int energy = storage.getEnergyStored();
 	private String customName;
 	public int cookTime;
+	private int previousenergy = energy;
+	private int ticks = 0;
 	
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
-		
+		TileEntityFluxCrafter te = (TileEntityFluxCrafter) this.world.getTileEntity(this.pos);
+		if(!world.isRemote) {
+			if(this.world.isBlockPowered(this.pos)) {
+				if(energy < storage.getMaxEnergyStored()) {
+					this.energy += Math.min(100, this.storage.getMaxEnergyStored()-this.energy);
+				}
+			}
+			// Server side
+			if(this.ticks < 5) {
+				this.ticks++;
+			} else {
+				this.ticks = 0;
+				if(this.previousenergy != energy) {
+					this.previousenergy = this.energy;
+					NetworkNetHandler.INSTANCE.sendToAllTracking(new MessageEnergy(this.energy, this.pos), new TargetPoint(this.world.provider.getDimension(), this.pos.getX(), this.pos.getY(), this.pos.getZ(), 5));
+				}
+			}
+		}
+		else {
+			//System.out.println(this.energy);
+		}
 	}
 	
 	private boolean isItemFuel(ItemStack stack) 
@@ -133,6 +159,16 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable {
 	public boolean isUsableByPlayer(EntityPlayer player) 
 	{
 		return this.world.getTileEntity(this.pos) != this ? false : player.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
+	}
+
+	@Override
+	public int getEnergy() {
+		return this.energy;
+	}
+
+	@Override
+	public void setEnergy(int amount) {
+		this.energy = amount;
 	}
 
 }

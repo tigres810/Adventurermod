@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraftforge.energy.IEnergyStorage"/>
 <fullyQualifiedTypeName name="joptsimple.internal.Messages"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.network.PacketSyncPower"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.network.Messages"/>
@@ -47,7 +46,6 @@
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="net.minecraft.util.EnumActionResult"/>
-<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelResourceLocation"/>
 <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
 <fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
@@ -58,6 +56,8 @@
 <fullyQualifiedTypeName name="scala.reflect.runtime.ThreadLocalStorage.MyThreadLocalStorage"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockEntityFluxCrafter"/>
-<fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxCrafter"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockFluxCrafterLeftSide"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
 </qualifiedTypeNameHistroy>
