@@ -39,8 +39,6 @@ public class BlockFluxCrafterLeftSide extends BlockBase {
 
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
 	
-	private static IBlockState state;
-	private static EnumFacing myfacing;
 	
 	public BlockFluxCrafterLeftSide(String name, Material material) {
 		super(name, material);
@@ -53,7 +51,6 @@ public class BlockFluxCrafterLeftSide extends BlockBase {
 			setCreativeTab(null);
 				
 			this.setDefaultState(this.getDefaultState().withProperty(FACING, EnumFacing.NORTH));
-			state = this.getDefaultState();
 	}
 	
 	@Override
@@ -71,7 +68,7 @@ public class BlockFluxCrafterLeftSide extends BlockBase {
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if(!worldIn.isRemote) {
-			BlockEntityFluxCrafter.openGui(worldIn, pos, playerIn);
+			playerIn.openGui(Main.instance, Reference.GUI_FLUX_CRAFTER_BLOCK, worldIn, pos.getX(), pos.getY(), pos.getZ());
 		}
 		
 		return true;
@@ -106,13 +103,13 @@ public class BlockFluxCrafterLeftSide extends BlockBase {
 	
 	@Override
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-		if(myfacing.equals(EnumFacing.NORTH)) {
+		if(state.getValue(FACING).equals(EnumFacing.NORTH)) {
         	worldIn.destroyBlock(pos.offset(EnumFacing.EAST.getOpposite()), false);
-        } else if(myfacing.equals(EnumFacing.SOUTH)) {
+        } else if(state.getValue(FACING).equals(EnumFacing.SOUTH)) {
         	worldIn.destroyBlock(pos.offset(EnumFacing.EAST), false);
-        } else if(myfacing.equals(EnumFacing.EAST)) {
+        } else if(state.getValue(FACING).equals(EnumFacing.EAST)) {
         	worldIn.destroyBlock(pos.offset(EnumFacing.SOUTH.getOpposite()), false);
-        } else if (myfacing.equals(EnumFacing.WEST)) {
+        } else if (state.getValue(FACING).equals(EnumFacing.WEST)) {
         	worldIn.destroyBlock(pos.offset(EnumFacing.SOUTH), false);
         }
 		super.breakBlock(worldIn, pos, state);
@@ -162,9 +159,9 @@ public class BlockFluxCrafterLeftSide extends BlockBase {
 		return ((EnumFacing)state.getValue(FACING)).getIndex();
 	}
 	
-	public static void setBlock( World worldIn, BlockPos pos, EnumFacing face) {
+	public void setBlock( World worldIn, BlockPos pos, EnumFacing face) {
+		IBlockState state = this.getDefaultState();
         worldIn.setBlockState(pos, state.withProperty(FACING, face), 2);
-        myfacing = face;
 	}
 
 }

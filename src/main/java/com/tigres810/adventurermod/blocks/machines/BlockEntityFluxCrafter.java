@@ -106,13 +106,13 @@ public class BlockEntityFluxCrafter extends BlockBase implements IPipeConnect {
             if(bool == true) {
             	worldIn.setBlockState(pos, state.withProperty(FACING, face), 2);
             	if(face.equals(EnumFacing.NORTH)) {
-            		BlockFluxCrafterLeftSide.setBlock(worldIn, pos.offset(EnumFacing.EAST), face);
+            		((BlockFluxCrafterLeftSide) ModBlocks.FLUX_CRAFTER_SIDE_BLOCK).setBlock(worldIn, pos.offset(EnumFacing.EAST), face);
             	} else if(face.equals(EnumFacing.SOUTH)) {
-            		BlockFluxCrafterLeftSide.setBlock(worldIn, pos.offset(EnumFacing.EAST.getOpposite()), face);
+            		((BlockFluxCrafterLeftSide) ModBlocks.FLUX_CRAFTER_SIDE_BLOCK).setBlock(worldIn, pos.offset(EnumFacing.EAST.getOpposite()), face);
             	} else if(face.equals(EnumFacing.EAST)) {
-            		BlockFluxCrafterLeftSide.setBlock(worldIn, pos.offset(EnumFacing.SOUTH), face);
+            		((BlockFluxCrafterLeftSide) ModBlocks.FLUX_CRAFTER_SIDE_BLOCK).setBlock(worldIn, pos.offset(EnumFacing.SOUTH), face);
             	} else if (face.equals(EnumFacing.WEST)) {
-            		BlockFluxCrafterLeftSide.setBlock(worldIn, pos.offset(EnumFacing.SOUTH.getOpposite()), face);
+            		((BlockFluxCrafterLeftSide) ModBlocks.FLUX_CRAFTER_SIDE_BLOCK).setBlock(worldIn, pos.offset(EnumFacing.SOUTH.getOpposite()), face);
             	}
             } else {
             	worldIn.destroyBlock(pos, true);
@@ -210,10 +210,6 @@ public class BlockEntityFluxCrafter extends BlockBase implements IPipeConnect {
         faces.add(state.getValue(FACING));
         return faces;
     }
-	
-	public static void openGui(World worldIn, BlockPos pos ,EntityPlayer playerIn) {
-		playerIn.openGui(Main.instance, Reference.GUI_FLUX_CRAFTER_BLOCK, worldIn, pos.getX(), pos.getY(), pos.getZ());
-	}
 
 
 }

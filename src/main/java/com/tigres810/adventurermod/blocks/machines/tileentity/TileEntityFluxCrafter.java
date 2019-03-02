@@ -113,7 +113,7 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 		this.energy = compound.getInteger("GuiEnergy");
 		int t = compound.getInteger("Energy");
 		this.customName = compound.getString("Name");
-		this.storage = new CustomEnergyStorage(1000, 0, 100, t);
+		this.storage = new CustomEnergyStorage(5000, 0, 100, t);
 	}
 	
 	@Override

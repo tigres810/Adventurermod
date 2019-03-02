@@ -48,8 +48,6 @@
 <fullyQualifiedTypeName name="net.minecraft.util.EnumActionResult"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelResourceLocation"/>
 <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
-<fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModBlocks"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModItems"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockFluxCrafterLeftSide"/>
 <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
+<fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModBlocks"/>
 </qualifiedTypeNameHistroy>
