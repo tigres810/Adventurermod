@@ -44,7 +44,6 @@
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.gui.GUIFluxCrafter"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="net.minecraft.util.EnumActionResult"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.block.model.ModelResourceLocation"/>
 <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
 <fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModBlocks"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 </qualifiedTypeNameHistroy>

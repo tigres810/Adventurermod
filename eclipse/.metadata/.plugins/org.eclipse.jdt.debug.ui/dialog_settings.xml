@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="conditionHistory">
+	</section>
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=AdventurerMod/C:\/Users\/tigres810\/.gradle\/caches\/modules-2\/files-2.1\/net.minecraft\/launchwrapper\/1.12\/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36\/launchwrapper-1.12.jar&amp;lt;net.minecraft.launchwrapper(Launch.class[Launch&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=AdventurerMod/C:\/Program Files\/Java\/jre1.8.0_202\/lib\/rt.jar&amp;lt;jdk.internal.org.objectweb.asm.util(ASMifier.class[ASMifier&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
@@ -10,5 +12,11 @@
 			<item value="137" key="DIALOG_X_ORIGIN"/>
 			<item value="-13" key="DIALOG_Y_ORIGIN"/>
 		</section>
+	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="200" key="SashWeightTree"/>
+		<item value="200" key="SashWeightDetails"/>
+		<item value="1020" key="WIDTH"/>
+		<item value="320" key="HEIGHT"/>
 	</section>
 </section>

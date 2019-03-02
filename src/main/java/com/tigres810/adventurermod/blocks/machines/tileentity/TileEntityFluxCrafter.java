@@ -30,7 +30,7 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 	private CustomEnergyStorage storage = new CustomEnergyStorage(5000, 0, 100);
 	public int energy = storage.getEnergyStored();
 	private String customName;
-	public int cookTime;
+	public int cookTime = 0;
 	private int previousenergy = energy;
 	private int ticks = 0;
 	
@@ -41,6 +41,26 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 			if(this.world.isBlockPowered(this.pos)) {
 				if(energy < storage.getMaxEnergyStored()) {
 					this.energy += Math.min(100, this.storage.getMaxEnergyStored()-this.energy);
+				}
+			} else {
+			// Furnace handler
+				if(!this.handler.getStackInSlot(0).isEmpty()) {
+					if(energy > 0) {
+						this.cookTime++;
+						if(this.cookTime == 25) {
+							energy -= 500;
+							if(this.handler.getStackInSlot(1).isEmpty()) {
+								this.handler.setStackInSlot(1, new ItemStack(this.handler.getStackInSlot(0).getItem()));
+							} else {
+								this.handler.insertItem(1, new ItemStack(this.handler.getStackInSlot(0).getItem()), false);
+							}
+							this.handler.getStackInSlot(0).shrink(1);
+							this.cookTime = 0;
+							if(energy < 0) energy = 0;
+						}
+					}
+				} else {
+					this.cookTime = 0;
 				}
 			}
 			// Server side
@@ -151,8 +171,10 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 		{
 		case 0:
 			this.energy = value;
+			break;
 		case 1:
 			this.cookTime = value;
+			break;
 		}
 	}
 	

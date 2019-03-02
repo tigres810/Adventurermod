@@ -170,8 +170,10 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 		{
 		case 0:
 			this.energy = value;
+			break;
 		case 1:
 			this.cookTime = value;
+			break;
 		}
 	}
 	
