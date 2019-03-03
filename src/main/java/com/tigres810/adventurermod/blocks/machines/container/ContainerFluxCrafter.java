@@ -1,14 +1,23 @@
 package com.tigres810.adventurermod.blocks.machines.container;
 
+import com.tigres810.adventurermod.blocks.machines.container.slots.CustomSlotFurnace;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxCrafter;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IContainerListener;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.inventory.Slot;
+import net.minecraft.inventory.SlotCrafting;
+import net.minecraft.inventory.SlotFurnaceOutput;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.MinecraftServer;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -17,12 +26,14 @@ public class ContainerFluxCrafter extends Container {
 	private final TileEntityFluxCrafter tileentity;
 	private int energy, cooktime;
 	
+	public InventoryCrafting craftMatrix = new InventoryCrafting(this, 3, 3);
+	
 	public ContainerFluxCrafter(InventoryPlayer player, TileEntityFluxCrafter tileentity) {
 		this.tileentity = tileentity;
 		IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 		
 		this.addSlotToContainer(new SlotItemHandler(handler, 0, 16, 22));
-		this.addSlotToContainer(new SlotItemHandler(handler, 1, 68, 22));
+		this.addSlotToContainer(new CustomSlotFurnace(handler, 1, 68, 22));
 		
 		for(int y = 0; y < 3; y++) {
 			for(int x = 0; x < 9; x++)
@@ -88,5 +99,5 @@ public class ContainerFluxCrafter extends Container {
 		}
 		
 		return stack;
-	}	
+	}
 }

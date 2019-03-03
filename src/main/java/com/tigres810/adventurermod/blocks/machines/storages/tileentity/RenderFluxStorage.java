@@ -31,7 +31,7 @@ import net.minecraftforge.fml.common.ClassNameUtils;
 
 public class RenderFluxStorage extends TileEntitySpecialRenderer<TileEntityFluxStorage> {
 
-	private static final ResourceLocation CIRCLE_INNER = new ResourceLocation(Reference.MOD_ID + ":textures/blocks/flux_fluid_flow.png");
+	private static final ResourceLocation CIRCLE_INNER = new ResourceLocation(Reference.MOD_ID + ":textures/blocks/flux_fluid.png");
 	
 	
 	@Override
@@ -49,7 +49,7 @@ public class RenderFluxStorage extends TileEntitySpecialRenderer<TileEntityFluxS
 		GlStateManager.disableRescaleNormal();
 		GlStateManager.disableLighting();
 		
-		GlStateManager.translate(x+0.5, y+1.0/16.0, z+0.5);
+		GlStateManager.translate(x+0.5, y+1.01/16.0, z+0.5);
         GlStateManager.scale(0.25, 10.8/16.0, 0.25);
         //GlStateManager.rotate((te.getWorld().getTotalWorldTime() + partialTicks), 0.0F, 1.0F, 0.0F);
 
@@ -100,5 +100,9 @@ public class RenderFluxStorage extends TileEntitySpecialRenderer<TileEntityFluxS
 		
 		GlStateManager.enableLighting();
         GlStateManager.popMatrix();
+	}
+	
+	public void reRenderCircle() {
+		
 	}
 }

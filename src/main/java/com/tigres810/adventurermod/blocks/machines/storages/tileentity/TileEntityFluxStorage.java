@@ -106,7 +106,7 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable, IEne
 	{
 		super.readFromNBT(compound);
 		int t = compound.getInteger("Energy");
-		this.storage = new CustomEnergyStorage(1000, 0, 100, t);
+		this.storage = new CustomEnergyStorage(10000, 0, 100, t);
 	}
 	
 	/*

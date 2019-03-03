@@ -9,6 +9,7 @@ import com.tigres810.adventurermod.network.NetworkNetHandler;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -34,6 +35,8 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 	private int previousenergy = energy;
 	private int ticks = 0;
 	
+	public static ItemStack currentfuel;
+	
 	@Override
 	public void update() {
 		TileEntityFluxCrafter te = (TileEntityFluxCrafter) this.world.getTileEntity(this.pos);
@@ -50,8 +53,10 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 						if(this.cookTime == 25) {
 							energy -= 500;
 							if(this.handler.getStackInSlot(1).isEmpty()) {
+								currentfuel = this.handler.getStackInSlot(0);
 								this.handler.setStackInSlot(1, new ItemStack(this.handler.getStackInSlot(0).getItem()));
 							} else {
+								currentfuel = this.handler.getStackInSlot(1);
 								this.handler.insertItem(1, new ItemStack(this.handler.getStackInSlot(0).getItem()), false);
 							}
 							this.handler.getStackInSlot(0).shrink(1);
@@ -77,6 +82,11 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 		else {
 			//System.out.println(this.energy);
 		}
+	}
+	
+	public static boolean isItemOutput(ItemStack stack) {
+		if(stack == currentfuel) return true;
+		else return false;
 	}
 	
 	private boolean isItemFuel(ItemStack stack) 

@@ -2,12 +2,16 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="setField" key="selection"/>
+		<item value="Energy" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="energy"/>
+			<item value="isitemvalid"/>
+			<item value="isitem"/>
+			<item value="putstack"/>
 			<item value="setfield"/>
 			<item value="this.cookTime"/>
 			<item value="connected=true,"/>
@@ -19,10 +23,6 @@
 			<item value="burning=false,connected=false,"/>
 			<item value="bed"/>
 			<item value="beds"/>
-			<item value="getopposite"/>
-			<item value="generator"/>
-			<item value="generating"/>
-			<item value="state"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
