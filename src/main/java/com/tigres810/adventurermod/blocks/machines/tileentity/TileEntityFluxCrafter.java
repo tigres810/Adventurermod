@@ -36,6 +36,7 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 	private int ticks = 0;
 	
 	public static ItemStack currentfuel;
+	public static ItemStack currentcraft;
 	
 	@Override
 	public void update() {
@@ -68,6 +69,7 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 					this.cookTime = 0;
 				}
 			}
+			//Crafting handler
 			// Server side
 			if(this.ticks < 5) {
 				this.ticks++;
@@ -86,6 +88,11 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 	
 	public static boolean isItemOutput(ItemStack stack) {
 		if(stack == currentfuel) return true;
+		else return false;
+	}
+	
+	public static boolean isItemCraftOutput(ItemStack stack) {
+		if(stack == currentcraft) return true;
 		else return false;
 	}
 	

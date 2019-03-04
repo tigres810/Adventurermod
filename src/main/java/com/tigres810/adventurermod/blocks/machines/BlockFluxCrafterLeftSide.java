@@ -68,7 +68,15 @@ public class BlockFluxCrafterLeftSide extends BlockBase {
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if(!worldIn.isRemote) {
-			playerIn.openGui(Main.instance, Reference.GUI_FLUX_CRAFTER_BLOCK, worldIn, pos.getX(), pos.getY(), pos.getZ());
+			if(state.getValue(FACING).equals(EnumFacing.NORTH)) {
+	        	((BlockEntityFluxCrafter) ModBlocks.FLUX_CRAFTER_BLOCK).openGui(worldIn, pos.offset(EnumFacing.EAST.getOpposite()), state, playerIn, hand, facing, hitX, hitY, hitZ);
+	        } else if(state.getValue(FACING).equals(EnumFacing.SOUTH)) {
+	        	((BlockEntityFluxCrafter) ModBlocks.FLUX_CRAFTER_BLOCK).openGui(worldIn, pos.offset(EnumFacing.EAST), state, playerIn, hand, facing, hitX, hitY, hitZ);
+	        } else if(state.getValue(FACING).equals(EnumFacing.EAST)) {
+	        	((BlockEntityFluxCrafter) ModBlocks.FLUX_CRAFTER_BLOCK).openGui(worldIn, pos.offset(EnumFacing.SOUTH.getOpposite()), state, playerIn, hand, facing, hitX, hitY, hitZ);
+	        } else if (state.getValue(FACING).equals(EnumFacing.WEST)) {
+	        	((BlockEntityFluxCrafter) ModBlocks.FLUX_CRAFTER_BLOCK).openGui(worldIn, pos.offset(EnumFacing.SOUTH), state, playerIn, hand, facing, hitX, hitY, hitZ);
+	        }
 		}
 		
 		return true;

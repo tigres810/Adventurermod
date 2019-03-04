@@ -4,6 +4,7 @@ import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntit
 import com.tigres810.adventurermod.energy.IEnergyProvider;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
@@ -12,17 +13,20 @@ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
-public class MessageHandler implements IMessageHandler<MessageEnergy, IMessage> {
+public class LoadEnergyMessageHandler implements IMessageHandler<LoadEnergyMessage, IMessage> {
 	  // Do note that the default constructor is required, but implicitly defined in this case
 
-	  @Override public IMessage onMessage(MessageEnergy message, MessageContext ctx) {
-	    // The world
-	    World world = Minecraft.getMinecraft().world;
-	    // The Tile entity
-	    IEnergyProvider te = (IEnergyProvider) world.getTileEntity(new BlockPos(message.x, message.y, message.z));
-	    // Set the energy in the tile entity
-	    te.setEnergy(message.toSend);
-	    // No response packet
+	  @Override public IMessage onMessage(LoadEnergyMessage message, MessageContext ctx) {
+		  // Player
+		  EntityPlayer sender = ctx.getServerHandler().player;
+		  // The world
+		  World playerworld = sender.world;
+		  // Tile Entity
+		  IEnergyProvider te = (IEnergyProvider) playerworld.getTileEntity(new BlockPos(message.x, message.y, message.z));
+		  // Set the energy in the tile entity
+		  if(te == null) return null;
+		  
+		  new MessageEnergy();
 	    return null;
 	  }
 	}

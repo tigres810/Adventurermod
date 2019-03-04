@@ -1,50 +1,28 @@
 package com.tigres810.adventurermod.blocks.machines.container;
 
-import com.tigres810.adventurermod.blocks.machines.container.slots.CustomSlotCrafting;
-import com.tigres810.adventurermod.blocks.machines.container.slots.CustomSlotFurnace;
-import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxCrafter;
+import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IContainerListener;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.inventory.Slot;
-import net.minecraft.inventory.SlotCrafting;
-import net.minecraft.inventory.SlotFurnaceOutput;
 import net.minecraft.item.ItemStack;
-import net.minecraft.server.MinecraftServer;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
-public class ContainerFluxCrafter extends Container {
-	private final TileEntityFluxCrafter tileentity;
+public class ContainerFluxStorage extends Container {
+	private final TileEntityFluxStorage tileentity;
 	private int energy, cooktime;
 	
-	public InventoryCrafting craftMatrix = new InventoryCrafting(this, 3, 3);
-	
-	public ContainerFluxCrafter(InventoryPlayer player, TileEntityFluxCrafter tileentity) {
+	public ContainerFluxStorage(InventoryPlayer player, TileEntityFluxStorage tileentity) {
 		this.tileentity = tileentity;
+		/*
 		IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 		
-		this.addSlotToContainer(new SlotItemHandler(handler, 0, 16, 22));
-		this.addSlotToContainer(new CustomSlotFurnace(handler, 1, 68, 22));
-		this.addSlotToContainer(new SlotItemHandler(handler, 3, 105, 26));
-		this.addSlotToContainer(new SlotItemHandler(handler, 4, 123, 26));
-		this.addSlotToContainer(new SlotItemHandler(handler, 5, 141, 26));
-		this.addSlotToContainer(new SlotItemHandler(handler, 6, 105, 44));
-		this.addSlotToContainer(new SlotItemHandler(handler, 7, 123, 44));
-		this.addSlotToContainer(new SlotItemHandler(handler, 8, 141, 44));
-		this.addSlotToContainer(new SlotItemHandler(handler, 9, 105, 62));
-		this.addSlotToContainer(new SlotItemHandler(handler, 10, 123, 62));
-		this.addSlotToContainer(new SlotItemHandler(handler, 11, 141, 62));
-		this.addSlotToContainer(new CustomSlotCrafting(handler, 12, 123, 10));
+		this.addSlotToContainer(new SlotItemHandler(handler, 0, 80, 33));
 		
 		for(int y = 0; y < 3; y++) {
 			for(int x = 0; x < 9; x++)
@@ -56,6 +34,7 @@ public class ContainerFluxCrafter extends Container {
 		for(int x = 0; x < 9; x++) {
 			this.addSlotToContainer(new Slot(player, x, 8 + x * 18, 142));
 		}
+		*/
 	}
 	
 	@Override
@@ -76,11 +55,11 @@ public class ContainerFluxCrafter extends Container {
 		{
 			IContainerListener listener = (IContainerListener)this.listeners.get(i);
 			if(this.energy != this.tileentity.getField(0)) listener.sendWindowProperty(this, 0, this.tileentity.getField(0));
-			if(this.cooktime != this.tileentity.getField(1)) listener.sendWindowProperty(this, 1, this.tileentity.getField(1));
+			//if(this.cooktime != this.tileentity.getField(1)) listener.sendWindowProperty(this, 1, this.tileentity.getField(1));
 		}
 		
 		this.energy = this.tileentity.getField(0);
-		this.cooktime = this.tileentity.getField(1);
+		//this.cooktime = this.tileentity.getField(1);
 	}
 	
 	@Override
@@ -110,5 +89,5 @@ public class ContainerFluxCrafter extends Container {
 		}
 		
 		return stack;
-	}
+	}	
 }

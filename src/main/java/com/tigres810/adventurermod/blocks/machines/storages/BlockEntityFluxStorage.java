@@ -41,7 +41,6 @@ import net.minecraft.world.World;
 public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 	
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
-	public static EntityPlayerSP player = null;
 
 	public BlockEntityFluxStorage(String name, Material material) {
 		super(name, material);
@@ -66,7 +65,6 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 		return new ItemStack(ModBlocks.FLUX_STORAGE_BLOCK);
 	}
 	
-	/*
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		if(!worldIn.isRemote) {
@@ -75,7 +73,6 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 		
 		return true;
 	}
-	*/
 	
 	@Override
 	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
@@ -91,7 +88,6 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
             else if (face == EnumFacing.WEST && west.isFullBlock() && !east.isFullBlock()) face = EnumFacing.EAST;
             else if (face == EnumFacing.EAST && east.isFullBlock() && !west.isFullBlock()) face = EnumFacing.WEST;
             worldIn.setBlockState(pos, state.withProperty(FACING, face), 2);
-            player = Minecraft.getMinecraft().player;
 		}
 	}
 	
@@ -100,8 +96,8 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 		IBlockState state = worldIn.getBlockState(pos);
 		TileEntity tileentity = worldIn.getTileEntity(pos);
 		
-		if(active) worldIn.setBlockState(pos, ModBlocks.FLUX_STORAGE_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)), 3);
-		else worldIn.setBlockState(pos, ModBlocks.FLUX_STORAGE_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)), 3);
+		//if(active) worldIn.setBlockState(pos, ModBlocks.FLUX_STORAGE_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)), 3);
+		worldIn.setBlockState(pos, ModBlocks.FLUX_STORAGE_BLOCK.getDefaultState().withProperty(FACING, state.getValue(FACING)), 3);
 		
 		if(tileentity != null) 
 		{
@@ -120,14 +116,12 @@ public class BlockEntityFluxStorage extends BlockBase implements IPipeConnect {
 		return new TileEntityFluxStorage();
 	}
 	
-	/*
 	@Override
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-		TileEntityFluxSTORAGE tileentity = (TileEntityFluxSTORAGE)worldIn.getTileEntity(pos);
-		worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
+		//TileEntityFluxSTORAGE tileentity = (TileEntityFluxSTORAGE)worldIn.getTileEntity(pos);
+		//worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
 		super.breakBlock(worldIn, pos, state);
 	}
-	*/
 	
 	@Override
 	public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {

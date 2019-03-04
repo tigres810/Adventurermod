@@ -71,6 +71,10 @@ public class BlockEntityFluxCrafter extends BlockBase implements IPipeConnect {
 		return true;
 	}
 	
+	public void openGui(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+		playerIn.openGui(Main.instance, Reference.GUI_FLUX_CRAFTER_BLOCK, worldIn, pos.getX(), pos.getY(), pos.getZ());
+	}
+	
 	@Override
 	public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
 		if(!worldIn.isRemote) {

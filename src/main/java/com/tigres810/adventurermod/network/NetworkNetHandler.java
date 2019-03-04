@@ -11,6 +11,7 @@ public class NetworkNetHandler {
 	public final static SimpleNetworkWrapper INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel(Reference.MOD_ID);
 	
 	public static void init() {
-		INSTANCE.registerMessage(MessageHandler.class, MessageEnergy.class, 0, Side.CLIENT);
+		INSTANCE.registerMessage(UpdateEnergyMessageHandler.class, MessageEnergy.class, 0, Side.CLIENT);
+		INSTANCE.registerMessage(LoadEnergyMessageHandler.class, LoadEnergyMessage.class, 0, Side.SERVER);
 	}
 }

@@ -29,6 +29,7 @@ import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.fluids.FluidTank;
 import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.NetworkRegistry.TargetPoint;
 import net.minecraftforge.fml.relauncher.Side;
@@ -97,6 +98,7 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable, IEne
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) 
 	{
 		super.writeToNBT(compound);
+		compound.setInteger("GuiEnergy", this.energy);
 		compound.setInteger("Energy", this.storage.getEnergyStored());
 		return compound;
 	}
@@ -105,6 +107,7 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable, IEne
 	public void readFromNBT(NBTTagCompound compound) 
 	{
 		super.readFromNBT(compound);
+		this.energy = compound.getInteger("GuiEnergy");
 		int t = compound.getInteger("Energy");
 		this.storage = new CustomEnergyStorage(10000, 0, 100, t);
 	}
@@ -120,6 +123,27 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable, IEne
 	public int getEnergyStored()
 	{
 		return this.energy;
+	}
+	
+	public int getField(int id)
+	{
+		switch(id)
+		{
+		case 0:
+			return this.energy;
+		default:
+			return 0;
+		}
+	}
+	
+	public void setField(int id, int value)
+	{
+		switch(id)
+		{
+		case 0:
+			this.energy = value;
+			break;
+		}
 	}
 	
 	public int getMaxEnergyStored()

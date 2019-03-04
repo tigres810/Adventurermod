@@ -2,12 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Energy" key="selection"/>
+		<item value="Caused" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="caused"/>
+			<item value="CLIENTSIDE"/>
+			<item value="ID:"/>
+			<item value="ID"/>
+			<item value="server"/>
+			<item value="messagehandler"/>
+			<item value="message"/>
 			<item value="energy"/>
 			<item value="isitemvalid"/>
 			<item value="isitem"/>
@@ -16,13 +23,6 @@
 			<item value="this.cookTime"/>
 			<item value="connected=true,"/>
 			<item value="connected=false,"/>
-			<item value="bool"/>
-			<item value="GENERATOR"/>
-			<item value="am:flux_crafter_block"/>
-			<item value="burning=false,connected=true,"/>
-			<item value="burning=false,connected=false,"/>
-			<item value="bed"/>
-			<item value="beds"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
