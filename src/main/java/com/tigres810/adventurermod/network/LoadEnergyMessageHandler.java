@@ -26,7 +26,6 @@ public class LoadEnergyMessageHandler implements IMessageHandler<LoadEnergyMessa
 		  // Set the energy in the tile entity
 		  if(te == null) return null;
 		  
-		  new MessageEnergy();
-	    return null;
+		  return new MessageEnergy(te.getEnergy(), new BlockPos(message.x, message.y, message.z));
 	  }
 	}

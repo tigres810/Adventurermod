@@ -8,6 +8,7 @@ import com.tigres810.adventurermod.blocks.machines.storages.BlockEntityFluxStora
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
 import com.tigres810.adventurermod.energy.IEnergyProvider;
 import com.tigres810.adventurermod.init.ModFluids;
+import com.tigres810.adventurermod.network.LoadEnergyMessage;
 import com.tigres810.adventurermod.network.MessageEnergy;
 import com.tigres810.adventurermod.network.NetworkNetHandler;
 import com.tigres810.adventurermod.util.handler.RegistryHandler;
@@ -66,6 +67,13 @@ public class TileEntityFluxStorage extends TileEntity implements ITickable, IEne
 		}
 		else {
 			//System.out.println(this.energy);
+		}
+	}
+	
+	@Override
+	public void onLoad() {
+		if (world.isRemote){
+			NetworkNetHandler.INSTANCE.sendToServer(new LoadEnergyMessage(this.getPos()));
 		}
 	}
 	

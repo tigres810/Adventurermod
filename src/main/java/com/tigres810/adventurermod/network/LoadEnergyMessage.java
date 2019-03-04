@@ -11,7 +11,7 @@ public class LoadEnergyMessage implements IMessage {
 	  int x;
 	  int y;
 	  int z;
-	  public LoadEnergyMessage(int toSend, BlockPos pos) {
+	  public LoadEnergyMessage(BlockPos pos) {
 	    this.x = pos.getX();
 	    this.y = pos.getY();
 	    this.z = pos.getZ();

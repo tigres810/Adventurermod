@@ -31,7 +31,6 @@
 <fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Items"/>
 <fullyQualifiedTypeName name="scala.reflect.runtime.ThreadLocalStorage.MyThreadLocalStorage"/>
-<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockFluxCrafterLeftSide"/>
 <fullyQualifiedTypeName name="net.minecraft.block.state.IBlockState"/>
 <fullyQualifiedTypeName name="net.minecraft.inventory.SlotCrafting"/>
@@ -53,11 +52,12 @@
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.gui.GUIFluxStorage"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.container.ContainerFluxStorage"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.network.LoadEnergyMessage"/>
 <fullyQualifiedTypeName name="net.minecraftforge.items.SlotItemHandler"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.init.ModBlocks"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.BlockEntityFluxCrafter"/>
 <fullyQualifiedTypeName name="net.minecraft.util.EnumFacing"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.network.MessageEnergy"/>
+<fullyQualifiedTypeName name="com.tigres810.adventurermod.network.LoadEnergyMessage"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 </qualifiedTypeNameHistroy>

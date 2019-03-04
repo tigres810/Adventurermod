@@ -12,6 +12,6 @@ public class NetworkNetHandler {
 	
 	public static void init() {
 		INSTANCE.registerMessage(UpdateEnergyMessageHandler.class, MessageEnergy.class, 0, Side.CLIENT);
-		INSTANCE.registerMessage(LoadEnergyMessageHandler.class, LoadEnergyMessage.class, 0, Side.SERVER);
+		INSTANCE.registerMessage(LoadEnergyMessageHandler.class, LoadEnergyMessage.class, 1, Side.SERVER);
 	}
 }
