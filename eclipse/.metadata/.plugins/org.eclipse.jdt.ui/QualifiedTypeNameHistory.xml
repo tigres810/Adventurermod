@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.IMessage"/>
 <fullyQualifiedTypeName name="io.netty.buffer.ByteBuf"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.MessageContext"/>
-<fullyQualifiedTypeName name="net.minecraft.world.World"/>
 <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.energy.IEnergyProvider"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.network.NetworkHandler"/>
@@ -40,7 +39,6 @@
 <fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxCrafter"/>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.container.slots.CustomSlotFurnace"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.storages.tileentity.RenderFluxStorage"/>
 <fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketUpdateTileEntity"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.network.MessageEnergy"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.network.LoadEnergyMessage"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
 </qualifiedTypeNameHistroy>

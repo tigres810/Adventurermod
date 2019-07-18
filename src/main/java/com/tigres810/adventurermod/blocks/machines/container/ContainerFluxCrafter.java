@@ -35,16 +35,16 @@ public class ContainerFluxCrafter extends Container {
 		
 		this.addSlotToContainer(new SlotItemHandler(handler, 0, 16, 22));
 		this.addSlotToContainer(new CustomSlotFurnace(handler, 1, 68, 22));
-		this.addSlotToContainer(new SlotItemHandler(handler, 3, 105, 26));
-		this.addSlotToContainer(new SlotItemHandler(handler, 4, 123, 26));
-		this.addSlotToContainer(new SlotItemHandler(handler, 5, 141, 26));
-		this.addSlotToContainer(new SlotItemHandler(handler, 6, 105, 44));
-		this.addSlotToContainer(new SlotItemHandler(handler, 7, 123, 44));
-		this.addSlotToContainer(new SlotItemHandler(handler, 8, 141, 44));
-		this.addSlotToContainer(new SlotItemHandler(handler, 9, 105, 62));
-		this.addSlotToContainer(new SlotItemHandler(handler, 10, 123, 62));
-		this.addSlotToContainer(new SlotItemHandler(handler, 11, 141, 62));
-		this.addSlotToContainer(new CustomSlotCrafting(handler, 12, 123, 10));
+		this.addSlotToContainer(new SlotItemHandler(handler, 2, 105, 26));
+		this.addSlotToContainer(new SlotItemHandler(handler, 3, 123, 26));
+		this.addSlotToContainer(new SlotItemHandler(handler, 4, 141, 26));
+		this.addSlotToContainer(new SlotItemHandler(handler, 5, 105, 44));
+		this.addSlotToContainer(new SlotItemHandler(handler, 6, 123, 44));
+		this.addSlotToContainer(new SlotItemHandler(handler, 7, 141, 44));
+		this.addSlotToContainer(new SlotItemHandler(handler, 8, 105, 62));
+		this.addSlotToContainer(new SlotItemHandler(handler, 9, 123, 62));
+		this.addSlotToContainer(new SlotItemHandler(handler, 10, 141, 62));
+		this.addSlotToContainer(new CustomSlotCrafting(handler, 11, 123, 6));
 		
 		for(int y = 0; y < 3; y++) {
 			for(int x = 0; x < 9; x++)

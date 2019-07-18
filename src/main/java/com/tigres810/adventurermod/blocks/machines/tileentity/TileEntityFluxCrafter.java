@@ -70,6 +70,13 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 				}
 			}
 			//Crafting handler
+			for(int i = 0; i < this.handler.getSlots(); i++) {
+				if(i == 2) {
+					if(isItemCrafting(2, this.handler.getStackInSlot(2).getItem())) {
+						System.out.println("YES!");
+					}
+				}
+			}
 			// Server side
 			if(this.ticks < 5) {
 				this.ticks++;
@@ -99,6 +106,11 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 	private boolean isItemFuel(ItemStack stack) 
 	{
 		return getFuelValue(stack) > 0;
+	}
+	
+	private boolean isItemCrafting(int Slot, Item item) {
+		if(Slot == 2 && item == Items.PAPER) return true;
+		else return false;
 	}
 	
 	private int getFuelValue(ItemStack stack) 

@@ -16,8 +16,10 @@ public class UpdateEnergyMessageHandler implements IMessageHandler<MessageEnergy
 	  // Do note that the default constructor is required, but implicitly defined in this case
 
 	  @Override public IMessage onMessage(MessageEnergy message, MessageContext ctx) {
+		// Multiplayer player
+		EntityPlayerMP serverPlayer = ctx.getServerHandler().player;
 	    // The world
-	    World world = Minecraft.getMinecraft().world;
+	    World world = serverPlayer.world;
 	    // The Tile entity
 	    IEnergyProvider te = (IEnergyProvider) world.getTileEntity(new BlockPos(message.x, message.y, message.z));
 	    if(te == null) return null;
