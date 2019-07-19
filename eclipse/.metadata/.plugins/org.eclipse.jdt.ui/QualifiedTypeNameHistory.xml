@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.gui.GUIFluxGenerator"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.client.gui.GuiInformationTablet"/>
-<fullyQualifiedTypeName name="com.tigres810.adventurermod.network.MessageBase"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayerMP"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.common.network.simpleimpl.IMessage"/>
 <fullyQualifiedTypeName name="io.netty.buffer.ByteBuf"/>
@@ -44,9 +40,6 @@
 <fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketUpdateTileEntity"/>
 <fullyQualifiedTypeName name="net.minecraft.nbt.NBTTagCompound"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
-<fullyQualifiedTypeName name="net.minecraft.server.MinecraftServer"/>
-<fullyQualifiedTypeName name="net.minecraftforge.fml.common.FMLCommonHandler"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.gui.GUIFluxStorage"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.container.ContainerFluxStorage"/>
 <fullyQualifiedTypeName name="com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="akka.event.Logging.Debug"/>
+<fullyQualifiedTypeName name="net.minecraft.server.MinecraftServer"/>
+<fullyQualifiedTypeName name="net.minecraft.world.WorldServer"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.FMLCommonHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.client.multiplayer.WorldClient"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.client.FMLClientHandler"/>
 </qualifiedTypeNameHistroy>

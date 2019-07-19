@@ -4,10 +4,14 @@ import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntit
 import com.tigres810.adventurermod.energy.IEnergyProvider;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
+import net.minecraftforge.fml.client.FMLClientHandler;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
@@ -16,12 +20,10 @@ public class UpdateEnergyMessageHandler implements IMessageHandler<MessageEnergy
 	  // Do note that the default constructor is required, but implicitly defined in this case
 
 	  @Override public IMessage onMessage(MessageEnergy message, MessageContext ctx) {
-		// Multiplayer player
-		EntityPlayerMP serverPlayer = ctx.getServerHandler().player;
 	    // The world
-	    World world = serverPlayer.world;
+		WorldClient worldClient = FMLClientHandler.instance().getWorldClient();
 	    // The Tile entity
-	    IEnergyProvider te = (IEnergyProvider) world.getTileEntity(new BlockPos(message.x, message.y, message.z));
+	    IEnergyProvider te = (IEnergyProvider) worldClient.getTileEntity(new BlockPos(message.x, message.y, message.z));
 	    if(te == null) return null;
 	    // Set the energy in the tile entity
 	    te.setEnergy(message.toSend);
