@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "advmod:flux_ore_block" }
+    }
+}

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.tigres810.adventurermod.blocks.BlockBase;
+import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxConveyor;
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxCrafter;
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.machines.BlockFluxCrafterLeftSide;
@@ -23,6 +24,9 @@ public class ModBlocks {
 	public static final Block FLUX_GENERATOR_BLOCK = new BlockEntityFluxGenerator("flux_generator_block", Material.IRON);
 	public static final Block FLUX_CRAFTER_BLOCK = new BlockEntityFluxCrafter("flux_crafter_block", Material.IRON);
 	public static final Block FLUX_CRAFTER_SIDE_BLOCK = new BlockFluxCrafterLeftSide("flux_crafter_side_block", Material.IRON);
+	
+	//Conveyors
+	public static final Block FLUX_CONVEYOR_BLOCK = new BlockEntityFluxConveyor("flux_conveyor_block", Material.IRON);
 	
 	//Pipes
 	public static final Block FLUX_PIPE_BLOCK = new BlockEntityFluxPipe("flux_pipe_block", Material.WOOD);

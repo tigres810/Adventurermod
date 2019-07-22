@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=north": { "model": "advmod:flux_conveyor_block", "y": 180 },
+        "facing=east": { "model": "advmod:flux_conveyor_block", "y": 270 },
+        "facing=south": { "model": "advmod:flux_conveyor_block" },
+        "facing=west": { "model": "advmod:flux_conveyor_block", "y": 90 }
+    }
+}

@@ -157,12 +157,6 @@ public class BlockEntityFluxPipe extends BlockBase implements IPipeConnect {
 	}
 	
 	@Override
-	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-		TileEntityFluxPipe tileentity = (TileEntityFluxPipe)worldIn.getTileEntity(pos);
-		super.breakBlock(worldIn, pos, state);
-	}
-	
-	@Override
 	public EnumBlockRenderType getRenderType(IBlockState state) {
 		return EnumBlockRenderType.MODEL;
 	}

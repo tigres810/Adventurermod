@@ -2,6 +2,7 @@ package com.tigres810.adventurermod.util.handler;
 
 import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.init.ModFluids;
+import com.tigres810.adventurermod.util.Reference;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.ItemMeshDefinition;
@@ -20,7 +21,7 @@ public class RenderHandler {
 			
 			@Override
 			public ModelResourceLocation getModelLocation(ItemStack stack) {
-				return new ModelResourceLocation("am:flux_fluid", "fluid");
+				return new ModelResourceLocation(Reference.MOD_ID + ":flux_fluid", "fluid");
 			}
 		});
 		
@@ -28,7 +29,7 @@ public class RenderHandler {
 			
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
-				return new ModelResourceLocation("am:flux_fluid", "fluid");
+				return new ModelResourceLocation(Reference.MOD_ID + ":flux_fluid", "fluid");
 			}
 		});
 	}

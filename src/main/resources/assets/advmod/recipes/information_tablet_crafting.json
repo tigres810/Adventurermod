@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        " F ",
+        " B ",
+        "   "
+    ],
+   
+    "key":
+    {
+        "B":
+        {
+            "item": "minecraft:book"
+        },
+        "F":
+        {
+            "item": "advmod:flux_ore"
+        }
+    },
+   
+    "result":
+    {
+        "item": "advmod:information_tablet",
+        "count": 1
+    }
+}

@@ -2,12 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="ItemBase" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="modid"/>
+			<item value="am"/>
+			<item value="generator"/>
+			<item value="facing"/>
+			<item value="getdisplay"/>
+			<item value="generating"/>
+			<item value="GENERATING"/>
+			<item value="GENERATOR"/>
 			<item value="updateenergy"/>
 			<item value="world"/>
 			<item value="caused"/>
@@ -15,16 +23,13 @@
 			<item value="ID:"/>
 			<item value="ID"/>
 			<item value="server"/>
-			<item value="messagehandler"/>
-			<item value="message"/>
-			<item value="energy"/>
-			<item value="isitemvalid"/>
-			<item value="isitem"/>
-			<item value="putstack"/>
-			<item value="setfield"/>
-			<item value="this.cookTime"/>
 		</list>
 		<list key="replacehistory">
+			<item value="advmod"/>
+			<item value="active"/>
+			<item value="conveyor"/>
+			<item value="ACTIVE"/>
+			<item value="CONVEYOR"/>
 			<item value=""/>
 			<item value="isblockair"/>
 			<item value="STORAGE"/>
@@ -35,11 +40,6 @@
 			<item value="0.1D"/>
 			<item value="wrInner"/>
 			<item value="ModFluids.FLUX_FLUID.setColor("/>
-			<item value="flux_storage_block"/>
-			<item value="storage"/>
-			<item value="FLUX_GENERATOR_BLOCK"/>
-			<item value="false"/>
-			<item value="flux_pipe_block_side_connector"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

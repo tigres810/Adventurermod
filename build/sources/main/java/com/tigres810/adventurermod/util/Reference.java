@@ -10,4 +10,6 @@ public class Reference {
 	public static final String COMMON_PROXY_CLASS = "com.tigres810.adventurermod.proxy.CommonProxy";
 	
 	public static final int GUI_FLUX_GENERATOR_BLOCK = 1;
+	public static final int GUI_FLUX_CRAFTER_BLOCK = 2;
+	public static final int GUI_FLUX_STORAGE_BLOCK = 3;
 }

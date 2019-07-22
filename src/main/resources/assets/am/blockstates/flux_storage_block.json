@@ -1,9 +1,0 @@
-{
-    "variants": 
-    {
-        "facing=north": { "model": "am:flux_storage_block", "y": 180 },
-        "facing=east": { "model": "am:flux_storage_block", "y": 270 },
-        "facing=south": { "model": "am:flux_storage_block" },
-        "facing=west": { "model": "am:flux_storage_block", "y": 90 }
-    }
-}

@@ -7,6 +7,7 @@ import java.util.Set;
 import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.fluids.FluidLiquid;
 import com.tigres810.adventurermod.items.ItemBase;
+import com.tigres810.adventurermod.util.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -28,7 +29,7 @@ public class ModFluids {
 
 	public static final List<Fluid> FLUIDS = new ArrayList<Fluid>();
 	
-	public static final Fluid FLUX_FLUID = new FluidLiquid("flux_fluid", new ResourceLocation("am:blocks/flux_fluid_still"), new ResourceLocation("am:blocks/flux_fluid_flow"));
+	public static final Fluid FLUX_FLUID = new FluidLiquid("flux_fluid", new ResourceLocation(Reference.MOD_ID + ":blocks/flux_fluid_still"), new ResourceLocation(Reference.MOD_ID + ":blocks/flux_fluid_flow"));
 	
 	public static void registerFluids() {
 		registerFluid(FLUX_FLUID);

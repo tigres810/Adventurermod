@@ -29,7 +29,11 @@ Note: Recompile with -Xlint:unchecked for details.
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
+:extractMcpData
+Download https://files.minecraftforge.net/maven/de/oceanlabs/mcp/mcp/1.12.2/mcp-1.12.2-srg.zip
 :extractMcpData SKIPPED
+:extractMcpMappings
+Download https://files.minecraftforge.net/maven/de/oceanlabs/mcp/mcp_snapshot/20171003-1.12/mcp_snapshot-20171003-1.12.zip
 :extractMcpMappings SKIPPED
 :getVersionJson
 :extractUserdev UP-TO-DATE
@@ -47,4 +51,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 1 mins 9.919 secs
+Total time: 34.178 secs

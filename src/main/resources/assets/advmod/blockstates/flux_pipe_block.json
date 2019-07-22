@@ -1,0 +1,40 @@
+{
+    "multipart": [
+        {   "when": { "north": "true" },
+            "apply": { "model": "advmod:flux_pipe_block_subnode", "uvlock": false }
+        },
+        {   "when": { "north": "false" },
+            "apply": { "model": "advmod:flux_pipe_block", "uvlock": false }
+        },
+        {   "when": { "east": "true" },
+            "apply": { "model": "advmod:flux_pipe_block_subnode", "y": 90, "uvlock": false }
+        },
+        {   "when": { "east": "false" },
+            "apply": { "model": "advmod:flux_pipe_block", "y": 90, "uvlock": false }
+        },
+        {   "when": { "south": "true" },
+            "apply": { "model": "advmod:flux_pipe_block_subnode", "y": 180, "uvlock": false }
+        },
+        {   "when": { "south": "false" },
+            "apply": { "model": "advmod:flux_pipe_block", "y": 180, "uvlock": false }
+        },
+        {   "when": { "west": "true" },
+            "apply": { "model": "advmod:flux_pipe_block_subnode", "y": 270, "uvlock": false }
+        },
+        {   "when": { "west": "false" },
+            "apply": { "model": "advmod:flux_pipe_block", "y": 270, "uvlock": false }
+        },
+        {   "when": { "up": "true" },
+            "apply": { "model": "advmod:flux_pipe_block_subnode", "x": 270, "uvlock": false }
+        },
+        {   "when": { "up": "false" },
+            "apply": { "model": "advmod:flux_pipe_block", "x": 270, "uvlock": false }
+        },
+        {   "when": { "down": "true" },
+            "apply": { "model": "advmod:flux_pipe_block_subnode", "x": 90, "y": 180, "uvlock": false }
+        },
+        {   "when": { "down": "false" },
+            "apply": { "model": "advmod:flux_pipe_block", "x": 90, "y": 180, "uvlock": false }
+        }
+    ]
+}

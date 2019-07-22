@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=north": { "model": "advmod:flux_crafter_side_block" },
+        "facing=east": { "model": "advmod:flux_crafter_side_block", "y": 90 },
+        "facing=south": { "model": "advmod:flux_crafter_side_block", "y": 180 },
+        "facing=west": { "model": "advmod:flux_crafter_side_block", "y": 270}
+    }
+}

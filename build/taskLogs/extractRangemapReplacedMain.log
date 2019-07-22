@@ -1,38 +1,80 @@
 Symbol range map extraction starting
-Processing 37 files
+Processing 56 files
 startProcessing "com\tigres810\adventurermod\Interfaces\IPipeConnect.java" md5: b2e85923d12104cd3007d1387bf4bc49
+Cache Hit!
 endProcessing "com\tigres810\adventurermod\Interfaces\IPipeConnect.java"
 
-startProcessing "com\tigres810\adventurermod\Main.java" md5: 36b2bab6c37ceb95d97d37345ba08428
+startProcessing "com\tigres810\adventurermod\Main.java" md5: 4ab21509e04c95b937d066bf7aad8bdf
 endProcessing "com\tigres810\adventurermod\Main.java"
 
-startProcessing "com\tigres810\adventurermod\blocks\BlockBase.java" md5: ba5bf78b3441b4a9dba6d1ccf64809ab
+startProcessing "com\tigres810\adventurermod\blocks\BlockBase.java" md5: 877ed2d1982a4a0a1fd5a584bc9a3db1
 endProcessing "com\tigres810\adventurermod\blocks\BlockBase.java"
 
-startProcessing "com\tigres810\adventurermod\blocks\gui\ContainerFluxGeneratorBlock.java" md5: 3d9f561ec5a3a498ca6147abd718921c
-endProcessing "com\tigres810\adventurermod\blocks\gui\ContainerFluxGeneratorBlock.java"
+startProcessing "com\tigres810\adventurermod\blocks\gui\GUIFluxCrafter.java" md5: 925a24937213f7bf2964e4d0b1036b79
+endProcessing "com\tigres810\adventurermod\blocks\gui\GUIFluxCrafter.java"
 
-startProcessing "com\tigres810\adventurermod\blocks\machines\BlockEntityFluxGenerator.java" md5: b538dc71190ad81462bde84d194a5e37
+startProcessing "com\tigres810\adventurermod\blocks\gui\GUIFluxGenerator.java" md5: 7bbaef75f853590824395d5a119bc8ae
+endProcessing "com\tigres810\adventurermod\blocks\gui\GUIFluxGenerator.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\gui\GUIFluxStorage.java" md5: 22077d5546ff39a547e679c9bc8eb556
+endProcessing "com\tigres810\adventurermod\blocks\gui\GUIFluxStorage.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\BlockEntityFluxConveyor.java" md5: 59c7859256c57ecdde8cc17d1b20d0ec
+endProcessing "com\tigres810\adventurermod\blocks\machines\BlockEntityFluxConveyor.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\BlockEntityFluxCrafter.java" md5: af2d11da070d8b3e736d8a120badbffd
+endProcessing "com\tigres810\adventurermod\blocks\machines\BlockEntityFluxCrafter.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\BlockEntityFluxGenerator.java" md5: c0171f7b37bd0c27fd08c11a01dc0529
 endProcessing "com\tigres810\adventurermod\blocks\machines\BlockEntityFluxGenerator.java"
 
-startProcessing "com\tigres810\adventurermod\blocks\machines\container\ContainerBlockEntityFluxGenerator.java" md5: 57acd58ced51c48f0b1ebd2d5ef2be33
-Cache Hit!
-endProcessing "com\tigres810\adventurermod\blocks\machines\container\ContainerBlockEntityFluxGenerator.java"
+startProcessing "com\tigres810\adventurermod\blocks\machines\BlockFluxCrafterLeftSide.java" md5: 142dc6e7d065a8e7f32dbdbd2ae0ff6a
+endProcessing "com\tigres810\adventurermod\blocks\machines\BlockFluxCrafterLeftSide.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\container\ContainerFluxCrafter.java" md5: 8e6a6a09e774ae57a8da80206a7267ea
+endProcessing "com\tigres810\adventurermod\blocks\machines\container\ContainerFluxCrafter.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\container\ContainerFluxGenerator.java" md5: 95dd353957267b2dc2450b63723d4541
+endProcessing "com\tigres810\adventurermod\blocks\machines\container\ContainerFluxGenerator.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\container\ContainerFluxStorage.java" md5: b4f3521725fc12151eeda1b4ec1e3ac0
+endProcessing "com\tigres810\adventurermod\blocks\machines\container\ContainerFluxStorage.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\container\slots\CustomSlotCrafting.java" md5: b72976e5a2608550805b76f8c54c432b
+endProcessing "com\tigres810\adventurermod\blocks\machines\container\slots\CustomSlotCrafting.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\container\slots\CustomSlotFurnace.java" md5: 7579f57cbb87cb2170589cba5f854739
+endProcessing "com\tigres810\adventurermod\blocks\machines\container\slots\CustomSlotFurnace.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\storages\BlockEntityFluxStorage.java" md5: cff0a121c48e6475237a61c73c704bbf
+endProcessing "com\tigres810\adventurermod\blocks\machines\storages\BlockEntityFluxStorage.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\storages\tileentity\RenderFluxStorage.java" md5: 2171198361b79b5656b04759a8430f09
+endProcessing "com\tigres810\adventurermod\blocks\machines\storages\tileentity\RenderFluxStorage.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\storages\tileentity\TileEntityFluxStorage.java" md5: fb47b57030db99a18f11ceb2e9dcf7c7
+endProcessing "com\tigres810\adventurermod\blocks\machines\storages\tileentity\TileEntityFluxStorage.java"
 
 startProcessing "com\tigres810\adventurermod\blocks\machines\tileentity\TileEntityEnergy.java" md5: 5fd152977ffe26d06691bfc80d80461a
 Cache Hit!
 endProcessing "com\tigres810\adventurermod\blocks\machines\tileentity\TileEntityEnergy.java"
 
-startProcessing "com\tigres810\adventurermod\blocks\machines\tileentity\TileEntityFluxGenerator.java" md5: 41a9ef451a6fa041b4be67899b855e3d
+startProcessing "com\tigres810\adventurermod\blocks\machines\tileentity\TileEntityFluxCrafter.java" md5: e55000ebca2a6d545161069045dfa428
+endProcessing "com\tigres810\adventurermod\blocks\machines\tileentity\TileEntityFluxCrafter.java"
+
+startProcessing "com\tigres810\adventurermod\blocks\machines\tileentity\TileEntityFluxGenerator.java" md5: 0b0a47fe9c3772664206c7bd42598fdf
 endProcessing "com\tigres810\adventurermod\blocks\machines\tileentity\TileEntityFluxGenerator.java"
 
 startProcessing "com\tigres810\adventurermod\blocks\ores\BlockFluxOre.java" md5: 721ab1f15c7edc2187f6ea408ee45ef9
+Cache Hit!
 endProcessing "com\tigres810\adventurermod\blocks\ores\BlockFluxOre.java"
 
 startProcessing "com\tigres810\adventurermod\blocks\pipes\BlockEntityFluxPipe.java" md5: 310bd2ea0ab6d483492b04c48ba83347
+Cache Hit!
 endProcessing "com\tigres810\adventurermod\blocks\pipes\BlockEntityFluxPipe.java"
 
 startProcessing "com\tigres810\adventurermod\blocks\pipes\tileentity\TileEntityFluxPipe.java" md5: cf83e1f01b39bce6710e84dfed73ecf0
+Cache Hit!
 endProcessing "com\tigres810\adventurermod\blocks\pipes\tileentity\TileEntityFluxPipe.java"
 
 startProcessing "com\tigres810\adventurermod\blocks\statements\TileEntityCable.java" md5: 83a2e58da345d2076b179a7eb8865b07
@@ -47,8 +89,7 @@ startProcessing "com\tigres810\adventurermod\blocks\statements\TileEntityRenderC
 Cache Hit!
 endProcessing "com\tigres810\adventurermod\blocks\statements\TileEntityRenderCable.java"
 
-startProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTablet.java" md5: fa9a0f2c0d51e7be857fb2285d3ed29b
-Cache Hit!
+startProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTablet.java" md5: 3b59ef2bb0aa6b56a1943e5da115bc75
 endProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTablet.java"
 
 startProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java" md5: f46935e3e961c5e060f437b93970e5fd
@@ -56,17 +97,19 @@ Cache Hit!
 endProcessing "com\tigres810\adventurermod\client\gui\GuiInformationTabletButton.java"
 
 startProcessing "com\tigres810\adventurermod\energy\CustomEnergyStorage.java" md5: 021fbdffec7c4d8c3da7f6f50f486054
+Cache Hit!
 endProcessing "com\tigres810\adventurermod\energy\CustomEnergyStorage.java"
 
-startProcessing "com\tigres810\adventurermod\fluids\FluidBase.java" md5: 2e5e5e98d343a92fa8122b4c3f9ada93
-Cache Hit!
+startProcessing "com\tigres810\adventurermod\energy\IEnergyProvider.java" md5: 57b36625625f03dac6e93f882e79d63a
+endProcessing "com\tigres810\adventurermod\energy\IEnergyProvider.java"
+
+startProcessing "com\tigres810\adventurermod\fluids\FluidBase.java" md5: 458be13d711a75d243b9090c6e9e9473
 endProcessing "com\tigres810\adventurermod\fluids\FluidBase.java"
 
-startProcessing "com\tigres810\adventurermod\fluids\FluidLiquid.java" md5: fad66afca0cf68a33bfd109bd04cbd04
-Cache Hit!
+startProcessing "com\tigres810\adventurermod\fluids\FluidLiquid.java" md5: ed7449da3a299a2c68fb755821d14602
 endProcessing "com\tigres810\adventurermod\fluids\FluidLiquid.java"
 
-startProcessing "com\tigres810\adventurermod\init\ModBlocks.java" md5: d35cfd73efc493acc4d766dd90117e52
+startProcessing "com\tigres810\adventurermod\init\ModBlocks.java" md5: 4b00fc117e7fe2eb2427095f63f89f6b
 endProcessing "com\tigres810\adventurermod\init\ModBlocks.java"
 
 startProcessing "com\tigres810\adventurermod\init\ModFluids.java" md5: c4198e5b13abd03c5d7d7fba5aca90d4
@@ -74,16 +117,31 @@ Cache Hit!
 endProcessing "com\tigres810\adventurermod\init\ModFluids.java"
 
 startProcessing "com\tigres810\adventurermod\init\ModItems.java" md5: c52611710fd0165dd9e077b825854a9a
+Cache Hit!
 endProcessing "com\tigres810\adventurermod\init\ModItems.java"
 
-startProcessing "com\tigres810\adventurermod\items\ItemBase.java" md5: 8f28e3f2526bf2f7cea09cb76b09ccb4
+startProcessing "com\tigres810\adventurermod\items\ItemBase.java" md5: bf64e0ce66a27e514f7cd80d99700b15
 endProcessing "com\tigres810\adventurermod\items\ItemBase.java"
 
-startProcessing "com\tigres810\adventurermod\proxy\ClientProxy.java" md5: 6c79ef12b1b092f485d09128e55ed6a0
+startProcessing "com\tigres810\adventurermod\network\LoadEnergyMessage.java" md5: a2342a1e0671e25355b809c949e6a6b2
+endProcessing "com\tigres810\adventurermod\network\LoadEnergyMessage.java"
+
+startProcessing "com\tigres810\adventurermod\network\LoadEnergyMessageHandler.java" md5: 406b8d74f255f5ed5c9b091a6cac7959
+endProcessing "com\tigres810\adventurermod\network\LoadEnergyMessageHandler.java"
+
+startProcessing "com\tigres810\adventurermod\network\MessageEnergy.java" md5: e9b71cd6fd12ebd61978be0fef5166bf
+endProcessing "com\tigres810\adventurermod\network\MessageEnergy.java"
+
+startProcessing "com\tigres810\adventurermod\network\NetworkNetHandler.java" md5: e29c96eb82fc0440bb4384c656ba47d7
+endProcessing "com\tigres810\adventurermod\network\NetworkNetHandler.java"
+
+startProcessing "com\tigres810\adventurermod\network\UpdateEnergyMessageHandler.java" md5: 676e56ee4876db5d17b49a4e2acbb1f3
+endProcessing "com\tigres810\adventurermod\network\UpdateEnergyMessageHandler.java"
+
+startProcessing "com\tigres810\adventurermod\proxy\ClientProxy.java" md5: 788582a16cf6c136556147808e48bba1
 endProcessing "com\tigres810\adventurermod\proxy\ClientProxy.java"
 
-startProcessing "com\tigres810\adventurermod\proxy\CommonProxy.java" md5: e28690bfcf6b154e538fa11283676a1e
-Cache Hit!
+startProcessing "com\tigres810\adventurermod\proxy\CommonProxy.java" md5: 17e1c63ea5e5ea70145458c869475e94
 endProcessing "com\tigres810\adventurermod\proxy\CommonProxy.java"
 
 startProcessing "com\tigres810\adventurermod\tabs\AdventurerModBlocksTab.java" md5: 485df2a0adc2437a218fc7fffd4e1924
@@ -98,35 +156,34 @@ startProcessing "com\tigres810\adventurermod\util\IHasModel.java" md5: 8ff2ca51a
 Cache Hit!
 endProcessing "com\tigres810\adventurermod\util\IHasModel.java"
 
-startProcessing "com\tigres810\adventurermod\util\Reference.java" md5: 55f7f0caaa45f419c544404a3c84999f
-Cache Hit!
+startProcessing "com\tigres810\adventurermod\util\Reference.java" md5: b9745e9e0fc00ee427dd13676511f242
 endProcessing "com\tigres810\adventurermod\util\Reference.java"
 
 startProcessing "com\tigres810\adventurermod\util\WorldUtil.java" md5: bb7b3bd3283d062d35cabff1eea9c079
 Cache Hit!
 endProcessing "com\tigres810\adventurermod\util\WorldUtil.java"
 
-startProcessing "com\tigres810\adventurermod\util\handler\GuiHandler.java" md5: 120b72443b755cd94d100102388f9e6c
-Cache Hit!
+startProcessing "com\tigres810\adventurermod\util\handler\GuiHandler.java" md5: 093971e75ef902fe90b5cd90fd686fbe
 endProcessing "com\tigres810\adventurermod\util\handler\GuiHandler.java"
 
-startProcessing "com\tigres810\adventurermod\util\handler\RegistryHandler.java" md5: 4975e45c8e8d8472ec531d17cefb0554
-Cache Hit!
+startProcessing "com\tigres810\adventurermod\util\handler\RegistryHandler.java" md5: 3405058486d1bb9f16a5ff29ae8c580f
 endProcessing "com\tigres810\adventurermod\util\handler\RegistryHandler.java"
 
-startProcessing "com\tigres810\adventurermod\util\handler\RenderHandler.java" md5: e5855253c0a9a7c4a447943b2b90a419
-Cache Hit!
+startProcessing "com\tigres810\adventurermod\util\handler\RenderHandler.java" md5: 1fc1f001b0b1f04a30dccf266b528347
 endProcessing "com\tigres810\adventurermod\util\handler\RenderHandler.java"
 
-startProcessing "com\tigres810\adventurermod\util\handler\TileEntityHandler.java" md5: 33bfb73f689a05d419ca5e51c7a37c99
+startProcessing "com\tigres810\adventurermod\util\handler\TileEntityHandler.java" md5: 408b7e9ffc3f6bfa341af698e713b6e6
 endProcessing "com\tigres810\adventurermod\util\handler\TileEntityHandler.java"
 
 startProcessing "com\tigres810\adventurermod\world\ModWorldGen.java" md5: f82574fc6185c6be963d4a58b7017e94
+Cache Hit!
 endProcessing "com\tigres810\adventurermod\world\ModWorldGen.java"
 
 startProcessing "fluids\FluidBase.java" md5: 8bd2b996a5abcd7cfe366273ac5645a6
+Cache Hit!
 endProcessing "fluids\FluidBase.java"
 
 startProcessing "fluids\FluidLiquid.java" md5: e51fcb9ca7af535626182264dd2ce35f
+Cache Hit!
 endProcessing "fluids\FluidLiquid.java"
 
