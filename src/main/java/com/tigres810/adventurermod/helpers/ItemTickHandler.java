@@ -17,7 +17,8 @@ import com.tigres810.adventurermod.util.Reference;
 @Mod.EventBusSubscriber(modid = Reference.MOD_ID)
 public class ItemTickHandler
 {
-    @SubscribeEvent
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	@SubscribeEvent
     public static void update(WorldTickEvent event) {
         if(event.phase == Phase.END) {
             List<Entity> entities = new ArrayList(event.world.loadedEntityList);

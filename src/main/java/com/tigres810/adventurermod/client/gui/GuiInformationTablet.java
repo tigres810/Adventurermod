@@ -2,9 +2,6 @@ package com.tigres810.adventurermod.client.gui;
 
 import java.io.IOException;
 
-import org.lwjgl.opengl.GL11;
-
-import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.util.Reference;
 
 import net.minecraft.client.Minecraft;

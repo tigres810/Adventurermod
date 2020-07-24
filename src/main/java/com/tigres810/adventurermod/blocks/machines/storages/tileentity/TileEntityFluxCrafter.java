@@ -1,9 +1,7 @@
 package com.tigres810.adventurermod.blocks.machines.storages.tileentity;
 
-import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
 import com.tigres810.adventurermod.energy.IEnergyProvider;
-import com.tigres810.adventurermod.init.ModFluids;
 import com.tigres810.adventurermod.network.MessageEnergy;
 import com.tigres810.adventurermod.network.NetworkNetHandler;
 
@@ -19,8 +17,6 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.energy.CapabilityEnergy;
-import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.fluids.FluidUtil;
 import net.minecraftforge.fml.common.network.NetworkRegistry.TargetPoint;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -30,7 +26,6 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 	public ItemStackHandler handler = new ItemStackHandler(12);
 	private CustomEnergyStorage storage = new CustomEnergyStorage(5000, 0, 100);
 	public int energy = storage.getEnergyStored();
-	private String customName;
 	public int cookTime = 0;
 	private int previousenergy = energy;
 	private int ticks = 0;
@@ -40,7 +35,6 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 	
 	@Override
 	public void update() {
-		TileEntityFluxCrafter te = (TileEntityFluxCrafter) this.world.getTileEntity(this.pos);
 		if(!world.isRemote) {
 			if(this.world.isBlockPowered(this.pos)) {
 				if(energy < storage.getMaxEnergyStored()) {
@@ -103,28 +97,16 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 		else return false;
 	}
 	
-	private boolean isItemFuel(ItemStack stack) 
-	{
-		return getFuelValue(stack) > 0;
-	}
-	
 	private boolean isItemCrafting(int Slot, Item item) {
 		if(Slot == 2 && item == Items.PAPER) return true;
 		else return false;
-	}
-	
-	private int getFuelValue(ItemStack stack) 
-	{
-		if(stack.getItem() == Items.WATER_BUCKET || stack.getItem() == Items.MILK_BUCKET) return 100;
-		else if(stack.getItem() == Items.WHEAT_SEEDS || stack.getItem() == Items.MELON_SEEDS || stack.getItem() == Items.PUMPKIN_SEEDS) return 50;
-		else if(stack.getItem() == FluidUtil.getFilledBucket(new FluidStack(ModFluids.FLUX_FLUID, 1)).getItem()) return 200;
-		else return 0;
 	}
 	
 	public int getCookTimeValue() {
 		return this.energy < this.storage.getMaxEnergyStored() ? this.cookTime : 0;
 	}
 	
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T> T getCapability(Capability<T> capability, EnumFacing facing) 
 	{
@@ -161,7 +143,7 @@ public class TileEntityFluxCrafter extends TileEntity implements ITickable, IEne
 		this.cookTime = compound.getInteger("CookTime");
 		this.energy = compound.getInteger("GuiEnergy");
 		int t = compound.getInteger("Energy");
-		this.customName = compound.getString("Name");
+		compound.getString("Name");
 		this.storage = new CustomEnergyStorage(5000, 0, 100, t);
 	}
 	

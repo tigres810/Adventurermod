@@ -1,12 +1,8 @@
 package com.tigres810.adventurermod.network;
 
-import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
 import com.tigres810.adventurermod.energy.IEnergyProvider;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;

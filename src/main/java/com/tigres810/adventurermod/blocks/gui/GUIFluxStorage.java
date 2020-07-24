@@ -1,9 +1,7 @@
 package com.tigres810.adventurermod.blocks.gui;
 
-import com.tigres810.adventurermod.blocks.machines.container.ContainerFluxGenerator;
 import com.tigres810.adventurermod.blocks.machines.container.ContainerFluxStorage;
 import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
-import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 import com.tigres810.adventurermod.util.Reference;
 
 import net.minecraft.client.gui.inventory.GuiContainer;

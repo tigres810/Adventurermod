@@ -3,7 +3,6 @@ package com.tigres810.adventurermod.blocks.machines.container.slots;
 import javax.annotation.Nonnull;
 
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxCrafter;
-import com.tigres810.adventurermod.init.ModBlocks;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;

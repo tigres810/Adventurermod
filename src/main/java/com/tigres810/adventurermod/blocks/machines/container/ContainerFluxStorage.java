@@ -1,7 +1,6 @@
 package com.tigres810.adventurermod.blocks.machines.container;
 
 import com.tigres810.adventurermod.blocks.machines.storages.tileentity.TileEntityFluxStorage;
-import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -10,18 +9,16 @@ import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.SlotItemHandler;
 
 public class ContainerFluxStorage extends Container {
 	private final TileEntityFluxStorage tileentity;
-	private int energy, cooktime;
+	private int energy;
 	
 	public ContainerFluxStorage(InventoryPlayer player, TileEntityFluxStorage tileentity) {
 		this.tileentity = tileentity;
-		/*
-		IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
+		tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 		
+		/*
 		this.addSlotToContainer(new SlotItemHandler(handler, 0, 80, 33));
 		
 		for(int y = 0; y < 3; y++) {

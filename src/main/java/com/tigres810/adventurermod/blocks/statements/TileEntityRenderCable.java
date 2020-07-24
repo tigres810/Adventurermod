@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 
+@SuppressWarnings("rawtypes")
 public class TileEntityRenderCable extends TileEntitySpecialRenderer {
 
 	ResourceLocation textureCable = new ResourceLocation(Reference.MOD_ID, "textures/blocks/cable.png");

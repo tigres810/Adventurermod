@@ -1,59 +1,29 @@
 package com.tigres810.adventurermod.blocks.pipes.tileentity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 import com.tigres810.adventurermod.blocks.pipes.BlockEntityFluxPipe;
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
 import com.tigres810.adventurermod.init.ModBlocks;
-import com.tigres810.adventurermod.init.ModFluids;
-import com.tigres810.adventurermod.init.ModItems;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Items;
-import net.minecraft.inventory.Container;
-import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.capabilities.Capability.IStorage;
 import net.minecraftforge.energy.CapabilityEnergy;
-import net.minecraftforge.energy.IEnergyStorage;
-import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.fluids.FluidUtil;
-import net.minecraftforge.fluids.capability.templates.FluidHandlerItemStack;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemStackHandler;
 
 
 public class TileEntityFluxPipe extends TileEntity implements ITickable
 {
 	private CustomEnergyStorage storage = new CustomEnergyStorage(500);
 	public int energy = storage.getEnergyStored();
-	private boolean output = false;
-	private String customName;
-	private int cooldown;
 	private int counttoenergy;
 	
+	@SuppressWarnings("unused")
 	private Block isBlockConnection(Block block) {
 		if(block == ModBlocks.FLUX_PIPE_BLOCK) return block;
 		else return null;
@@ -61,9 +31,7 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 	
 	@Override
 	public void update() {
-		IBlockState currentState = this.world.getBlockState(pos); // Updates current state variable
-        EnumFacing facing = EnumFacing.SOUTH; // Gets which way block is facing
-        
+		this.world.getBlockState(pos);
         if (this.world != null) 
         {
             if (!this.world.isRemote)
@@ -174,6 +142,7 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 		return super.hasCapability(capability, facing);
 	}
 	
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T> T getCapability(Capability<T> capability, EnumFacing facing) 
 	{
@@ -196,7 +165,7 @@ public class TileEntityFluxPipe extends TileEntity implements ITickable
 	{
 		super.readFromNBT(compound);
 		this.energy = compound.getInteger("GuiEnergy");
-		this.customName = compound.getString("Name");
+		compound.getString("Name");
 		this.storage.readFromNBT(compound);
 	}
 	

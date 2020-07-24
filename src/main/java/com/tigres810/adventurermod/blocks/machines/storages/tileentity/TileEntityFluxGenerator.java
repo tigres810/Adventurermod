@@ -1,35 +1,22 @@
 package com.tigres810.adventurermod.blocks.machines.storages.tileentity;
 
 import com.tigres810.adventurermod.energy.CustomEnergyStorage;
-import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.init.ModFluids;
-import com.tigres810.adventurermod.init.ModItems;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.inventory.Container;
-import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.energy.CapabilityEnergy;
-import net.minecraftforge.energy.IEnergyStorage;
-import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidUtil;
-import net.minecraftforge.fluids.capability.templates.FluidHandlerItemStack;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
 
@@ -38,7 +25,6 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 	public ItemStackHandler handler = new ItemStackHandler(1);
 	private CustomEnergyStorage storage = new CustomEnergyStorage(1000, 0, 100);
 	public int energy = storage.getEnergyStored();
-	private String customName;
 	public int cookTime;
 	
     @Override
@@ -95,6 +81,7 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 		return this.energy < this.storage.getMaxEnergyStored() ? this.cookTime : 0;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T> T getCapability(Capability<T> capability, EnumFacing facing) 
 	{
@@ -131,7 +118,7 @@ public class TileEntityFluxGenerator extends TileEntity implements ITickable
 		this.cookTime = compound.getInteger("CookTime");
 		this.energy = compound.getInteger("GuiEnergy");
 		int t = compound.getInteger("Energy");
-		this.customName = compound.getString("Name");
+		compound.getString("Name");
 		this.storage = new CustomEnergyStorage(1000, 0, 100, t);
 	}
 	

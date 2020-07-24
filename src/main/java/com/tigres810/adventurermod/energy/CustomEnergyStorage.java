@@ -1,8 +1,6 @@
 package com.tigres810.adventurermod.energy;
 
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 import net.minecraftforge.energy.EnergyStorage;
 
 public class CustomEnergyStorage extends EnergyStorage {

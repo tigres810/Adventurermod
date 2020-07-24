@@ -2,28 +2,13 @@ package com.tigres810.adventurermod.init;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
-import com.tigres810.adventurermod.Main;
 import com.tigres810.adventurermod.fluids.FluidLiquid;
-import com.tigres810.adventurermod.items.ItemBase;
 import com.tigres810.adventurermod.util.Reference;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
-import net.minecraftforge.fluids.FluidActionResult;
 import net.minecraftforge.fluids.FluidRegistry;
-import net.minecraftforge.fluids.FluidRegistry.FluidRegisterEvent;
-import net.minecraftforge.fluids.FluidStack;
-import net.minecraftforge.fluids.FluidUtil;
-import net.minecraftforge.fluids.UniversalBucket;
-import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
-import net.minecraftforge.fluids.capability.IFluidHandlerItem;
-import net.minecraftforge.fluids.capability.templates.FluidHandlerItemStack;
-import net.minecraftforge.fluids.capability.templates.FluidHandlerItemStackSimple;
 
 public class ModFluids {
 

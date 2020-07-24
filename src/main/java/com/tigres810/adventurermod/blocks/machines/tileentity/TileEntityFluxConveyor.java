@@ -4,8 +4,6 @@ import java.util.List;
 
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxConveyor;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.state.BlockWorldState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
@@ -22,7 +20,6 @@ public class TileEntityFluxConveyor extends TileEntity implements ITickable
 	public void update() {
 		List<EntityItem> stuff = world.getEntitiesWithinAABB(EntityItem.class, new AxisAlignedBB(pos, pos.add(1, 2, 1)));
 		IBlockState blockstate = world.getBlockState(pos);
-		Block block = blockstate.getBlock();
 		EnumFacing facing = blockstate.getValue(BlockEntityFluxConveyor.FACING);
 		
 		for (EntityItem item : stuff) {

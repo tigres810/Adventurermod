@@ -1,8 +1,6 @@
 package com.tigres810.adventurermod.tabs;
 
 import com.tigres810.adventurermod.init.ModBlocks;
-import com.tigres810.adventurermod.init.ModItems;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 

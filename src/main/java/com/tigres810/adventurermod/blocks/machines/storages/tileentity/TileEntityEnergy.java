@@ -12,6 +12,7 @@ public class TileEntityEnergy extends TileEntity implements ITickable {
 
 	private CustomEnergyStorage storage = new CustomEnergyStorage(5000);
 	
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T> T getCapability(Capability<T> capability, EnumFacing facing) {
 		if(capability == CapabilityEnergy.ENERGY) return (T)this.storage;

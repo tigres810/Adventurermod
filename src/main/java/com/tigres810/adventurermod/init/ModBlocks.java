@@ -3,7 +3,6 @@ package com.tigres810.adventurermod.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.tigres810.adventurermod.blocks.BlockBase;
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxConveyor;
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxCrafter;
 import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxGenerator;

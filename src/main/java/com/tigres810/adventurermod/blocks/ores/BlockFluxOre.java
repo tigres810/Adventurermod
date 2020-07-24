@@ -5,7 +5,6 @@ import java.util.Random;
 import com.tigres810.adventurermod.blocks.BlockBase;
 import com.tigres810.adventurermod.init.ModItems;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

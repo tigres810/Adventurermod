@@ -1,6 +1,5 @@
 package com.tigres810.adventurermod.helpers;
 
-import com.tigres810.adventurermod.blocks.machines.BlockEntityFluxConveyor;
 import com.tigres810.adventurermod.helpers.ItemTickHandler.EntityItemTickEvent;
 import com.tigres810.adventurermod.init.ModBlocks;
 import com.tigres810.adventurermod.util.Reference;
