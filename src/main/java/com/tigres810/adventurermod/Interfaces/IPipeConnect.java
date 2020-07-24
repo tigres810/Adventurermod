@@ -1,4 +1,4 @@
-package com.tigres810.adventurermod.Interfaces;
+package com.tigres810.adventurermod.interfaces;
 
 import java.util.List;
 

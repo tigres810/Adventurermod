@@ -1,2 +1,9 @@
 Manifest-Version: 1.0
+Implementation-Title: AdventurerMod1
+Implementation-Version: 1.0
+Specification-Vendor: examplemodsareus
+Specification-Title: examplemod
+Implementation-Timestamp: 2020-07-24T05:28:07+0200
+Specification-Version: 1
+Implementation-Vendor: examplemodsareus
 

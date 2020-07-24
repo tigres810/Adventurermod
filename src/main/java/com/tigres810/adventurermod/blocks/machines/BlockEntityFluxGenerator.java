@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.Random;
 
 import com.tigres810.adventurermod.Main;
-import com.tigres810.adventurermod.Interfaces.IPipeConnect;
 import com.tigres810.adventurermod.blocks.BlockBase;
 import com.tigres810.adventurermod.blocks.machines.tileentity.TileEntityFluxGenerator;
 import com.tigres810.adventurermod.init.ModBlocks;
+import com.tigres810.adventurermod.interfaces.IPipeConnect;
 import com.tigres810.adventurermod.util.Reference;
 
 import net.minecraft.block.BlockHorizontal;

@@ -1,2 +1,2 @@
-@ECHO ON
+@echo on
 gradlew build
