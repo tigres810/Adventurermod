@@ -8,17 +8,15 @@ import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.items.CapabilityItemHandler;
 
 public class ContainerFluxStorage extends Container {
 	private final TileEntityFluxStorage tileentity;
 	private int energy;
-	
 	public ContainerFluxStorage(InventoryPlayer player, TileEntityFluxStorage tileentity) {
 		this.tileentity = tileentity;
-		tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
-		
 		/*
+		IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
+		
 		this.addSlotToContainer(new SlotItemHandler(handler, 0, 80, 33));
 		
 		for(int y = 0; y < 3; y++) {
